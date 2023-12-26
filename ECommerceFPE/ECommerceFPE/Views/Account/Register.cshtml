@@ -1,0 +1,90 @@
+﻿@model ECommerceFPE.Models.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+<hr />
+
+<div class="row d-flex justify-content-center pb-lg-3">
+    <div class="col-md-10">
+        <form asp-action="Register">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-row d-flex">
+                <div class="form-group col-md-6 m-2">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6 m-2">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-row d-flex">
+
+                <div class="form-group col-md-4 m-1">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4 m-1">
+                    <label asp-for="Country" class="control-label"></label>
+                    <input asp-for="Country" class="form-control" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4 m-1">
+                    <label asp-for="Gender" class="control-label"></label>
+                    @*  <input asp-for="Gender" class="form-control" />*@
+
+
+
+                    <select asp-for="Gender" class="form-control">
+
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+
+                    </select>
+
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+
+                </div>
+            </div>
+
+
+
+            <div class="form-row d-flex justify-content-between">
+                <div class="form-group col-md-6 m-2">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6 m-2">
+                    <label asp-for="ConfirmPassword" class="control-label"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-row d-flex justify-content-end pt-1">
+                <div class="form-group col-md-2 d-flex m-2 justify-content-end">
+                    <input type="submit" value="Create" class="btn btn-primary btn-md btn-block m-2" />
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-warning btn-md btn-block m-2">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

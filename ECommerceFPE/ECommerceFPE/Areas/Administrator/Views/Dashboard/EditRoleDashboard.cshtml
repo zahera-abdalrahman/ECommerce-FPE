@@ -1,0 +1,76 @@
+﻿@model ECommerceFPE.Models.ViewModels.EditRoleViewModel
+@{
+    ViewData["Title"] = "EditRole";
+}
+<h1>Edit Role</h1>
+<hr />
+<div class="row ">
+    <div class="col-md-8" style="margin-top:30px; margin-bottom:200px;">
+        <form asp-action="CreateRoleDashboard" asp-controller="Dashboard" asp-area="Administrator" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group visually-hidden">
+                <label asp-for="RoleId" class="control-label"></label>
+                <input asp-for="RoleId" class="form-control" />
+                <span asp-validation-for="RoleId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RoleName" class="control-label"></label>
+                <input asp-for="RoleName" class="form-control" />
+                <span asp-validation-for="RoleName" class="text-danger"></span>
+            </div>
+            <div class="align-text-bottom" style="margin-top:20px;">
+                <input asp-action="EditRoleDashboard" asp-controller="Dashboard" asp-area="Administrator" asp-route-id="@Model.RoleId" type="submit" value="Edit" class="btn btn-primary btn-md btn-block" />
+                <a asp-action="RolesListDashboard" asp-controller="Dashboard" asp-area="Administrator" class="btn btn-warning btn-md btn-block">Cancel</a>
+            </div>
+        </form>
+
+        <form asp-action="EditUserInRole" method="post">
+            <div class="card" style="margin-top:20px;">
+                <div class="card-header">
+                    <h3>Users in this role</h3>
+                </div>
+                <div class="card-body">
+                    @if (Model.Users.Any())
+                    {
+                        foreach (var user in Model.Users)
+                        {
+                            <h5 class="card-title">@user</h5>
+                        }
+                    }
+                    else
+                    {
+                        <h5 class="card-title">None at the moment</h5>
+                    }
+                </div>
+                @*
+                <div class="card-footer">
+                    <a asp-action="EditUserInRole"
+                       asp-route-id="@Model.RoleId" class="btn btn-primary" style="width:auto">Add or Remove Users</a>
+                </div>*@
+            </div>
+        </form>
+
+
+
+        @*
+        <form asp-action="AddRemove">
+
+            <div class="form-group">
+
+                <hr />
+                <h2>Users How are in this Role </h2>
+                <hr />
+              @User.Identity.Name
+                <hr />
+                <div class="align-text-bottom">
+                    <input type="submit" value="AddRemove" class="btn btn-primary btn-md btn-block" />
+                    <a asp-action="RolesList" asp-controller="Account" class="btn btn-warning btn-md btn-block">Cancel</a>
+                </div>
+
+            </div>
+        </form>
+        *@
+
+    </div>
+</div>
+

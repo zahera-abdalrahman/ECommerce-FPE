@@ -1,0 +1,38 @@
+﻿@model IEnumerable<IdentityRole>
+
+@{
+    ViewData["Title"] = "RolesList";
+}
+
+<h1 style="margin-top:150px">Roles List</h1>
+
+@foreach (var role in Model)
+{
+
+
+    <div class="card mb-4">
+    <div class="card-header">Role</div>
+    <div class="card-body"><h3>@role.Name</h3></div>
+    <div class="card-footer">
+        <a asp-route-id="@role.Id" asp-action="EditRole" asp-controller="Account" class="btn btn-warning">Edit</a>
+        <a asp-route-id="@role.Id" asp-action="DeleteRole" class="btn btn-danger">Delete</a>
+  
+
+        @* @if (User.IsInRole(role.Name) == true)
+        {
+
+            @User.Identity.Name <hr />
+        }
+
+        *@
+
+
+    </div>
+
+    
+
+
+
+</div>}
+
+<hr />
