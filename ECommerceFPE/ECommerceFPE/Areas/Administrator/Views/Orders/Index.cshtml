@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ECommerceFPE.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="card mb-4">
+    <header class="card-header">
+        <h4 class="card-title">Latest orders</h4>
+    </header>
+    <div class="card-body">
+        <div class="table-responsive">
+            <div class="table-responsive">
+                <table class="table align-middle table-nowrap mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x=>x.Customer.CustomerName)</th>
+                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x=>x.OrderDate)</th>
+                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x=>x.TotalAmount)</th>
+                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x => x.OrderStatus)</th>
+                            <th class="align-middle" scope="col" asp-action="Details" asp-controller="Orders" asp-area="Administrator">View Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Customer.CustomerName</td>
+                                <td>@item.OrderDate</td>
+                                <td>
+                                    @item.TotalAmount
+                                </td>
+                                <td>
+                                    @item.OrderStatus
+                                </td>
+                                <td>
+                                    <a href="#" class="btn btn-xs" asp-action="Details"asp-route-id="@item.OrderId"> View details</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- table-responsive end// -->
+    </div>
+</div>
