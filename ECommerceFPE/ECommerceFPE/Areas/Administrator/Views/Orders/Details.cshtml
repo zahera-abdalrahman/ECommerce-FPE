@@ -1,0 +1,110 @@
+﻿@model ECommerceFPE.Models.Order
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        dl.row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        dt, dd {
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        dt {
+            font-weight: bold;
+            background-color: #eee;
+        }
+
+        dd {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Order Details</title>
+</head>
+<body>
+
+    <h1>Details Order</h1>
+
+    <div>
+        <hr />
+        <dl class="row">
+            <dt>
+                <strong>Products</strong>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Products)
+            </dd>
+
+            <dt>
+                <strong>Order Date</strong>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.OrderDate)
+            </dd>
+
+            <dt>
+                <strong>Total Amount</strong>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TotalAmount)
+            </dd>
+
+            <dt>
+                <strong>Order Status</strong>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.OrderStatus)
+            </dd>
+
+            <dt>
+                <strong>Customer Name</strong>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Customer.CustomerName)
+            </dd>
+
+            <dt>
+                <strong>Customer Address</strong>
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Customer.Address)
+            </dd>
+        </dl>
+    </div>
+
+</body>
+</html>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ECommerceFPE",
+    "\\ECommerceFPE\\ECommerceFPE",
+    "\\ECommerceFPE\\ECommerceFPE\\Areas",
+    "\\ECommerceFPE\\ECommerceFPE\\Areas\\Administrator",
+    "\\ECommerceFPE\\ECommerceFPE\\Areas\\Administrator\\Controllers"
+  ],
+  "SelectedNode": "\\ECommerceFPE\\ECommerceFPE\\Areas\\Administrator\\Controllers\\DashboardController.cs",
+  "PreviewInSolutionExplorer": false
+}

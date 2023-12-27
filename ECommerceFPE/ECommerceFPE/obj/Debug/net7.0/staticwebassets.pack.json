@@ -1,0 +1,1553 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ECommerceFPE.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ECommerceFPE.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css.map"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\plugins\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\animate.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\plugins\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\jquery-ui.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\plugins\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\magnific-popup.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\plugins\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\plugins\\select2.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\select2.min.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\plugins\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\slick.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendors\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\vendors\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\evara-font.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendors\\evara-font.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendors\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\normalize.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendors\\normalize.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\uicons-regular-straight.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendors\\uicons-regular-straight.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-brands-400.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-brands-400.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-brands-400.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-brands-400d41d.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-duotone-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-duotone-900.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-duotone-900.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-duotone-900.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-duotone-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-duotone-900.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-duotone-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-duotone-900.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-duotone-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-duotone-900.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-duotone-900d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-duotone-900d41d.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-light-300.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-light-300.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-light-300.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-light-300.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-light-300.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-light-300.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-light-300.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-light-300.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-light-300.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-light-300d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-light-300d41d.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-regular-400.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-regular-400.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-regular-400.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-regular-400d41d.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-solid-900.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-solid-900.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-solid-900.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\awesome\\fa-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\awesome\\fa-solid-900d41d.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\evara-font\\evara-font.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\evara-font\\evara-font.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\evara-font\\evara-font.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\evara-font\\evara-font.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\evara-font\\evara-font.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\evara-font\\evara-font.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\evara-font\\evara-font.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\evara-font\\evara-font.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\evara-font\\evara-font.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\evara-font\\evara-font.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\uicons\\uicons-regular-straight.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\uicons\\uicons-regular-straight.eot"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\uicons\\uicons-regular-straight.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\uicons\\uicons-regular-straight.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\uicons\\uicons-regular-straight.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\uicons\\uicons-regular-straight.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-1.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-10.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-11.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-11.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-11.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-12.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-12.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-13.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-13.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-2.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-3.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-3.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-4.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-4.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-5.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-5.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-7.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-8.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\banner-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\banner-9.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\brand-1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\brand-1.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\brand-2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\brand-2.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\brand-3.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\brand-3.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\brand-4.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\brand-4.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\brand-5.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\brand-5.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\brand-6.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\brand-6.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-10.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-7.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-7.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-7.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-8.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner-9.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\banner\\menu-banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\banner\\menu-banner.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-10.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-8.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\blog\\blog-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\blog\\blog-9.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\about-1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\about-1.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\avatar-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\avatar-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\avatar-3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\avatar-4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\avatar-5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\avatar-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\avatar-6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\avatar-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\avatar-7.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\avatar-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\avatar-8.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\company-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\company-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\company-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\company-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\company-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\company-3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\page\\img-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-7.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-8.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-1-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-1-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-10-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-10-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-10-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-10-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-11-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-11-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-11-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-11-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-12-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-12-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-12-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-12-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-13-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-13-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-13-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-13-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-14-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-14-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-14-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-14-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-15-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-15-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-15-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-15-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-16-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-16-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-16-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-16-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-16-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-16-3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-16-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-16-4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-16-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-16-5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-16-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-16-6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-16-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-16-7.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-2-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-2-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-2-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-2-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-3-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-3-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-3-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-3-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-4-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-4-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-4-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-4-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-5-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-5-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-5-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-5-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-6-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-6-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-6-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-6-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-7-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-7-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-7-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-7-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-8-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-8-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-8-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-8-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-9-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-9-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\product-9-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\product-9-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-7.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-8.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\thumbnail-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\shop\\thumbnail-9.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\slider\\slider-1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\slider\\slider-1.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\slider\\slider-111.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\slider\\slider-111.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\slider\\slider-2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\slider\\slider-2.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\slider\\slider-3.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\slider\\slider-3.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\slider\\slider-4.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\slider\\slider-4.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\slider\\slider-5.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\slider\\slider-5.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\slider\\slider-6.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\slider\\slider-6.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\slider\\slider-7.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\slider\\slider-7.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\404.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\404.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\app-store.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\app-store.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\btn-brush-bg-1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\btn-brush-bg-1.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\btn-brush-bg-2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\btn-brush-bg-2.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\btn-brush-bg-3.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\btn-brush-bg-3.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\favicon.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\favicon.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-dt.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\flag-dt.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-fr.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\flag-fr.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-ru.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\flag-ru.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\google-play.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\google-play.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\feature-1.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\feature-1.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\feature-2.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\feature-2.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\feature-3.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\feature-3.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\feature-4.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\feature-4.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\feature-5.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\feature-5.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\feature-6.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\feature-6.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-cart.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-cart.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-dribbble.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-dribbble.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-email.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-email.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-facebook.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-facebook.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-heart.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-heart.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-instagram.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-instagram.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-pinterest.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-pinterest.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-twitter.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-twitter.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\icon-youtube.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\icon-youtube.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\icons\\search.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\icons\\search.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\logo-2.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\logo-2.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\logo.svg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\logo.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\payment-method.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\payment-method.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\rating-stars.png",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\rating-stars.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\topbar-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\imgs\\theme\\topbar-bg.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\TweenMax.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\TweenMax.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\counterup.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\counterup.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\custom-parallax.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\custom-parallax.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\images-loaded.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\images-loaded.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\isotope.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\isotope.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery-ui.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\jquery.elevatezoom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.elevatezoom.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\jquery.syotimer.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.syotimer.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\jquery.theia.sticky.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.theia.sticky.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\jquery.vticker-min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.vticker-min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\leaflet.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\leaflet.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\magnific-popup.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\magnific-popup.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\scrollup.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\scrollup.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\select2.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\select2.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\slick.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\slick.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\waypoints.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\waypoints.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\plugins\\wow.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\wow.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\shop.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shop.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\vendor\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\vendor\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\vendor\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\vendor\\jquery-migrate-3.3.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-migrate-3.3.0.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\vendor\\modernizr-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-3.6.0.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_functions.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\abstracts\\_functions.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\abstracts\\_mixins.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_variables.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\abstracts\\_variables.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\base\\_animation.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\base\\_animation.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\base\\_common.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\base\\_common.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\base\\_typography.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\base\\_typography.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_banners.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\components\\_banners.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\components\\_buttons.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_card.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\components\\_card.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_form.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\components\\_form.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_misc.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\components\\_misc.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_slider.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\components\\_slider.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_tabs.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\components\\_tabs.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_footer.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\layout\\_footer.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_header.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\layout\\_header.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_navigation.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\layout\\_navigation.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_responsive.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\layout\\_responsive.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_sidebar.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\layout\\_sidebar.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_spacing.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\layout\\_spacing.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\main.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\main.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\pages\\_blog.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\pages\\_blog.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\pages\\_page.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\pages\\_page.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\pages\\_shop.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\pages\\_shop.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\themes\\_default.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\themes\\_default.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\vendors\\_vendors-import.scss",
+      "PackagePath": "staticwebassets\\assets\\sass\\vendors\\_vendors-import.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\css\\main.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\css\\main.css.map"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\vendors\\bootstrap.css",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\css\\vendors\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\vendors\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\css\\vendors\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\vendors\\material-icon-round.css",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\css\\vendors\\material-icon-round.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\vendors\\normalize.css",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\css\\vendors\\normalize.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\vendors\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\css\\vendors\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\vendors\\select2.min.css",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\css\\vendors\\select2.min.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Outlined.ttf",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Outlined.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Outlined.woff",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Outlined.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Outlined.woff2",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Outlined.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Round.ttf",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Round.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Round.woff",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Round.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Round.woff2",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Round.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Sharp.ttf",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Sharp.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Sharp.woff",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Sharp.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Sharp.woff2",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-Sharp.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-TwoTone.ttf",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-TwoTone.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-TwoTone.woff",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-TwoTone.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-TwoTone.woff2",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons-TwoTone.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons.ttf",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons.ttf"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons.woff",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons.woff"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons.woff2",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\fonts\\material-icon\\MaterialIcons.woff2"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-1.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-10.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-10.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-11.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-11.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-12.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-12.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-13.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-13.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-14.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-14.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-15.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-15.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-16.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-16.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-17.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-17.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-18.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-18.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-2.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-3.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-4.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-5.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-6.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-7.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-7.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-8.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-8.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand-9.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand-9.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\brands\\brand.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\brands\\brand.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\card-brands\\1.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\card-brands\\1.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\card-brands\\2.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\card-brands\\2.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\card-brands\\3.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\card-brands\\3.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\card-brands\\4.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\card-brands\\4.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\icons\\stars-active.svg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\icons\\stars-active.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\icons\\starts-disable.svg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\icons\\starts-disable.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\1.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\10.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\10.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\11.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\11.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\12-1.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\12-1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\12-2.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\12-2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\12.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\12.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\2.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\3.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\4.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\5.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\5.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\6.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\6.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\7.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\7.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\8.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\8.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\items\\9.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\items\\9.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\misc\\map.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\misc\\map.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\people\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\people\\avatar1.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\people\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\people\\avatar2.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\people\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\people\\avatar3.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\people\\avatar4.jpg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\people\\avatar4.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\theme\\404.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\theme\\404.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\theme\\favicon.svg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\theme\\favicon.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\theme\\flag-cn.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\theme\\flag-cn.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\theme\\flag-fr.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\theme\\flag-fr.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\theme\\flag-jp.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\theme\\flag-jp.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\theme\\flag-us.png",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\theme\\flag-us.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\theme\\logo.svg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\theme\\logo.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\imgs\\theme\\upload.svg",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\imgs\\theme\\upload.svg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\custom-chart.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\custom-chart.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\vendors\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\vendors\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\vendors\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\vendors\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\vendors\\chart.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\vendors\\chart.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\vendors\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\vendors\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\vendors\\jquery.fullscreen.min.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\vendors\\jquery.fullscreen.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\vendors\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\vendors\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\js\\vendors\\select2.min.js",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\js\\vendors\\select2.min.js"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\abstracts\\_import-vendors.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\abstracts\\_import-vendors.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\abstracts\\_mixins.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\abstracts\\_mixins.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\abstracts\\_variables.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\abstracts\\_variables.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\base\\_helpers.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\base\\_helpers.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\base\\_typography.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\base\\_typography.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\components\\_buttons.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\components\\_buttons.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\components\\_elements.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\components\\_elements.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\components\\_forms.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\components\\_forms.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\components\\_items.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\components\\_items.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\components\\_lists.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\components\\_lists.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\components\\_navigation.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\components\\_navigation.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\layout\\_layout-dark.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\layout\\_layout-dark.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\layout\\_layout.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\layout\\_layout.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\layout\\_responsive.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\layout\\_responsive.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\layout\\_spacing.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\layout\\_spacing.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\sass\\main.scss",
+      "PackagePath": "staticwebassets\\evara-backend\\assets\\sass\\main.scss"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\index-dark.html",
+      "PackagePath": "staticwebassets\\evara-backend\\index-dark.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\index.html",
+      "PackagePath": "staticwebassets\\evara-backend\\index.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-account-login.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-account-login.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-account-register.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-account-register.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-blank.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-blank.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-brands.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-brands.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-categories.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-categories.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-error-404.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-error-404.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-form-product-1.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-form-product-1.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-form-product-2.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-form-product-2.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-form-product-3.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-form-product-3.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-form-product-4.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-form-product-4.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-invoice.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-invoice.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-orders-1.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-orders-1.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-orders-2.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-orders-2.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-orders-detail.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-orders-detail.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-orders-tracking.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-orders-tracking.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-products-grid-2.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-products-grid-2.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-products-grid.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-products-grid.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-products-list.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-products-list.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-reviews.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-reviews.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-seller-detail.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-seller-detail.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-sellers-cards.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-sellers-cards.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-sellers-list.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-sellers-list.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-settings-1.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-settings-1.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-settings-2.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-settings-2.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-transactions-1.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-transactions-1.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-transactions-2.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-transactions-2.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\page-transactions-details.html",
+      "PackagePath": "staticwebassets\\evara-backend\\page-transactions-details.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\htmlCut.html",
+      "PackagePath": "staticwebassets\\htmlCut.html"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ECommerceFPE.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ECommerceFPE.props",
+      "PackagePath": "build\\ECommerceFPE.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ECommerceFPE.props",
+      "PackagePath": "buildMultiTargeting\\ECommerceFPE.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ECommerceFPE.props",
+      "PackagePath": "buildTransitive\\ECommerceFPE.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
