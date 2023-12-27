@@ -29,6 +29,8 @@ namespace ECommerceFPE.Data
 
         public DbSet<Review> Review { get; set; }
 
+        public DbSet<ReviewAll> ReviewAll { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
