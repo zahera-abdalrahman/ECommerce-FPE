@@ -11,7 +11,23 @@ namespace ECommerceFPE.Data
 
         }
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Cart> Cart { get; set; }
+
+        public DbSet<CartItems> CartItems { get; set; }
+
+        public DbSet<CreditCard> CreditCard { get; set; }
+
+
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderItems> OrderItems { get; set; }
+        public DbSet<Payment> Payment { get; set; }
+        public DbSet<ProductImages> ProductImages { get; set; }
+        public DbSet<ProductCatalog> ProductCatalog { get; set; }
+
+        public DbSet<ProductCategory> ProductCategory { get; set; }
+
+        public DbSet<Review> Review { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
