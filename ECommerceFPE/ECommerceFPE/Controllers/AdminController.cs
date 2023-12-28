@@ -13,10 +13,23 @@ public class AdminController : Controller
     }
 
     [Route("/admin/cart")]
-    public IActionResult Cart()
+    public async Task<IActionResult> Cart()
     {
-        var cart = _context.Cart.ToList();
+        var cartList = await _context.Cart.Include(c => c.Customer).ToListAsync();
 
-        return View("~/Views/AdminDashboard/Cart.cshtml");
+        return View("~/Views/AdminDashboard/Cart.cshtml", cartList);
+    }
+
+    [Route("/admin/cartitems/{cartId}")]
+    public async Task<IActionResult> CartItems(int cartId)
+    {
+        var cartItemsList = await _context
+            .CartItems
+            .where(c => c.CartId == cartId)
+            .Include(c => c.Cart)
+            .Include(c => c.ProductCatalog)
+            .ToListAsync();
+
+        return View("~/Views/AdminDashboard/CartItems.cshtml", cartItemsList);
     }
 }
