@@ -15,18 +15,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/main.css?v=3.4">
-   
-    
+
+     @RenderSection("PageSpecificStyles", required: false)
 </head>
 
 <body>
     <!-- Modal -->
-    
+
     <!-- Quick view -->
     <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-        <div class="modal-content">              
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>       
+        <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6 col-sm-12 col-xs-12">
@@ -104,7 +104,7 @@
                                 <div class="short-desc mb-30">
                                     <p class="font-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem officia, corrupti reiciendis minima nisi modi,!</p>
                                 </div>
-                                
+
                                 <div class="attr-detail attr-color mb-15">
                                     <strong class="mr-10">Color</strong>
                                     <ul class="list-filter color-filter">
@@ -149,12 +149,12 @@
                             <!-- Detail Info -->
                         </div>
                     </div>
-                </div>        
+                </div>
         </div>
         </div>
     </div>
-  
-    
+
+
     <header class="header-area header-style-1 header-height-2">
         <div class="header-top header-top-ptb-1 d-none d-lg-block">
             <div class="container">
@@ -168,7 +168,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-4">
-                        
+
                     </div>
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info header-info-right">
@@ -207,7 +207,7 @@
                         </div>
                         <div class="header-action-right">
                             <div class="header-action-2">
-                               
+
                                 <div class="header-action-icon-2">
                                     <a class="mini-cart-icon" href="shop-cart.html">
                                         <img alt="Evara" src="~/assets/imgs/theme/icons/icon-cart.svg">
@@ -462,7 +462,7 @@
                             </nav>
                         </div>
                     </div>
-                    
+
                     <p class="mobile-promotion">Happy <span class="text-brand">Mother's Day</span>. Big Sale Up to 40%</p>
                     <div class="header-action-right d-block d-lg-none">
                         <div class="header-action-2">
@@ -677,11 +677,11 @@
                         <a href="#">(+01) - 2345 - 6789 </a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
-    <main class="main">       
+    <main class="main">
         <section class="home-slider position-relative pt-50">
             <div class="hero-slider-1 dot-style-1 dot-style-1-position-1">
                 <div class="single-hero-slider single-animation-wrap">
@@ -747,7 +747,7 @@
             </div>
             <div class="slider-arrow hero-slider-1-arrow"></div>
         </section>
-        <section class="featured section-padding position-relative">            
+        <section class="featured section-padding position-relative">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 col-md-4 mb-md-3 mb-lg-0">
@@ -859,8 +859,8 @@
                 </div>
             </div>
         </section>
-        
-       
+
+
     </main>
 
     <div class="container">
@@ -911,8 +911,8 @@
                             <p class="wow fadeIn animated">
                                 <strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789
                             </p>
-                        
-                            
+
+
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3">
@@ -932,7 +932,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="row">
-                            
+
                             <div class="mobile-social-icon">
                                 <h5 class="mb-15 text-grey-4">Follow Us</h5>
                                 <a href="#"><img src="~/assets/imgs/theme/icons/icon-facebook.svg" alt=""></a>
