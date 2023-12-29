@@ -1,0 +1,36 @@
+﻿@model IEnumerable<CartItems>
+
+@{
+    ViewBag.Title = "CartItems";
+}
+
+@section PageSpecificStyles {
+    <link rel="stylesheet" type="text/css" href="~/assets/css/cart.css">
+}
+
+
+<div class="table-container">
+    <table class="admin-table">
+        <thead>
+        <tr>
+            <th>Cart Item ID</th>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var cartItem in Model)
+        {
+            <tr>
+                <td>@cartItem.CartId</td>
+                <td>@cartItem.ProductId</td>
+                <td>@cartItem.ProductCatalog.ProductName</td>
+                <td>@cartItem.ProductCatalog.Price</td>
+                <td>@cartItem.ProductCatalog.QuantityInStock</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
