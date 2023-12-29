@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.14" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
@@ -22,7 +21,589 @@
   <ItemGroup>
     <Folder Include="Areas\Administrator\Data\" />
     <Folder Include="Areas\Administrator\Models\" />
+    <Folder Include="wwwroot\assets\fonts\material-icon\css\" />
     <Folder Include="wwwroot\evara-backend\assets\fonts\material-icon\css\" />
+    <Folder Include="wwwroot\main\" />
+    <Folder Include="wwwroot\img1\" />
+    <Folder Include="wwwroot\img2\" />
+    <Folder Include="wwwroot\img3\" />
+    <Folder Include="wwwroot\CategoryImg\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets1\css\main.css.map" />
+    <None Include="wwwroot\assets1\css\vendors\bootstrap.min.css.map" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-brands-400.svg" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-brands-400.woff2" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-duotone-900.svg" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-duotone-900.woff2" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-light-300.svg" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-light-300.woff2" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-regular-400.svg" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-regular-400.woff2" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-solid-900.svg" />
+    <None Include="wwwroot\assets1\fonts\awesome\fa-solid-900.woff2" />
+    <None Include="wwwroot\assets1\fonts\evara-font\evara-font.svg" />
+    <None Include="wwwroot\assets1\fonts\evara-font\evara-font.woff2" />
+    <None Include="wwwroot\assets1\fonts\uicons\uicons-regular-straight.woff2" />
+    <None Include="wwwroot\assets1\imgs\theme\favicon.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-cart.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-dribbble.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-email.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-facebook.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-heart.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-instagram.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-pinterest.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-twitter.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\icons\icon-youtube.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\logo-2.svg" />
+    <None Include="wwwroot\assets1\imgs\theme\logo.svg" />
+    <None Include="wwwroot\assets1\js\main.js" />
+    <None Include="wwwroot\assets1\js\plugins\counterup.js" />
+    <None Include="wwwroot\assets1\js\plugins\custom-parallax.js" />
+    <None Include="wwwroot\assets1\js\plugins\images-loaded.js" />
+    <None Include="wwwroot\assets1\js\plugins\isotope.js" />
+    <None Include="wwwroot\assets1\js\plugins\jquery-ui.js" />
+    <None Include="wwwroot\assets1\js\plugins\jquery.countdown.min.js" />
+    <None Include="wwwroot\assets1\js\plugins\jquery.elevatezoom.js" />
+    <None Include="wwwroot\assets1\js\plugins\jquery.syotimer.min.js" />
+    <None Include="wwwroot\assets1\js\plugins\jquery.theia.sticky.js" />
+    <None Include="wwwroot\assets1\js\plugins\jquery.vticker-min.js" />
+    <None Include="wwwroot\assets1\js\plugins\leaflet.js" />
+    <None Include="wwwroot\assets1\js\plugins\magnific-popup.js" />
+    <None Include="wwwroot\assets1\js\plugins\perfect-scrollbar.js" />
+    <None Include="wwwroot\assets1\js\plugins\scrollup.js" />
+    <None Include="wwwroot\assets1\js\plugins\select2.min.js" />
+    <None Include="wwwroot\assets1\js\plugins\slick.js" />
+    <None Include="wwwroot\assets1\js\plugins\TweenMax.min.js" />
+    <None Include="wwwroot\assets1\js\plugins\waypoints.js" />
+    <None Include="wwwroot\assets1\js\plugins\wow.js" />
+    <None Include="wwwroot\assets1\js\shop.js" />
+    <None Include="wwwroot\assets1\js\vendor\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\assets1\js\vendor\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\assets1\js\vendor\jquery-3.6.0.min.js" />
+    <None Include="wwwroot\assets1\js\vendor\jquery-migrate-3.3.0.min.js" />
+    <None Include="wwwroot\assets1\js\vendor\modernizr-3.6.0.min.js" />
+    <None Include="wwwroot\assets1\sass\abstracts\_functions.scss" />
+    <None Include="wwwroot\assets1\sass\abstracts\_mixins.scss" />
+    <None Include="wwwroot\assets1\sass\abstracts\_variables.scss" />
+    <None Include="wwwroot\assets1\sass\base\_animation.scss" />
+    <None Include="wwwroot\assets1\sass\base\_common.scss" />
+    <None Include="wwwroot\assets1\sass\base\_typography.scss" />
+    <None Include="wwwroot\assets1\sass\components\_banners.scss" />
+    <None Include="wwwroot\assets1\sass\components\_buttons.scss" />
+    <None Include="wwwroot\assets1\sass\components\_card.scss" />
+    <None Include="wwwroot\assets1\sass\components\_form.scss" />
+    <None Include="wwwroot\assets1\sass\components\_misc.scss" />
+    <None Include="wwwroot\assets1\sass\components\_slider.scss" />
+    <None Include="wwwroot\assets1\sass\components\_tabs.scss" />
+    <None Include="wwwroot\assets1\sass\layout\_footer.scss" />
+    <None Include="wwwroot\assets1\sass\layout\_header.scss" />
+    <None Include="wwwroot\assets1\sass\layout\_navigation.scss" />
+    <None Include="wwwroot\assets1\sass\layout\_responsive.scss" />
+    <None Include="wwwroot\assets1\sass\layout\_sidebar.scss" />
+    <None Include="wwwroot\assets1\sass\layout\_spacing.scss" />
+    <None Include="wwwroot\assets1\sass\main.scss" />
+    <None Include="wwwroot\assets1\sass\pages\_blog.scss" />
+    <None Include="wwwroot\assets1\sass\pages\_page.scss" />
+    <None Include="wwwroot\assets1\sass\pages\_shop.scss" />
+    <None Include="wwwroot\assets1\sass\themes\_default.scss" />
+    <None Include="wwwroot\assets1\sass\vendors\_vendors-import.scss" />
+    <None Include="wwwroot\assets\css\main.css.map" />
+    <None Include="wwwroot\assets\css\vendors\bootstrap.css.map" />
+    <None Include="wwwroot\assets\css\vendors\bootstrap.min.css.map" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-brands-400.svg" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-brands-400.woff2" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-duotone-900.svg" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-duotone-900.woff2" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-light-300.svg" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-light-300.woff2" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-regular-400.svg" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-regular-400.woff2" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-solid-900.svg" />
+    <None Include="wwwroot\assets\fonts\awesome\fa-solid-900.woff2" />
+    <None Include="wwwroot\assets\fonts\evara-font\evara-font.svg" />
+    <None Include="wwwroot\assets\fonts\evara-font\evara-font.woff2" />
+    <None Include="wwwroot\assets\fonts\material-icon\MaterialIcons-Outlined.woff2" />
+    <None Include="wwwroot\assets\fonts\material-icon\MaterialIcons-Round.woff2" />
+    <None Include="wwwroot\assets\fonts\material-icon\MaterialIcons-Sharp.woff2" />
+    <None Include="wwwroot\assets\fonts\material-icon\MaterialIcons-TwoTone.woff2" />
+    <None Include="wwwroot\assets\fonts\material-icon\MaterialIcons.woff2" />
+    <None Include="wwwroot\assets\fonts\uicons\uicons-regular-straight.woff2" />
+    <None Include="wwwroot\assets\imgs\icons\stars-active.svg" />
+    <None Include="wwwroot\assets\imgs\icons\starts-disable.svg" />
+    <None Include="wwwroot\assets\imgs\theme\favicon.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-cart.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-dribbble.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-email.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-facebook.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-heart.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-instagram.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-pinterest.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-twitter.svg" />
+    <None Include="wwwroot\assets\imgs\theme\icons\icon-youtube.svg" />
+    <None Include="wwwroot\assets\imgs\theme\logo-2.svg" />
+    <None Include="wwwroot\assets\imgs\theme\logo.svg" />
+    <None Include="wwwroot\assets\imgs\theme\upload.svg" />
+    <None Include="wwwroot\assets\js\custom-chart.js" />
+    <None Include="wwwroot\assets\js\main.js" />
+    <None Include="wwwroot\assets\js\plugins\counterup.js" />
+    <None Include="wwwroot\assets\js\plugins\custom-parallax.js" />
+    <None Include="wwwroot\assets\js\plugins\images-loaded.js" />
+    <None Include="wwwroot\assets\js\plugins\isotope.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery-ui.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.countdown.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.elevatezoom.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.syotimer.min.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.theia.sticky.js" />
+    <None Include="wwwroot\assets\js\plugins\jquery.vticker-min.js" />
+    <None Include="wwwroot\assets\js\plugins\leaflet.js" />
+    <None Include="wwwroot\assets\js\plugins\magnific-popup.js" />
+    <None Include="wwwroot\assets\js\plugins\perfect-scrollbar.js" />
+    <None Include="wwwroot\assets\js\plugins\scrollup.js" />
+    <None Include="wwwroot\assets\js\plugins\select2.min.js" />
+    <None Include="wwwroot\assets\js\plugins\slick.js" />
+    <None Include="wwwroot\assets\js\plugins\TweenMax.min.js" />
+    <None Include="wwwroot\assets\js\plugins\waypoints.js" />
+    <None Include="wwwroot\assets\js\plugins\wow.js" />
+    <None Include="wwwroot\assets\js\shop.js" />
+    <None Include="wwwroot\assets\js\vendors\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\assets\js\vendors\bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\vendors\chart.js" />
+    <None Include="wwwroot\assets\js\vendors\jquery-3.6.0.min.js" />
+    <None Include="wwwroot\assets\js\vendors\jquery.fullscreen.min.js" />
+    <None Include="wwwroot\assets\js\vendors\perfect-scrollbar.js" />
+    <None Include="wwwroot\assets\js\vendors\select2.min.js" />
+    <None Include="wwwroot\assets\js\vendor\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\assets\js\vendor\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\assets\js\vendor\jquery-3.6.0.min.js" />
+    <None Include="wwwroot\assets\js\vendor\jquery-migrate-3.3.0.min.js" />
+    <None Include="wwwroot\assets\js\vendor\modernizr-3.6.0.min.js" />
+    <None Include="wwwroot\assets\sass\abstracts\_functions.scss" />
+    <None Include="wwwroot\assets\sass\abstracts\_import-vendors.scss" />
+    <None Include="wwwroot\assets\sass\abstracts\_mixins.scss" />
+    <None Include="wwwroot\assets\sass\abstracts\_variables.scss" />
+    <None Include="wwwroot\assets\sass\base\_animation.scss" />
+    <None Include="wwwroot\assets\sass\base\_common.scss" />
+    <None Include="wwwroot\assets\sass\base\_helpers.scss" />
+    <None Include="wwwroot\assets\sass\base\_typography.scss" />
+    <None Include="wwwroot\assets\sass\components\_banners.scss" />
+    <None Include="wwwroot\assets\sass\components\_buttons.scss" />
+    <None Include="wwwroot\assets\sass\components\_card.scss" />
+    <None Include="wwwroot\assets\sass\components\_elements.scss" />
+    <None Include="wwwroot\assets\sass\components\_form.scss" />
+    <None Include="wwwroot\assets\sass\components\_forms.scss" />
+    <None Include="wwwroot\assets\sass\components\_items.scss" />
+    <None Include="wwwroot\assets\sass\components\_lists.scss" />
+    <None Include="wwwroot\assets\sass\components\_misc.scss" />
+    <None Include="wwwroot\assets\sass\components\_navigation.scss" />
+    <None Include="wwwroot\assets\sass\components\_slider.scss" />
+    <None Include="wwwroot\assets\sass\components\_tabs.scss" />
+    <None Include="wwwroot\assets\sass\layout\_footer.scss" />
+    <None Include="wwwroot\assets\sass\layout\_header.scss" />
+    <None Include="wwwroot\assets\sass\layout\_layout-dark.scss" />
+    <None Include="wwwroot\assets\sass\layout\_layout.scss" />
+    <None Include="wwwroot\assets\sass\layout\_navigation.scss" />
+    <None Include="wwwroot\assets\sass\layout\_responsive.scss" />
+    <None Include="wwwroot\assets\sass\layout\_sidebar.scss" />
+    <None Include="wwwroot\assets\sass\layout\_spacing.scss" />
+    <None Include="wwwroot\assets\sass\main.scss" />
+    <None Include="wwwroot\assets\sass\pages\_blog.scss" />
+    <None Include="wwwroot\assets\sass\pages\_page.scss" />
+    <None Include="wwwroot\assets\sass\pages\_shop.scss" />
+    <None Include="wwwroot\assets\sass\themes\_default.scss" />
+    <None Include="wwwroot\assets\sass\vendors\_vendors-import.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\assets\css\main.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\css\main.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\css\vendors\normalize.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\css\vendors\perfect-scrollbar.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\css\vendors\select2.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Outlined.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Outlined.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Outlined.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Round.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Round.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Round.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Sharp.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Sharp.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-Sharp.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-TwoTone.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-TwoTone.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons-TwoTone.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\fonts\material-icon\MaterialIcons.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-10.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-11.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-12.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-13.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-14.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-15.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-16.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-17.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-18.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-6.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-7.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-8.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand-9.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\brands\brand.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\card-brands\1.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\card-brands\2.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\card-brands\3.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\card-brands\4.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\icons\stars-active.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\icons\starts-disable.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\10.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\11.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\12-1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\12-2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\12.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\6.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\7.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\8.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\items\9.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\misc\map.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\people\avatar1.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\people\avatar2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\people\avatar3.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\people\avatar4.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\theme\404.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\theme\favicon.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\theme\flag-cn.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\theme\flag-fr.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\theme\flag-jp.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\theme\flag-us.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\theme\logo.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\imgs\theme\upload.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\custom-chart.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\main.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\vendors\bootstrap.bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\vendors\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\vendors\chart.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\vendors\jquery-3.6.0.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\vendors\jquery.fullscreen.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\vendors\perfect-scrollbar.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\js\vendors\select2.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\abstracts\_import-vendors.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\abstracts\_mixins.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\abstracts\_variables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\base\_helpers.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\base\_typography.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\components\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\components\_elements.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\components\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\components\_items.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\components\_lists.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\components\_navigation.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\layout\_layout-dark.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\layout\_layout.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\layout\_responsive.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\layout\_spacing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\sass\main.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

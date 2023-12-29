@@ -1,0 +1,68 @@
+﻿@model ECommerceFPE.Models.Images
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="pagetitle">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Home</a></li>
+                        <a class="breadcrumb-item" asp-action="Index" asp-controller="Images">Product Images</a>
+                        <a class="breadcrumb-item active" asp-action="Delete" asp-controller="ProductCategory">Delete</a>
+                    </ol>
+                </nav>
+            </div>
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.MainImageUrl)
+                </dt>
+                <dd class="col-sm-10">
+                    <img src="~/main/@Model.MainImageUrl" style="width:60px">
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.MainImageUrl1)
+                </dt>
+                <dd class="col-sm-10">
+                    <img src="~/img1/@Model.MainImageUrl1" style="width:60px">
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.MainImageUrl2)
+                </dt>
+                <dd class="col-sm-10">
+                    <img src="~/img2/@Model.MainImageUrl2" style="width:60px">
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.MainImageUrl3)
+                </dt>
+                <dd class="col-sm-10">
+                    <img src="~/img3/@Model.MainImageUrl3" style="width:60px">
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.ImageOrder)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.ImageOrder)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.ProductCatalog)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.ProductCatalog.Description)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="ImageId" />
+                <div class="text-end mt-3">
+                    <input type="submit" value="Delete" class="btn btn-danger btn-sm font-sm rounded" />
+                    <a asp-action="Index" class="btn btn-brand btn-sm font-sm rounded">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

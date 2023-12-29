@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECommerceFPE.Models
 {
@@ -12,11 +13,13 @@ namespace ECommerceFPE.Models
 
 
         [Required]
+        [ForeignKey("Cart")]
         public int CartId { get; set; }
         public Cart Cart { get; set; }
 
         [Required]
+        [ForeignKey("Product")]
         public int ProductId { get; set; }
-        public ProductCatalog ProductCatalog { get; set; }
+        public Product ProductCatalog { get; set; }
     }
 }

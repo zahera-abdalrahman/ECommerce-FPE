@@ -1,0 +1,81 @@
+﻿@model ECommerceFPE.Models.ViewModels.ImagesModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="pagetitle">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Home</a></li>
+                        <a class="breadcrumb-item" asp-action="Index" asp-controller="Images">Product Images</a>
+                        <a class="breadcrumb-item active" asp-action="Update" asp-controller="ProductCategory">Update</a>
+                    </ol>
+                </nav>
+            </div>
+                <form asp-action="Edit" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ImageId" />
+                    <div class="form-group">
+                        <label asp-for="MainImageUrl" class="control-label"></label>
+                        <input asp-for="MainImageUrlFile" class="form-control" type="file" />
+                        <span asp-validation-for="MainImageUrl" class="text-danger"></span>
+                        <input type="hidden" asp-for="MainImageUrl" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <img src="~/main/@Model.MainImageUrl" style="max-width:50px;" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MainImageUrl1" class="control-label"></label>
+                        <input asp-for="MainImageUrl1File" class="form-control" type="file" />
+                        <span asp-validation-for="MainImageUrl1" class="text-danger"></span>
+                        <input type="hidden" asp-for="MainImageUrl1" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <img src="~/img1/@Model.MainImageUrl1" style="max-width:50px;" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MainImageUrl2" class="control-label"></label>
+                        <input asp-for="MainImageUrl2File" class="form-control" type="file" />
+                        <span asp-validation-for="MainImageUrl2" class="text-danger"></span>
+                        <input type="hidden" asp-for="MainImageUrl2" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <img src="~/img2/@Model.MainImageUrl2" style="max-width:50px;" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MainImageUrl3" class="control-label"></label>
+                        <input asp-for="MainImageUrl3File" class="form-control" type="file" />
+                        <span asp-validation-for="MainImageUrl3" class="text-danger"></span>
+                        <input type="hidden" asp-for="MainImageUrl3" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <img src="~/img3/@Model.MainImageUrl3" style="max-width:50px;" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ImageOrder" class="control-label"></label>
+                        <input asp-for="ImageOrder" class="form-control" />
+                        <span asp-validation-for="ImageOrder" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ProductId" class="control-label"></label>
+                        <select asp-for="ProductId" class="form-control" asp-items="ViewBag.ProductId"></select>
+                        <span asp-validation-for="ProductId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group text-end mt-3">
+                        <input type="submit" value="Save" class="btn btn-sm font-sm rounded btn-primary" />
+                        <a asp-action="Index" class="btn btn-sm font-sm rounded btn-primary">Back to List</a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

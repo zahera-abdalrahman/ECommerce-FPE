@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECommerceFPE.Models
 {
     public class Customer
     {
         [Key]
-        [Required]
         public int CustomerId { get; set; }
         [Display(Name = "Customer Name")]
         [Required]
@@ -18,12 +18,9 @@ namespace ECommerceFPE.Models
         )]
         public string Address { get; set; }
 
-        // Collections navigation properties
-        public ICollection<Review> Reviews { get; set; }
-        public ICollection<Order> Orders { get; set; }
 
-        public ICollection<Payment> Payments { get; set; }
-
+        [Required]
+        [ForeignKey("CreditCard")]
         public int CreditCardID { get; set; }
 
         public CreditCard CreditCard { get; set; }
