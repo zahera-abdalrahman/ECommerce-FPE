@@ -87,19 +87,19 @@
         <div class="carausel-6-columns-cover position-relative">
             <div class="slider-arrow slider-arrow-2 carausel-6-columns-arrow" id="carausel-6-columns-arrows"></div>
             <div class="carausel-6-columns" id="carausel-6-columns">
-
-                @foreach (var category in ViewBag.categoryList)
-                {
-                    <div class="card-1">
-                        <figure class="img-hover-scale overflow-hidden">
-                            <a asp-controller="Home" asp-action="Category" asp-route-CategoryName="@category.CategoryName">
-                                <img src="~/CategoryImg/@category.ImageUrl" alt="">
-                            </a>
-                        </figure>
-                        <h5><a asp-controller="Home" asp-action="Category" asp-route-CategoryName="@category.CategoryName">@category.CategoryName</a></h5>
-                    </div>
-                }
-
+               
+                    @foreach (var category in ViewBag.categoryList)
+                    {
+                        <div class="card-1">
+                            <figure class="img-hover-scale overflow-hidden">
+                                <a asp-controller="Home" asp-action="Category" asp-route-CategoryName="@category.CategoryName">
+                                    <img src="~/CategoryImg/@category.ImageUrl" alt="">
+                                </a>
+                            </figure>
+                            <h5><a asp-controller="Home" asp-action="Category" asp-route-CategoryName="@category.CategoryName">@category.CategoryName</a></h5>
+                        </div>
+                    }
+                
             </div>
         </div>
     </div>

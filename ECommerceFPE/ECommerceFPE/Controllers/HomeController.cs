@@ -15,9 +15,9 @@ namespace ECommerceFPE.Controllers
             _logger = logger;
             _context = context;
         }
-        
 
-       
+
+
         public IActionResult Index()
         {
             ViewBag.productList = _context.Product;
@@ -49,15 +49,80 @@ namespace ECommerceFPE.Controllers
 
         public IActionResult Category(string categoryName)
         {
-            var categoryProducts = _context.Product.Where(p => p.Category.CategoryName == categoryName).ToList();
-            var categoryCount = categoryProducts.Count;
+            List<Product> categoryProducts;
 
-            ViewBag.productList = categoryProducts;
+            if (string.IsNullOrEmpty(categoryName))
+            {
+                categoryName = "All";
+            }
+
+            if (categoryName.Equals("All", StringComparison.OrdinalIgnoreCase))
+            {
+                categoryProducts = _context.Product.Include(p => p.Category).ToList();
+            }
+            else
+            {
+                categoryProducts = _context.Product
+                    .Include(p => p.Category)
+                    .Where(p => p.Category != null && p.Category.CategoryName == categoryName)
+                    .ToList();
+            }
+
+            var discountedProducts = categoryProducts.Select(p => new
+            {
+                ProductId = p.ProductId,
+                ProductName = p.ProductName,
+                Description = p.Description,
+                Price = p.Price,
+                QuantityInStock = p.QuantityInStock,
+                CategoryId = p.CategoryId,
+                Category = p.Category,
+                DiscountPercent = p.DiscountPercent,
+                ImageUrl = p.ImageUrl,
+                DiscountedPrice = p.Price - (p.Price * p.DiscountPercent / 100)
+            }).ToList();
+
+            ViewBag.productList = discountedProducts;
             ViewBag.categoryList = _context.Category;
-            ViewBag.categoryCount = categoryCount;
+            ViewBag.categoryCount = discountedProducts.Count;
+
             return View();
         }
 
+        public IActionResult ProductSingle(int productId)
+        {
+            var product = _context.Product
+                .Include(p => p.Category)
+                .FirstOrDefault(p => p.ProductId == productId);
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            var discountedPrice = CalculateDiscountedPrice((decimal)product.Price, product.DiscountPercent);
+
+            ViewBag.product = new
+            {
+                ProductId = product.ProductId,
+                ProductName = product.ProductName,
+                Description = product.Description,
+                Price = product.Price,
+                QuantityInStock = product.QuantityInStock,
+                CategoryId = product.CategoryId,
+                Category = product.Category,
+                DiscountPercent = product.DiscountPercent,
+                ImageUrl = product.ImageUrl,
+                DiscountedPrice = discountedPrice
+            };
+
+            return View();
+        }
+
+        private decimal CalculateDiscountedPrice(decimal originalPrice, decimal discountPercent)
+        {
+            return originalPrice - (originalPrice * discountPercent / 100);
+        }
         public IActionResult Privacy()
         {
             return View();

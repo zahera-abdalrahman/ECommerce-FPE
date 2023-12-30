@@ -67,7 +67,7 @@
                             <div class="product-img-action-wrap">
                                 <div class="product-img product-img-zoom">
                                     <div class="product-img-inner">
-                                        <a href="shop-product-right.html">
+                                        <a asp-action="ProductSingle" asp-controller="Home" asp-route-ProductId="@product.ProductId">
                                             <img class="default-img" src="~/ProductImg/@product.ImageUrl" alt="">
                                             <img class="hover-img" src="~/ProductImg/@product.ImageUrl" alt="">
                                         </a>
@@ -78,11 +78,18 @@
                             </div>
                             <div class="product-content-wrap">
                                 <div class="product-category">
-                                    <a href="shop-grid-right.html">Music</a>
+                                   @product.Category.CategoryName
                                 </div>
-                                <h2><a href="shop-product-right.html">@product.ProductName</a></h2>
+                                <h2><a asp-action="ProductSingle" asp-controller="Home" asp-route-ProductId="@product.ProductId">@product.ProductName</a></h2>
                                 <div class="product-price">
-                                    <span>$@product.Price</span>
+                                    @if (product.DiscountPercent > 0)
+                                    {
+                                        <span>@product.DiscountedPrice</span>
+                                        <span class="old-price">$@product.Price</span>
+                                    }
+                                    <span>@product.Price</span>
+
+
                                 </div>
                                 <p class="mt-15">@product.Description</p>
                                 <div class="product-action-1 show">
@@ -93,12 +100,20 @@
                         </div>
                     }
                 </div>
+             
 
             </div>
             <div class="col-lg-3 primary-sidebar sticky-sidebar">
                 <div class="widget-category mb-30">
                     <h5 class="section-title style-1 mb-30 wow fadeIn animated">Category</h5>
                     <ul class="categories">
+
+                        <li>
+                            <a href="@Url.Action("Category", "Home", new { categoryName = "All", applyFilter = true })"
+                               class="@((ViewBag.SelectedCategory ?? "All").Equals("All", StringComparison.OrdinalIgnoreCase) ? "active" : "")">
+                                All
+                            </a>
+                        </li>
                         @foreach (var category in ViewBag.categoryList)
                         {
                             <li><a href="@Url.Action("Category", "Home", new { categoryName = category.CategoryName })">@category.CategoryName</a></li>
@@ -106,8 +121,6 @@
 
                     </ul>
                 </div>
-                <!-- Fillter By Price -->
-                <!-- Product sidebar Widget -->
 
             </div>
         </div>
