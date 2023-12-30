@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ECommerceFPE.Data;
 using ECommerceFPE.Models;
+using Microsoft.Extensions.Hosting;
+using ECommerceFPE.Models.ViewModels;
 
 namespace ECommerceFPE.Areas.Administrator.Controllers
 {
@@ -58,13 +60,35 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,ProductName,Description,Price,QuantityInStock,CategoryId,DiscountPercent")] Product product)
-        {
-            
-                _context.Add(product);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-          
+        public async Task<IActionResult> Create(ProductModel product, [FromServices] IWebHostEnvironment host)
+            {
+            string ImageName = "";
+            if (product.File != null)
+            {
+                string PathImage = Path.Combine(host.WebRootPath, "ProductImg");
+                FileInfo fi = new FileInfo(product.File.FileName);
+                ImageName = "Image" + DateTime.UtcNow.ToString().Replace("/", "").Replace(":", "").Replace("-", "").Replace(" ", "") + fi.Extension;
+
+                string FullPath = Path.Combine(PathImage, ImageName);
+                product.File.CopyTo(new FileStream(FullPath, FileMode.Create));
+            }
+
+
+            var newProduct = new Product
+            {
+                ProductId=product.ProductId,
+                ProductName=product.ProductName,
+                CategoryId=product.CategoryId,
+                Description = product.Description,
+                Price = product.Price,
+                QuantityInStock=product.QuantityInStock,
+                DiscountPercent=product.DiscountPercent,
+                ImageUrl=ImageName,
+        };
+            _context.Add(newProduct);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: Administrator/Product/Edit/5
@@ -74,14 +98,25 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             {
                 return NotFound();
             }
-
             var product = await _context.Product.FindAsync(id);
+            var newProduct = new ProductModel
+            {
+                ProductId=product.ProductId,
+                ProductName=product.ProductName,
+                CategoryId=product.CategoryId,
+                Description = product.Description,
+                Price = product.Price,
+                QuantityInStock=product.QuantityInStock,
+                DiscountPercent=product.DiscountPercent,
+                ImageUrl=product.ImageUrl
+            };
+           
             if (product == null)
             {
                 return NotFound();
             }
             ViewData["CategoryId"] = new SelectList(_context.Category, "CategoryId", "CategoryName", product.CategoryId);
-            return View(product);
+            return View(newProduct);
         }
 
         // POST: Administrator/Product/Edit/5
@@ -89,32 +124,43 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,ProductName,Description,Price,QuantityInStock,CategoryId,DiscountPercent")] Product product)
+        public async Task<IActionResult> Edit(int id, ProductModel product, [FromServices] IWebHostEnvironment host)
         {
             if (id != product.ProductId)
             {
                 return NotFound();
             }
 
-           
-                try
-                {
-                    _context.Update(product);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(product.ProductId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-          
+            string ImageName = "";
+            if (product.File != null)
+            {
+                string PathImage = Path.Combine(host.WebRootPath, "ProductImg");
+                FileInfo fi = new FileInfo(product.File.FileName);
+                ImageName = "Image" + DateTime.UtcNow.ToString().Replace("/", "").Replace(":", "").Replace("-", "").Replace(" ", "") + fi.Extension;
+
+                string FullPath = Path.Combine(PathImage, ImageName);
+                product.File.CopyTo(new FileStream(FullPath, FileMode.Create));
+            }
+            else
+            {
+                ImageName = product.ImageUrl;
+            }
+            var newProduct = new Product
+            {
+                ProductId = product.ProductId,
+                ProductName = product.ProductName,
+                CategoryId = product.CategoryId,
+                Description = product.Description,
+                Price = product.Price,
+                QuantityInStock = product.QuantityInStock,
+                DiscountPercent = product.DiscountPercent,
+                ImageUrl = ImageName,
+             
+            };
+            _context.Update(newProduct);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: Administrator/Product/Delete/5

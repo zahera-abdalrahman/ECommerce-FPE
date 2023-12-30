@@ -1,9 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ECommerceFPE.Models
+namespace ECommerceFPE.Models.ViewModels
 {
-    public class Product
+    public class ProductModel
     {
         [Key]
         public int ProductId { get; set; }
@@ -26,6 +25,7 @@ namespace ECommerceFPE.Models
 
         [Required]
         public string ImageUrl { get; set; }
-        
+
+        public IFormFile File { get; set; }
     }
 }

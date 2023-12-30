@@ -1,5 +1,6 @@
 ﻿using ECommerceFPE.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ECommerceFPE.Controllers;
 
@@ -12,7 +13,7 @@ public class AdminController : Controller
         _context = context;
     }
 
-    [Route("/admin/cart")]
+    [Route("/Administrator/admin/cart")]
     public async Task<IActionResult> Cart()
     {
         var cartList = await _context.Cart.Include(c => c.Customer).ToListAsync();
@@ -20,12 +21,12 @@ public class AdminController : Controller
         return View("~/Views/AdminDashboard/Cart.cshtml", cartList);
     }
 
-    [Route("/admin/cartitems/{cartId}")]
+    [Route("/Administrator/admin/cartitems/{cartId}")]
     public async Task<IActionResult> CartItems(int cartId)
     {
         var cartItemsList = await _context
             .CartItems
-            .where(c => c.CartId == cartId)
+            .Where(c => c.CartId == cartId)
             .Include(c => c.Cart)
             .Include(c => c.ProductCatalog)
             .ToListAsync();

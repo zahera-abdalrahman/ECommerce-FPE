@@ -5,6 +5,54 @@
       "PackagePath": "staticwebassets\\ECommerceFPE.bundle.scp.css"
     },
     {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323341PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202323341PM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323354PM.png",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202323354PM.png"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323410PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202323410PM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323425PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202323425PM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202394342AM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202394342AM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202320747AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202320747AM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202320825AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202320825AM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321045AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202321045AM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202322122AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202322122AM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202322320AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202322320AM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202323256AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202323256AM.jpg"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202323930AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202323930AM.jpg"
+    },
+    {
       "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\css\\main.css",
       "PackagePath": "staticwebassets\\assets1\\css\\main.css"
     },
@@ -1003,6 +1051,10 @@
     {
       "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\sass\\vendors\\_vendors-import.scss",
       "PackagePath": "staticwebassets\\assets1\\sass\\vendors\\_vendors-import.scss"
+    },
+    {
+      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\cart.css",
+      "PackagePath": "staticwebassets\\assets\\css\\cart.css"
     },
     {
       "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css",
@@ -2869,88 +2921,8 @@
       "PackagePath": "staticwebassets\\htmlCut.html"
     },
     {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img1\\Image1229202365743AM.jpg",
-      "PackagePath": "staticwebassets\\img1\\Image1229202365743AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img1\\Image1229202372948AM.jpg",
-      "PackagePath": "staticwebassets\\img1\\Image1229202372948AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img1\\Image1229202374543AM.jpg",
-      "PackagePath": "staticwebassets\\img1\\Image1229202374543AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img2\\Image1229202365747AM.jpg",
-      "PackagePath": "staticwebassets\\img2\\Image1229202365747AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img2\\Image1229202371623AM.jpg",
-      "PackagePath": "staticwebassets\\img2\\Image1229202371623AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img2\\Image1229202372948AM.png",
-      "PackagePath": "staticwebassets\\img2\\Image1229202372948AM.png"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img2\\Image1229202374543AM.png",
-      "PackagePath": "staticwebassets\\img2\\Image1229202374543AM.png"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img2\\Image1229202380035AM.jpg",
-      "PackagePath": "staticwebassets\\img2\\Image1229202380035AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img3\\Image1229202365749AM.jpg",
-      "PackagePath": "staticwebassets\\img3\\Image1229202365749AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img3\\Image1229202372948AM.png",
-      "PackagePath": "staticwebassets\\img3\\Image1229202372948AM.png"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\img3\\Image1229202374543AM.png",
-      "PackagePath": "staticwebassets\\img3\\Image1229202374543AM.png"
-    },
-    {
       "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202365741AM.jpg",
-      "PackagePath": "staticwebassets\\main\\Image1229202365741AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202371505AM.jpg",
-      "PackagePath": "staticwebassets\\main\\Image1229202371505AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202371618AM.jpg",
-      "PackagePath": "staticwebassets\\main\\Image1229202371618AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202372948AM.jpg",
-      "PackagePath": "staticwebassets\\main\\Image1229202372948AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202374543AM.png",
-      "PackagePath": "staticwebassets\\main\\Image1229202374543AM.png"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202385617AM.jpg",
-      "PackagePath": "staticwebassets\\main\\Image1229202385617AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202385624AM.jpg",
-      "PackagePath": "staticwebassets\\main\\Image1229202385624AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202393634AM.jpg",
-      "PackagePath": "staticwebassets\\main\\Image1229202393634AM.jpg"
-    },
-    {
-      "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202394150AM.jpg",
-      "PackagePath": "staticwebassets\\main\\Image1229202394150AM.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ECommerceFPE.Microsoft.AspNetCore.StaticWebAssets.props",

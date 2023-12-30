@@ -1,4 +1,4 @@
-﻿@model ECommerceFPE.Models.Product
+﻿@model ECommerceFPE.Models.ViewModels.ProductModel
 
 @{
     ViewData["Title"] = "Create";
@@ -16,7 +16,7 @@
                     </ol>
                 </nav>
             </div>
-            <form asp-action="Create">
+            <form asp-action="Create" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
                     <label asp-for="ProductName" class="control-label"></label>
@@ -46,6 +46,11 @@
                     <label asp-for="DiscountPercent" class="control-label"></label>
                     <input asp-for="DiscountPercent" class="form-control" />
                     <span asp-validation-for="DiscountPercent" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ImageUrl" class="control-label"></label>
+                    <input asp-for="File" class="form-control" type="file" />
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
                 </div>
                 <div class="form-group mt-3 text-end">
                     <a asp-action="Index" class="btn btn-primary">Back to List</a>

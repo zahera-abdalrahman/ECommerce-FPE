@@ -18,5 +18,7 @@ namespace ECommerceFPE.Models
         public int Rating { get; set; }
         
         public DateTime ReviewDate { get; set; }
+
+        public bool isActive { get; set; }
     }
 }

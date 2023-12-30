@@ -14,6 +14,7 @@ namespace ECommerceFPE.Models
 
         public Customer Customer { get; set; }
 
-
+        [Required]
+        public double Total { get; set; }
     }
 }

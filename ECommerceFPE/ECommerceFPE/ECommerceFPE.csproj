@@ -23,11 +23,8 @@
     <Folder Include="Areas\Administrator\Models\" />
     <Folder Include="wwwroot\assets\fonts\material-icon\css\" />
     <Folder Include="wwwroot\evara-backend\assets\fonts\material-icon\css\" />
-    <Folder Include="wwwroot\main\" />
-    <Folder Include="wwwroot\img1\" />
-    <Folder Include="wwwroot\img2\" />
-    <Folder Include="wwwroot\img3\" />
     <Folder Include="wwwroot\CategoryImg\" />
+    <Folder Include="wwwroot\ProductImg\" />
   </ItemGroup>
 
   <ItemGroup>

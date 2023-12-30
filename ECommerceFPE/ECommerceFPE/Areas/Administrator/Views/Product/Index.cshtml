@@ -28,9 +28,7 @@
                                 <th>
                                     @Html.DisplayNameFor(model => model.ProductName)
                                 </th>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.Description)
-                                </th>
+                              
                                 <th>
                                     @Html.DisplayNameFor(model => model.Price)
                                 </th>
@@ -43,6 +41,9 @@
                                 <th>
                                     @Html.DisplayNameFor(model => model.DiscountPercent)
                                 </th>
+                                <th>
+                                    Image
+                                </th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -53,9 +54,7 @@
                                     <td>
                                         @Html.DisplayFor(modelItem => item.ProductName)
                                     </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.Description)
-                                    </td>
+                                  
                                     <td>
                                         @Html.DisplayFor(modelItem => item.Price)
                                     </td>
@@ -67,6 +66,9 @@
                                     </td>
                                     <td>
                                         @Html.DisplayFor(modelItem => item.DiscountPercent)
+                                    </td>
+                                    <td>
+                                        <img src="~/ProductImg/@item.ImageUrl" style="width:60px">
                                     </td>
                                     <td>
                                         <div class="text-end">
