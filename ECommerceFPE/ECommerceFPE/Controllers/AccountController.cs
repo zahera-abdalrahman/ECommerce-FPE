@@ -75,7 +75,7 @@ namespace ECommerceFPE.Controllers
                 }
                 return View(model);
             }
-            return View();
+            return View(model);
         }
 
         //---------------------------------------------------------------------------------------
@@ -91,19 +91,18 @@ namespace ECommerceFPE.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await signInManager.PasswordSignInAsync
-                    (model.Email, model.Password, model.RemmberMe, false);
+                var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RemmberMe, false);
+               
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
-                    // return RedirectToAction("Index", "Dashboard" , new {area = "Administrator" });
+                    return RedirectToAction("Index", "Orders", new {area = "Administrator" });
                 }
 
                 ModelState.AddModelError("", "Invalid User or Password");
                 return View(model);
             }
 
-            return RedirectToAction("Index", "Home");
+            return View(model);
         }
         //---------------------------------------------------------------------------------------
         [HttpPost]

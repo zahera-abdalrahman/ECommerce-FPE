@@ -1,6 +1,10 @@
 ﻿using ECommerceFPE.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< Updated upstream
+=======
+using System.Linq;
+>>>>>>> Stashed changes
 
 namespace ECommerceFPE.Controllers;
 

@@ -2,89 +2,114 @@
 
 @{
     ViewData["Title"] = "Register";
+    Layout = null;
 }
+<link rel="shortcut icon" type="image/x-icon" href="~/assets/imgs/theme/favicon.svg">
+<!-- Template CSS -->
+<link rel="stylesheet" href="~/assets/css/main.css?v=3.4">
+<style>
+    .update-center {
+        justify-content: center;
+    }
 
-<h1>Register</h1>
-<hr />
+    .btn-fill-out {
+        width: 100%;
+    }
+</style>
+<section class="pt-150 pb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 m-auto">
+                <div class="row update-center">
+                    <div class="col-lg-6">
+                        <div class="login_wrap widget-taber-content p-30 background-white border-radius-5">
+                            <div class="padding_eight_all bg-white">
+                                <div class="heading_s1">
+                                    <h3 class="mb-30">Create an Account</h3>
+                                </div>
+                                <form method="post" asp-action="Register">
+                                    <div class="form-group">
+                                        <label asp-for="FirstName" class="control-label"></label>
+                                        <input asp-for="FirstName" class="form-control" />
+                                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="LastName" class="control-label"></label>
+                                        <input asp-for="LastName" class="form-control" />
+                                        <span asp-validation-for="LastName" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Email" class="control-label"></label>
+                                        <input asp-for="Email" class="form-control" />
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Country" class="control-label"></label>
+                                        <input asp-for="Country" class="form-control" />
+                                        <span asp-validation-for="Country" class="text-danger"></span>
+                                    </div> 
+                                    <div class="form-group">
+                                        <label asp-for="Gender" class="control-label"></label>
+                                        <select asp-for="Gender" class="form-control">
 
-<div class="row d-flex justify-content-center pb-lg-3">
-    <div class="col-md-10">
-        <form asp-action="Register">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-row d-flex">
-                <div class="form-group col-md-6 m-2">
-                    <label asp-for="FirstName" class="control-label"></label>
-                    <input asp-for="FirstName" class="form-control" />
-                    <span asp-validation-for="FirstName" class="text-danger"></span>
-                </div>
-                <div class="form-group col-md-6 m-2">
-                    <label asp-for="LastName" class="control-label"></label>
-                    <input asp-for="LastName" class="form-control" />
-                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                            <option value="">Select Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+
+                                        </select>
+                                        <span asp-validation-for="Gender" class="text-danger"></span>
+                                    </div>
+                                     <div class="form-group">
+                                        <label asp-for="Password" class="control-label"></label>
+                                        <input asp-for="Password" class="form-control" />
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="ConfirmPassword" class="control-label"></label>
+                                        <input asp-for="ConfirmPassword" class="form-control" />
+                                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-fill-out btn-block hover-up">Register</button>
+                                    </div>
+                                </form>
+                                <div class="divider-text-center mt-15 mb-15">
+                                    <span> or</span>
+                                </div>
+
+                                <div class="text-muted text-center">Already have an account? <a asp-action="Login">Sign in now</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="form-row d-flex">
-
-                <div class="form-group col-md-4 m-1">
-                    <label asp-for="Email" class="control-label"></label>
-                    <input asp-for="Email" class="form-control" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-                <div class="form-group col-md-4 m-1">
-                    <label asp-for="Country" class="control-label"></label>
-                    <input asp-for="Country" class="form-control" />
-                    <span asp-validation-for="Country" class="text-danger"></span>
-                </div>
-                <div class="form-group col-md-4 m-1">
-                    <label asp-for="Gender" class="control-label"></label>
-                    @*  <input asp-for="Gender" class="form-control" />*@
-
-
-
-                    <select asp-for="Gender" class="form-control">
-
-                        <option value="">Select Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                        <option value="prefer-not-to-say">Prefer not to say</option>
-
-                    </select>
-
-                    <span asp-validation-for="Gender" class="text-danger"></span>
-
-                </div>
-            </div>
-
-
-
-            <div class="form-row d-flex justify-content-between">
-                <div class="form-group col-md-6 m-2">
-                    <label asp-for="Password" class="control-label"></label>
-                    <input asp-for="Password" class="form-control" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                <div class="form-group col-md-6 m-2">
-                    <label asp-for="ConfirmPassword" class="control-label"></label>
-                    <input asp-for="ConfirmPassword" class="form-control" />
-                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                </div>
-            </div>
-
-
-            <div class="form-row d-flex justify-content-end pt-1">
-                <div class="form-group col-md-2 d-flex m-2 justify-content-end">
-                    <input type="submit" value="Create" class="btn btn-primary btn-md btn-block m-2" />
-                    <a asp-action="Index" asp-controller="Home" class="btn btn-warning btn-md btn-block m-2">Cancel</a>
-                </div>
-            </div>
-        </form>
+        </div>
     </div>
-</div>
+</section>
 
 
+<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/plugins/slick.js"></script>
+<script src="assets/js/plugins/jquery.syotimer.min.js"></script>
+<script src="assets/js/plugins/wow.js"></script>
+<script src="assets/js/plugins/jquery-ui.js"></script>
+<script src="assets/js/plugins/perfect-scrollbar.js"></script>
+<script src="assets/js/plugins/magnific-popup.js"></script>
+<script src="assets/js/plugins/select2.min.js"></script>
+<script src="assets/js/plugins/waypoints.js"></script>
+<script src="assets/js/plugins/counterup.js"></script>
+<script src="assets/js/plugins/jquery.countdown.min.js"></script>
+<script src="assets/js/plugins/images-loaded.js"></script>
+<script src="assets/js/plugins/isotope.js"></script>
+<script src="assets/js/plugins/scrollup.js"></script>
+<script src="assets/js/plugins/jquery.vticker-min.js"></script>
+<script src="assets/js/plugins/jquery.theia.sticky.js"></script>
+<!-- Template  JS -->
+<script src="./assets/js/main.js?v=3.4"></script>
 
-@section Scripts {
+@* @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+} *@
