@@ -18,6 +18,29 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\OrangeTasks\ASPNET\ECommerce-FPE\ECommerceFPE\ECommerceFPE
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< Updated upstream
+=======
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xDYXRlZ29yeVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Category/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xDYXRlZ29yeVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Category/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xDYXRlZ29yeVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xDYXRlZ29yeVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xDYXRlZ29yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Dashboard/CreateRoleDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xEYXNoYm9hcmRcQ3JlYXRlUm9sZURhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +65,29 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xEYXNoYm9hcmRcVXNlcnNMaXN0RGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
+=======
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Images/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xJbWFnZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Images/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xJbWFnZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Images/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xJbWFnZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Images/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xJbWFnZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Images/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xJbWFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xPcmRlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +108,29 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xPcmRlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
+=======
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xQcm9kdWN0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xQcm9kdWN0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xQcm9kdWN0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xQcm9kdWN0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xQcm9kdWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -106,6 +175,25 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2VyUm9sZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
+=======
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Views/AdminDashboard/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Views/AdminDashboard/CartItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQ2FydEl0ZW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Views/Home/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -114,6 +202,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
+=======
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Views/Home/ProductSale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0U2FsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -134,6 +229,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xTaGFyZWRcX0Rhc2hib2FyZExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-8tudp003an
 
+<<<<<<< Updated upstream
+=======
+[E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ve6er44pgy
+
+>>>>>>> Stashed changes
 [E:/OrangeTasks/ASPNET/ECommerce-FPE/ECommerceFPE/ECommerceFPE/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6570nzvq4x

@@ -20,6 +20,28 @@ namespace ECommerceFPE.Data
         public DbSet<CreditCard> CreditCards { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
+<<<<<<< Updated upstream
+=======
+        public DbSet<CartItems> CartItems { get; set; }
+
+        public DbSet<CreditCard> CreditCard { get; set; }
+
+
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderItems> OrderItems { get; set; }
+        public DbSet<Payment> Payment { get; set; }
+        public DbSet<Product> Product { get; set; }
+
+        public DbSet<Category> Category { get; set; }
+
+        public DbSet<Review> Review { get; set; }
+
+        public DbSet<ReviewAll> ReviewAll { get; set; }
+
+        public DbSet<Images> ImagesProducts { get; set; }
+        public DbSet<ApplicationUser>ApplicationUsers { get; set; }
+>>>>>>> Stashed changes
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
