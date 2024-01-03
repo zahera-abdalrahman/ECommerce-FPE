@@ -23,7 +23,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
         // GET: Administrator/Orders
         public async Task<IActionResult> Index()
         {
-            var eCommerceDBContext = _context.Order.Include(o => o.Customer)
+            var eCommerceDBContext = _context.Order.Include(o => o.ApplicationUser)
                 .ToListAsync();
             return View(await eCommerceDBContext);
         }
@@ -37,7 +37,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             }
 
             var order = await _context.Order
-                .Include(o => o.Customer)
+                .Include(o => o.ApplicationUser)
                 .FirstOrDefaultAsync(m => m.OrderId == id);
             if (order == null)
             {
@@ -57,7 +57,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             }
 
             var order = await _context.Order
-                .Include(o => o.Customer)
+                .Include(o => o.ApplicationUser)
                 .FirstOrDefaultAsync(m => m.OrderId == id);
             if (order == null)
             {

@@ -1,0 +1,88 @@
+﻿@model ECommerceFPE.Models.ReviewAll
+@{
+    ViewData["Title"] = "Review";
+}
+<section class="mt-4">
+    <div class="row d-flex justify-content-center">
+       
+    </div>
+
+    <div class="row text-center">
+        
+
+            @foreach (var review in ViewBag.AllReview)
+            {
+                @if (review.isActive)
+                {
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                        class="rounded-circle shadow-1-strong" width="150" height="150" />
+                    </div>
+                    <h5 class="mb-3">@review.Customer.CustomerName</h5>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        @review.Comment
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                    </li>
+                </ul>
+                </div>
+
+            }
+            }
+        
+    </div>
+</section>
+
+
+
+<div class="comment-form">
+    <h4 class="mb-15">Add a review</h4>
+   
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <form class="form-contact comment_form" method="post" action="@Url.Action("ReviewAll", "Home")">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <textarea asp-for="Comment" class="form-control w-100" name="Comment" id="comment" cols="30" rows="9" placeholder="Write Comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input asp-for="ApplicationUser.UserName" class="form-control" name="Customer.CustomerName" id="name" type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input asp-for="ApplicationUser.Email" class="form-control" name="Customer.Email" id="email" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input asp-for="ApplicationUser.Address" class="form-control" name="Customer.Address" type="text" placeholder="Address">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button button-contactForm" value="Create">Submit Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -14,6 +14,6 @@ namespace ECommerceFPE.Models.ViewModels
         [Required(ErrorMessage = "Enter Your Password")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        public bool RemmberMe { get; set; }
+        public bool RememberMe { get; set; }
     }
 }

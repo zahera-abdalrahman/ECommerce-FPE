@@ -1,0 +1,72 @@
+﻿@{
+    var cart = ViewBag.Cart as Cart;
+}
+
+
+<div class="page-header breadcrumb-wrap">
+    <div class="container">
+        <div class="breadcrumb">
+            <a asp-action="Index" asp-controller="Home">Home</a>
+            <span></span> Shop
+            <span></span> Your Cart
+        </div>
+    </div>
+</div>
+<section class="mt-50 mb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table shopping-summery text-center clean">
+                        <thead>
+                            <tr class="main-heading">
+                                <th scope="col">Image</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ViewBag.Cart)
+                            {
+                                <tr>
+                                    <td class="image product-thumbnail"><img src="~/ProductImg/@item.ImageUrl"></td>
+                                    <td class="product-des product-name">
+                                        <h5 class="product-name"><a href="shop-product-right.html">@item.ProductName</a></h5>
+                                        <p class="font-xs">
+                                            @item.Description
+                                        </p>
+                                    </td>
+                                    <td class="price" data-title="Price"><span>$@item.Price </span></td>
+                                    <td class="text-center" data-title="Stock">
+                                        <div class="detail-qty border radius  m-auto">
+                                            <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
+                                            <span class="qty-val">1</span>
+                                            <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
+                                        </div>
+                                    </td>
+                                    <td class="text-right" data-title="Cart">
+                                        <span>$65.00 </span>
+                                    </td>
+                                    <td class="action" data-title="Remove"><a href="#" class="text-muted"><i class="fi-rs-trash"></i></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="6" class="text-end">
+                                        <a href="#" class="text-muted"> <i class="fi-rs-cross-small"></i> Clear Cart</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart-action text-end">
+                    <a class="btn "><i class="fi-rs-shopping-bag mr-10"></i>Continue Shopping</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

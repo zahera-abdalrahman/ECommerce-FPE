@@ -1,5 +1,6 @@
 ﻿using ECommerceFPE.Data;
 using ECommerceFPE.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
@@ -10,10 +11,14 @@ namespace ECommerceFPE.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ECommerceDBContext _context;
-        public HomeController(ILogger<HomeController> logger, ECommerceDBContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public HomeController(ILogger<HomeController> logger, ECommerceDBContext context, UserManager<ApplicationUser> userManager)
         {
             _logger = logger;
             _context = context;
+            _userManager = userManager;
+
         }
 
 
@@ -21,10 +26,20 @@ namespace ECommerceFPE.Controllers
         public IActionResult Index()
         {
             ViewBag.productList = _context.Product;
-            ViewBag.categoryList = _context.Category;
+            ViewBag.categoryList = _context.Category.ToList(); ;
             return View();
         }
-
+        ////////////////////////////////////////////////////////
+        public IActionResult About()
+        {
+            return View();
+        }
+        ////////////////////////////////////////////////////////
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+        ////////////////////////////////////////////////////////
         public IActionResult ProductSale()
         {
             var productsWithDiscount = _context.Product.Include(p => p.Category).Where(p => p.DiscountPercent > 0).ToList();
@@ -46,7 +61,7 @@ namespace ECommerceFPE.Controllers
             ViewBag.productList = discountedProducts;
             return View();
         }
-
+        ////////////////////////////////////////////////////////
         public IActionResult Category(string categoryName)
         {
             List<Product> categoryProducts;
@@ -88,7 +103,7 @@ namespace ECommerceFPE.Controllers
 
             return View();
         }
-
+        ////////////////////////////////////////////////////////
         public IActionResult ProductSingle(int productId)
         {
             var product = _context.Product
@@ -118,20 +133,108 @@ namespace ECommerceFPE.Controllers
 
             return View();
         }
-
+        ////////////////////////////////////////////////////////
         private decimal CalculateDiscountedPrice(decimal originalPrice, decimal discountPercent)
         {
             return originalPrice - (originalPrice * discountPercent / 100);
         }
+
+        ////////////////////////////////////////////////////////
+        public IActionResult ReviewAll()
+        {
+            ViewBag.AllReview = _context.ReviewAll.Include(p=>p.ApplicationUser).ToList();
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ReviewAll(ReviewAll model)
+        {
+           
+                model.ReviewDate = DateTime.Now;
+                model.isActive = false; 
+                model.ApplicationUser.Address = "123 Main St";
+                _context.ReviewAll.Add(model);
+                _context.SaveChanges();
+
+                return RedirectToAction("ReviewAll"); 
+           
+        }
+
+        ////////////////////////////////////////////////////////
         public IActionResult Privacy()
         {
             return View();
         }
-
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+       
+        ////////////////////////////////////////////////////////
+
+        public IActionResult AddToCart()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddToCart(int productId)
+        {
+            ApplicationUser user = await _userManager.GetUserAsync(User);
+
+            Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
+
+            if (cart == null)
+            {
+                cart = new Cart
+                {
+                    UserId = user.Id,
+                    Total = 0
+                };
+
+                _context.Cart.Add(cart);
+            }
+
+            CartItems cartItem = _context.CartItems.FirstOrDefault(ci => ci.CartId == cart.CartId && ci.ProductId == productId);
+
+            if (cartItem == null)
+            {
+                cartItem = new CartItems
+                {
+                    CartId = cart.CartId,
+                    ProductId = productId,
+                    Quantity = 1
+                };
+
+                _context.CartItems.Add(cartItem);
+            }
+            else
+            {
+                cartItem.Quantity++;
+            }
+
+            double productPrice = GetProductPrice(productId);
+            cart.Total += productPrice;
+
+            _context.SaveChanges();
+
+            // Pass cart data to the view using ViewBag
+            ViewBag.Cart = cart;
+
+            return View("AddToCart");
+        }
+
+
+
+        private double GetProductPrice(int productId)
+        {
+            return _context.Product.FirstOrDefault(p => p.ProductId == productId)?.Price ?? 0;
+        }
+
+
     }
 }

@@ -21,10 +21,9 @@ namespace ECommerceFPE.Models
         public DateTime ReviewDate { get; set; }
 
         // Foreign Keys
-        [Required]
-        [ForeignKey("Customer")]
-        public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
+        public string UserId { get; set; }
+
+        public ApplicationUser ApplicationUser { get; set; }
 
         [Required]
         [ForeignKey("Product")]

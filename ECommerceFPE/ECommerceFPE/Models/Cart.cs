@@ -8,11 +8,11 @@ namespace ECommerceFPE.Models
         [Key]
         public int CartId { get; set; }
 
-        [Required]
-        [ForeignKey("Customer")]
-        public int CustomerId { get; set; }
 
-        public Customer Customer { get; set; }
+        [ForeignKey("ApplicationUser")]
+        public string UserId { get; set; }
+
+        public ApplicationUser ApplicationUser { get; set; }
 
         [Required]
         public double Total { get; set; }

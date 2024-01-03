@@ -9,12 +9,12 @@ namespace ECommerceFPE.Models
         public int ReviewId { get; set; }
 
         // Foreign Key for User
-        [ForeignKey("Customer")]
-        public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
+        public string UserId { get; set; }
+
+        public ApplicationUser ApplicationUser { get; set; }
         [Required]
         public string Comment { get; set; }
-        [Required]
+        
         public int Rating { get; set; }
         
         public DateTime ReviewDate { get; set; }

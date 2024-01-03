@@ -6,11 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using System.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ECommerceFPE.Areas.Administrator.Controllers
 {
     [Area("Administrator")]
+    [Authorize(Roles = "Administrator")]
     public class DashboardController : Controller
     {
         private RoleManager<IdentityRole> roleManager;
@@ -23,7 +25,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             roleManager = _RoleManager;
             userManager = _userManager;
         }
-
+       
         public IActionResult Index()
         {
             return View();

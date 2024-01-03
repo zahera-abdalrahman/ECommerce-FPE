@@ -11,14 +11,14 @@ namespace ECommerceFPE.Models
         [Required]
         public string CardNumber { get; set; }
 
-        [Required]
-        public DateTime ExpiryDate { get; set; }
 
         [Required]
-        [ForeignKey("Customer")]
-        public int CustomerId { get; set; }
+        public string password { get; set; }
 
-        public Customer Customer { get; set; }
+       
+        //public string UserId { get; set; }
+
+        //public ApplicationUser ApplicationUser { get; set; }
 
 
 

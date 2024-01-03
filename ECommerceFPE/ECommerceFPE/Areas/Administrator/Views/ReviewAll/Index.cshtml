@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ECommerceFPE.Models.ReviewAll>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicationUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReviewDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isActive)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isActive)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.ReviewId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ReviewId">Delete</a>|
+                    @if (item.isActive)
+                    {
+                        <a asp-action="ToggleStatus" asp-route-id="@item.ReviewId">Active</a>
+                    }
+                    else
+                    {
+                        <a asp-action="ToggleStatus" asp-route-id="@item.ReviewId">Inactive</a>
+                    }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+
+@*@model List<ReviewAll>
+
+<h1>Admin Reviews</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer</th>
+            <th>Comment</th>
+            <th>Rating</th>
+            <th>Review Date</th>
+            <th>Is Active</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var review in Model)
+        {
+            <tr>
+                <td>@review.Customer.CustomerName</td>
+                <td>@review.Comment</td>
+                <td>@review.Rating</td>
+                <td>@review.ReviewDate</td>
+                <td>@review.isActive</td>
+            </tr>
+        }
+    </tbody>
+</table>*@

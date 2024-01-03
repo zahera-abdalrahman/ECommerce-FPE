@@ -24,5 +24,9 @@ namespace ECommerceFPE.Models
         public int CreditCardID { get; set; }
 
         public CreditCard CreditCard { get; set; }
+
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
     }
 }

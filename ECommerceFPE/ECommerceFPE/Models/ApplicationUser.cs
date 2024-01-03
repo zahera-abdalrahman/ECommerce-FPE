@@ -23,15 +23,13 @@ namespace ECommerceFPE.Models
         [MinLength(3, ErrorMessage = "Min 3 Char")]
         public string LastName { get; set; }
 
+        [Required(ErrorMessage = "Enter Address")]
+        public string Address { get; set; }
 
 
-        [Required(ErrorMessage = "Enter Country")]
-        public string Country { get; set; }
-
-
-        [Required(ErrorMessage = "Enter Gender")]
-        public string Gender { get; set; }
-
+        //[Required]
+        //[DataType(DataType.EmailAddress)]
+        //public string Email { get; set; }
 
 
     }

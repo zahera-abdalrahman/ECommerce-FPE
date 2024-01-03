@@ -15,10 +15,10 @@ namespace ECommerceFPE.Data
 
         public DbSet<CartItems> CartItems { get; set; }
 
-        public DbSet<CreditCard> CreditCard { get; set; }
+        //public DbSet<CreditCard> CreditCard { get; set; }
 
 
-        public DbSet<Customer> Customer { get; set; }
+        //public DbSet<Customer> Customer { get; set; }
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderItems> OrderItems { get; set; }
         public DbSet<Payment> Payment { get; set; }
@@ -30,7 +30,7 @@ namespace ECommerceFPE.Data
 
         public DbSet<ReviewAll> ReviewAll { get; set; }
 
-        public DbSet<Images> ImagesProducts { get; set; }
+        //public DbSet<Images> ImagesProducts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -39,10 +39,10 @@ namespace ECommerceFPE.Data
             // Configure Identity related entities (if needed)
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ECommerceDBContext).Assembly);
            
-            modelBuilder.Entity<Customer>()
-                .HasOne(c => c.CreditCard)
-                .WithOne(cc => cc.Customer)
-                .HasForeignKey<CreditCard>(cc => cc.CustomerId);
+            //modelBuilder.Entity<ApplicationUser>()
+            //    .HasOne(c => c.CreditCard)
+            //    .WithOne(cc => cc.ApplicationUser)
+            //    .HasForeignKey<CreditCard>(cc => cc.CustomerId);
         // Add your additional configurations here if necessary
     }
     }

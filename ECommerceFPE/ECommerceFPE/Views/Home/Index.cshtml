@@ -18,7 +18,7 @@
                     </div>
                     <div class="col-lg-7 col-md-6">
                         <div class="single-slider-img single-slider-img-1">
-                            <img class="animated slider-1-1" src="~/assets1/imgs/slider/slider-1.png" alt="">
+                            <img class="animated slider-1-1" src="~/assets1/slider-3.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -69,25 +69,15 @@
         </div>
     </div>
 </section>
-<section class="banner-2 section-padding pb-0">
-    <div class="container">
-        <div class="banner-img banner-big wow fadeIn animated f-none">
-            <img src="~/assets1/imgs/banner/banner-4.png" alt="">
-            <div class="banner-text d-md-block d-none">
-                <h4 class="mb-15 mt-40 text-brand">Repair Services</h4>
-                <h1 class="fw-600 mb-20">We're an Apple <br>Authorised Service Provider</h1>
-                <a href="shop-grid-right.html" class="btn">Learn More <i class="fi-rs-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="popular-categories section-padding mt-15 mb-25">
     <div class="container wow fadeIn animated">
         <h3 class="section-title mb-20"><span>Popular</span> Categories</h3>
         <div class="carausel-6-columns-cover position-relative">
             <div class="slider-arrow slider-arrow-2 carausel-6-columns-arrow" id="carausel-6-columns-arrows"></div>
             <div class="carausel-6-columns" id="carausel-6-columns">
-               
+
+                @if (ViewBag.categoryList != null)
+                {
                     @foreach (var category in ViewBag.categoryList)
                     {
                         <div class="card-1">
@@ -99,7 +89,26 @@
                             <h5><a asp-controller="Home" asp-action="Category" asp-route-CategoryName="@category.CategoryName">@category.CategoryName</a></h5>
                         </div>
                     }
+                }
+                else
+                {
+                    <p>No categories available</p>
+                }
+
                 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner-2 section-padding pb-0">
+    <div class="container">
+        <div class="banner-img banner-big wow fadeIn animated f-none">
+            <img src="~/assets1/imgs/banner/banner-4.png" alt="">
+            <div class="banner-text d-md-block d-none">
+                <h4 class="mb-15 mt-40 text-brand">Repair Services</h4>
+                <h1 class="fw-600 mb-20">Have questions about <br />our handmade treasures? </h1>
+                <a asp-action="ContactUs" asp-controller="Home" class="btn">Contact Us<i class="fi-rs-arrow-right"></i></a>
             </div>
         </div>
     </div>

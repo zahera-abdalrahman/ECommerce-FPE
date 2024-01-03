@@ -3,40 +3,82 @@
 @{
     ViewData["Title"] = "Login";
 }
-
-<h1>Login</h1>
-
-<hr />
-<div class="row justify-content-center pb-xl-5">
-    <div class="col-md-6">
-        <form asp-action="Login" asp-controller="Account" method="post">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check pt-1">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="RemmberMe" /> @Html.DisplayNameFor(model => model.RemmberMe)
-                </label>
-            </div>
-
-            <div class="pt-3 m-2 pb-xl-5 d-flex justify-content-evenly">
-                <input type="submit" value="Login" class="btn btn-primary btn-md btn-block" />
-                <a asp-action="Register" asp-controller="Account" class="btn btn-info btn-md btn-block">Register</a>        
-                <a asp-action="Index" asp-controller="Home" class="btn btn-warning btn-md btn-block">Cancel</a>
-            </div>
-        </form>
-    </div>
-</div>
-
-
-    @section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+<style>
+    .update-center {
+        justify-content: center;
     }
+</style>
+
+
+
+
+<main class="main">
+    <div class="page-header breadcrumb-wrap">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" rel="nofollow">Home</a>
+                <span></span> Pages
+                <span></span> Login / Register
+            </div>
+        </div>
+    </div>
+    <section class="pt-150 pb-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="row update-center">
+                        <div class="col-lg-5">
+                            <div class="login_wrap widget-taber-content p-30 background-white border-radius-10 mb-md-5 mb-lg-0 mb-sm-5">
+                                <div class="padding_eight_all bg-white">
+                                    <div class="heading_s1">
+                                        <h3 class="mb-30">Login</h3>
+                                    </div>
+                                    <form asp-action="Login" asp-controller="Account" method="post">
+                                        <div asp-validation-summary="All" class="text-danger"></div>
+                                        <div class="form-group">
+                                            <label asp-for="Email" class="control-label"></label>
+                                            <input asp-for="Email" class="form-control" />
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="Password" class="control-label"></label>
+                                            <input asp-for="Password" class="form-control" />
+                                            <span asp-validation-for="Password" class="text-danger"></span>
+                                        </div>
+
+
+                                        <div class="login_footer form-group">
+                                            <div class="chek-form">
+                                                <div class="custome-checkbox">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" asp-for="RememberMe" /> @Html.DisplayNameFor(model => model.RememberMe)
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                            <a class="text-muted" href="#">Forgot password?</a>
+                                        </div>
+
+                                        <div class="pt-3 m-2 pb-xl-5 d-flex justify-content-evenly">
+                                            <input type="submit" value="Login" class="btn btn-primary btn-md btn-block" />                                         
+                                        </div>
+                                        <a asp-action="Register" asp-controller="Account" class="text-muted">Don't have an account?<span>Register</span></a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+@section Scripts {
+@{
+     await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
+
+

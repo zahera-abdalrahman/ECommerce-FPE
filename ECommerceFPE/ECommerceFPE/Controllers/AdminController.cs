@@ -1,36 +1,36 @@
-﻿using ECommerceFPE.Data;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿//using ECommerceFPE.Data;
+//using Microsoft.AspNetCore.Mvc;
+//using Microsoft.EntityFrameworkCore;
 
-namespace ECommerceFPE.Controllers;
+//namespace ECommerceFPE.Controllers;
 
-public class AdminController : Controller
-{
-    private readonly ECommerceDBContext _context;
+//public class AdminController : Controller
+//{
+//    private readonly ECommerceDBContext _context;
 
-    public AdminController(ECommerceDBContext context)
-    {
-        _context = context;
-    }
+//    public AdminController(ECommerceDBContext context)
+//    {
+//        _context = context;
+//    }
 
-    [Route("/Administrator/admin/cart")]
-    public async Task<IActionResult> Cart()
-    {
-        var cartList = await _context.Cart.Include(c => c.Customer).ToListAsync();
+//    [Route("/Administrator/admin/cart")]
+//    public async Task<IActionResult> Cart()
+//    {
+//        var cartList = await _context.Cart.Include(c => c.Customer).ToListAsync();
 
-        return View("~/Views/AdminDashboard/Cart.cshtml", cartList);
-    }
+//        return View("~/Views/AdminDashboard/Cart.cshtml", cartList);
+//    }
 
-    [Route("/Administrator/admin/cartitems/{cartId}")]
-    public async Task<IActionResult> CartItems(int cartId)
-    {
-        var cartItemsList = await _context
-            .CartItems
-            .Where(c => c.CartId == cartId)
-            .Include(c => c.Cart)
-            .Include(c => c.ProductCatalog)
-            .ToListAsync();
+//    [Route("/Administrator/admin/cartitems/{cartId}")]
+//    public async Task<IActionResult> CartItems(int cartId)
+//    {
+//        var cartItemsList = await _context
+//            .CartItems
+//            .Where(c => c.CartId == cartId)
+//            .Include(c => c.Cart)
+//            .Include(c => c.ProductCatalog)
+//            .ToListAsync();
 
-        return View("~/Views/AdminDashboard/CartItems.cshtml", cartItemsList);
-    }
-}
+//        return View("~/Views/AdminDashboard/CartItems.cshtml", cartItemsList);
+//    }
+//}
