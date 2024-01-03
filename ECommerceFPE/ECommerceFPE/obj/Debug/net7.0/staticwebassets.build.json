@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r/NujMrF/4byxoTs6Mq0nJM7bFx34YB5sD9PHZdbz8s=",
+  "Hash": "154UQabd4Vat246dzeJqQrhPPACbAh+0qme9McBLfyc=",
   "Source": "ECommerceFPE",
   "BasePath": "_content/ECommerceFPE",
   "Mode": "Default",
@@ -13802,6 +13802,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProductImg\\Image1231202335357AM.jpg"
+    },
+    {
+      "Identity": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image132024124911PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image132024124911PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image132024124911PM.jpg"
     }
   ]
 }

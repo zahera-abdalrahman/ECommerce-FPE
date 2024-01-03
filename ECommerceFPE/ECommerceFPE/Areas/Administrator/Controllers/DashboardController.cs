@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using ECommerceFPE.Data;
 
 namespace ECommerceFPE.Areas.Administrator.Controllers
 {
@@ -17,26 +19,48 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
     {
         private RoleManager<IdentityRole> roleManager;
         private UserManager<ApplicationUser> userManager;
+        private readonly ECommerceDBContext _context;
 
 
-        public DashboardController(UserManager<ApplicationUser> _userManager, RoleManager<IdentityRole> _RoleManager)
+        public DashboardController(UserManager<ApplicationUser> _userManager, RoleManager<IdentityRole> _RoleManager, ECommerceDBContext context)
 
         {
+            _context = context;
             roleManager = _RoleManager;
             userManager = _userManager;
         }
-       
+
         public IActionResult Index()
         {
-            return View();
+            var orders = _context.Order.ToList();
+
+            var ordersTable = _context.Order
+        .OrderByDescending(order => order.OrderDate)
+        .Take(10)
+        .ToList();
+
+            ViewBag.OrderCount = orders.Count;
+
+            var products = _context.Product.ToList();
+            ViewBag.ProductCount = products.Count;
+
+            var category = _context.Category.ToList();
+            ViewBag.CategoryCount = category.Count;
+
+            var currentMonth = DateTime.Now.Month;
+            var currentYear = DateTime.Now.Year;
+
+            var ordersForCurrentMonth = orders
+                .Where(order => order.OrderDate.Month == currentMonth && order.OrderDate.Year == currentYear)
+                .ToList();
+
+            decimal totalForCurrentMonth = ordersForCurrentMonth.Sum(order => decimal.Parse(order.TotalAmount));
+            ViewBag.TotalForCurrentMonth = totalForCurrentMonth;
+
+            return View(ordersTable);
         }
 
 
-        public IActionResult UsersListDashboard()
-        {
-            var users = userManager.Users;
-            return View(users);
-        }
 
 
         #region Roles
