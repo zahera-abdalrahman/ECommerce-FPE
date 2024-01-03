@@ -1,0 +1,89 @@
+﻿@{
+    var cart = ViewBag.CartItems as CartItems;
+}
+
+
+<div class="page-header breadcrumb-wrap">
+    <div class="container">
+        <div class="breadcrumb">
+            <a asp-action="Index" asp-controller="Home">Home</a>
+            <span></span> Shop
+            <span></span> Your Cart
+        </div>
+    </div>
+</div>
+<section class="mt-50 mb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table shopping-summery text-center clean">
+                        <thead>
+                            <tr class="main-heading">
+                                <th scope="col">Image</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @if (ViewBag.CartItems != null)
+                        {
+                            @foreach (var item in ViewBag.CartItems)
+                            {
+                                <tr>
+                                    <td class="image product-thumbnail"><img src="~/ProductImg/@item.ProductCatalog.ImageUrl"></td>
+                                    <td class="product-des product-name">
+                                        <h5 class="product-name"><a href="shop-product-right.html">@item.ProductCatalog.ProductName</a></h5>
+                                        <p class="font-xs">
+                                            @item.ProductCatalog.Description
+                                        </p>
+                                    </td>
+                                    @{
+                                        double itemPrice;
+                                        if (item.ProductCatalog.DiscountPercent > 0)
+                                        {
+                                            itemPrice = item.ProductCatalog.Price - (item.ProductCatalog.Price * item.ProductCatalog.DiscountPercent / 100);
+                                        }
+                                        else
+                                        {
+                                            itemPrice = item.ProductCatalog.Price;
+                                        }
+                                    }
+                                        <td class="price" data-title="Price"><span>$@itemPrice </span></td>
+                                        <td class="text-center" data-title="Stock">
+                                            <div class="detail-qty border radius  m-auto">
+                                                <a class="qty-down" asp-controller="Home" asp-action="Cart" asp-route-productId="@item.ProductCatalog.ProductId" asp-route-change="remove"><i class="fi-rs-angle-small-down"></i></a>
+                                                <span class="qty-val">@item.Quantity</span>
+                                                <a class="qty-up" asp-controller="Home" asp-action="Cart" asp-route-productId="@item.ProductCatalog.ProductId" asp-route-change="add"><i class="fi-rs-angle-small-up"></i></a>
+                                            </div>
+                                        </td>
+                                    <td class="text-right" data-title="Cart">
+                                        @{
+                                            var totalItemPrice = itemPrice * item.Quantity;
+                                        }
+                                        <span>$@totalItemPrice</span>
+                                    </td>
+                                        <td class="action" data-title="Remove"><a href="#" class="text-muted"><i class="fi-rs-trash"></i></a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="6" class="text-end">
+                                            <a class="text-muted" asp-controller="Home" asp-action="Cart" asp-route-productId="@item.ProductCatalog.ProductId" asp-route-change="delete"> <i class="fi-rs-cross-small"></i> Clear Item</a>
+                                        </td>
+                                </tr>
+                            }
+                        }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart-action text-end">
+                    <a class="btn "><i class="fi-rs-shopping-bag mr-10"></i>Continue Shopping</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
