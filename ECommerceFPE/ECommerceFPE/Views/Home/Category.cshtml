@@ -20,8 +20,8 @@
                         <p> We found <strong class="text-brand">@ViewBag.categoryCount</strong> items for you!</p>
                     </div>
                     <div class="sort-by-product-area">
-                       
-                       
+
+
                     </div>
                 </div>
                 <div class="product-list mb-50">
@@ -57,14 +57,14 @@
                                 </div>
                                 <p class="mt-15">@product.Description</p>
                                 <div class="product-action-1 show">
-                                    <a aria-label="Buy now" class="action-btn" href="shop-cart.html"><i class="fi-rs-shopping-bag-add"></i>Add to Cart</a>
+<a aria-label="Buy now" class="action-btn" asp-controller="Home" asp-action="Cart" asp-route-productId="@product.ProductId" asp-route-change="add"><i class="fi-rs-shopping-bag-add"></i>Add to Cart</a>
 
                                 </div>
                             </div>
                         </div>
                     }
                 </div>
-             
+
 
             </div>
             <div class="col-lg-3 primary-sidebar sticky-sidebar">
