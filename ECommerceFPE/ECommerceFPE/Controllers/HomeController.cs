@@ -229,6 +229,8 @@ namespace ECommerceFPE.Controllers
 
             Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
 
+            var isDeleted = false;
+
             if (change != "add" && change != "remove" && change != "delete")
             {
                 var cartItems = _context
@@ -281,6 +283,12 @@ namespace ECommerceFPE.Controllers
                 }
                 else if (change == "remove")
                 {
+                    if (cartItem.Quantity == 1)
+                    {
+                        _context.CartItems.Remove(cartItem);
+                        _context.SaveChanges();
+                        isDeleted = true;
+                    }
                     cartItem.Quantity--;
                 }
                 else if (change == "delete")
@@ -295,7 +303,7 @@ namespace ECommerceFPE.Controllers
             {
                 cart.Total += productPrice;
             }
-            else if (change == "remove")
+            else if (change == "remove" && !isDeleted)
             {
                 cart.Total -= productPrice;
             }
