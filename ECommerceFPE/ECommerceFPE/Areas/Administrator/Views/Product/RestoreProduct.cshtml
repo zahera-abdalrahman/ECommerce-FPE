@@ -1,0 +1,87 @@
+﻿@model IEnumerable<ECommerceFPE.Models.Product>
+
+@{
+    ViewData["Title"] = "RestoreProduct";
+}
+
+<h1>RestoreEmployee</h1>
+
+
+<section class="section">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="pagetitle">
+                        <nav>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Home</a></li>
+                                <a class="breadcrumb-item" asp-action="Index" asp-controller="Product">Products</a>
+                            </ol>
+                        </nav>
+                    </div>
+                    <table class="table datatable table-hover">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ProductName)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Price)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.QuantityInStock)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Category)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.DiscountPercent)
+                                </th>
+                                <th>
+                                    Image
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ProductName)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Price)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.QuantityInStock)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Category.CategoryName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.DiscountPercent)
+                                    </td>
+                                    <td>
+                                        <img src="~/ProductImg/@item.ImageUrl" style="width:60px">
+                                    </td>
+                                    <td>
+                                        <div class="text-end">
+                                            <a asp-action="ConfirmRestoreProduct" asp-controller="Product" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand"><i class="material-icons md-edit"></i>Restore Employee</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
