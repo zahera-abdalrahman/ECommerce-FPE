@@ -1,28 +1,36 @@
 using ECommerceFPE.Data;
-using Microsoft.AspNetCore.Hosting;
+using ECommerceFPE.Models;
 using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.Extensions.Configuration;
-using ECommerceFPE.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<ECommerceDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ECommerceFPEContext") ?? throw new InvalidOperationException("Connection string 'ECommerceFPEContext' not found.")));
+builder
+    .Services
+    .AddDbContext<ECommerceDBContext>(
+        options =>
+            options.UseSqlServer(
+                builder.Configuration.GetConnectionString("ECommerceFPEContext")
+                    ?? throw new InvalidOperationException(
+                        "Connection string 'ECommerceFPEContext' not found."
+                    )
+            )
+    );
 
-
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+builder
+    .Services
+    .AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ECommerceDBContext>()
     .AddDefaultTokenProviders();
-
 
 var app = builder.Build();
 
@@ -41,7 +49,6 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
 
 /*
 app.UseEndpoints(endpoints =>
@@ -76,19 +83,13 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
         name: "areas",
-        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
 
     endpoints.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
+        pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
 });
-
-
-
-
-
-
-
-
 
 app.Run();
