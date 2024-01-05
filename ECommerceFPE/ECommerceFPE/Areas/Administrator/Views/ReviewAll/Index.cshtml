@@ -9,14 +9,14 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ApplicationUser)
+                @Html.DisplayNameFor(model => model.ApplicationUser.FirstName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Comment)
             </th>
-            <th>
+           @* <th>
                 @Html.DisplayNameFor(model => model.Rating)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.ReviewDate)
             </th>
@@ -30,14 +30,14 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                    @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName)
+                    @Html.DisplayFor(modelItem => item.ApplicationUser.UserName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Comment)
             </td>
-            <td>
+           @* <td>
                 @Html.DisplayFor(modelItem => item.Rating)
-            </td>
+            </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.ReviewDate)
             </td>

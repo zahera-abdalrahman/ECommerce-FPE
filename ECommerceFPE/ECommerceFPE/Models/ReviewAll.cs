@@ -12,11 +12,9 @@ namespace ECommerceFPE.Models
         public string UserId { get; set; }
 
         public ApplicationUser ApplicationUser { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Please enter your review.")]
         public string Comment { get; set; }
-        
-        public int Rating { get; set; }
-        
+                
         public DateTime ReviewDate { get; set; }
 
         public bool isActive { get; set; }

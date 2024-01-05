@@ -162,15 +162,19 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
         {
             if (_context.Category == null)
             {
-                return Problem("Entity set 'ECommerceDBContext.ProductCategory'  is null.");
+                return Problem("Entity set 'ECommerceDBContext.ProductCategory' is null.");
             }
+
             var productCategory = await _context.Category.FindAsync(id);
             if (productCategory != null)
             {
                 _context.Category.Remove(productCategory);
+                await _context.SaveChangesAsync();
+
+                // Add SweetAlert confirmation message
+                TempData["SweetAlert"] = "Deleted|The category has been successfully deleted.";
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

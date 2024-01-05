@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OYS02QIk8ODtEYp/bJVO6CK4lRT96JjhCrxS/GjYyLN2egFa35XRXOdepwGkig+Mwl8OQDCpOmXaUGfHP7zpeg==",
+  "dgSpecHash": "++KBqJDuz4frXXKbcBMERmuc+tUwatveqPGHyx07DrqEoEyKoOceXzTd8KNv32SLy6Ry9pEkRJPFSsFjzWtaTA==",
   "success": true,
-  "projectFilePath": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
+  "projectFilePath": "F:\\Orange Coding School\\ecommerce final project\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -1,4 +1,5 @@
-﻿<div class="mobile-header-active mobile-header-wrapper-style">
+﻿@model ReviewAll
+<div class="mobile-header-active mobile-header-wrapper-style">
     <div class="mobile-header-wrapper-inner">
         <div class="mobile-header-top">
             <div class="mobile-header-logo">
@@ -196,7 +197,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="testimonials" class="section-padding">
         <div class="container pt-25">
             <div class="row mb-50">
@@ -206,93 +207,61 @@
                     <p class="w-50 m-auto text-grey-3 wow fadeIn animated">At vero eos et accusamus et iusto odio dignissimos ducimus quiblanditiis praesentium. ebitis nesciunt voluptatum dicta reprehenderit accusamus</p>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="hero-card box-shadow-outer-6 wow fadeIn animated mb-30 hover-up d-flex">
-                        <div class="hero-card-icon icon-left-2 hover-up ">
-                            <img class="btn-shadow-brand hover-up border-radius-5 bg-brand-muted" src="assets/imgs/page/avatar-1.jpg" alt="">
+                <div class="row align-items-center">
+                    @foreach (var review in ViewBag.Reviews)
+                    {
+                        <div class="col-md-6 col-lg-4">
+                            <div class="hero-card box-shadow-outer-6 wow fadeIn animated mb-30 hover-up d-flex">
+                                <div class="hero-card-icon icon-left-2 hover-up ">
+                                    <img class="btn-shadow-brand hover-up border-radius-5 bg-brand-muted" src="assets/imgs/page/avatar-1.jpg" alt="">
+                                </div>
+                                <div class="pl-30">
+                                    <h5 class="mb-5 fw-500">
+                                    @if (review.ApplicationUser != null)
+                                    {
+                                        @review.ApplicationUser.FirstName
+                                    }
+                                    else
+                                    {
+                                        <text>Unknown User</text>
+                                    }
+                                    </h5>
+                                    <p class="font-sm text-grey-5">Adobe Jsc</p>
+                                    <p class="text-grey-3">@review.Comment</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="pl-30">
-                            <h5 class="mb-5 fw-500">
-                                J. Bezos
-                            </h5>
-                            <p class="font-sm text-grey-5">Adobe Jsc</p>
-                            <p class="text-grey-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt voluptatum dicta reprehenderit accusamus voluptatibus voluptas."</p>
-                        </div>
-                    </div>
+                    }
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="hero-card box-shadow-outer-6 wow fadeIn animated mb-30 hover-up d-flex">
-                        <div class="hero-card-icon icon-left-2 hover-up ">
-                            <img class="btn-shadow-brand hover-up border-radius-5 bg-brand-muted" src="assets/imgs/page/avatar-3.jpg" alt="">
-                        </div>
-                        <div class="pl-30">
-                            <h5 class="mb-5 fw-500">
-                                B.Gates
-                            </h5>
-                            <p class="font-sm text-grey-5">Adobe Jsc</p>
-                            <p class="text-grey-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt voluptatum dicta reprehenderit accusamus voluptatibus voluptas."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="hero-card box-shadow-outer-6 wow fadeIn animated mb-30 hover-up d-flex">
-                        <div class="hero-card-icon icon-left-2 hover-up ">
-                            <img class="btn-shadow-brand hover-up border-radius-5 bg-brand-muted" src="assets/imgs/page/avatar-2.jpg" alt="">
-                        </div>
-                        <div class="pl-30">
-                            <h5 class="mb-5 fw-500">
-                                B. Meyers
-                            </h5>
-                            <p class="font-sm text-grey-5">Adobe Jsc</p>
-                            <p class="text-grey-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt voluptatum dicta reprehenderit accusamus voluptatibus voluptas."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="hero-card box-shadow-outer-6 wow fadeIn animated mb-30 hover-up d-flex">
-                        <div class="hero-card-icon icon-left-2 hover-up ">
-                            <img class="btn-shadow-brand hover-up border-radius-5 bg-brand-muted" src="assets/imgs/page/avatar-4.jpg" alt="">
-                        </div>
-                        <div class="pl-30">
-                            <h5 class="mb-5 fw-500">
-                                J. Bezos
-                            </h5>
-                            <p class="font-sm text-grey-5">Adobe Jsc</p>
-                            <p class="text-grey-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt voluptatum dicta reprehenderit accusamus voluptatibus voluptas."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="hero-card box-shadow-outer-6 wow fadeIn animated mb-30 hover-up d-flex">
-                        <div class="hero-card-icon icon-left-2 hover-up ">
-                            <img class="btn-shadow-brand hover-up border-radius-5 bg-brand-muted" src="assets/imgs/page/avatar-5.jpg" alt="">
-                        </div>
-                        <div class="pl-30">
-                            <h5 class="mb-5 fw-500">
-                                B.Gates
-                            </h5>
-                            <p class="font-sm text-grey-5">Adobe Jsc</p>
-                            <p class="text-grey-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt voluptatum dicta reprehenderit accusamus voluptatibus voluptas."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="hero-card box-shadow-outer-6 wow fadeIn animated mb-30 hover-up d-flex">
-                        <div class="hero-card-icon icon-left-2 hover-up ">
-                            <img class="btn-shadow-brand hover-up border-radius-5 bg-brand-muted" src="assets/imgs/page/avatar-1.jpg" alt="">
-                        </div>
-                        <div class="pl-30">
-                            <h5 class="mb-5 fw-500">
-                                B. Meyers
-                            </h5>
-                            <p class="font-sm text-grey-5">Adobe Jsc</p>
-                            <p class="text-grey-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt voluptatum dicta reprehenderit accusamus voluptatibus voluptas."</p>
-                        </div>
-                    </div>
-                </div>
+
+              
             </div>
-          
-        </div>
+
     </section>
+
+    <div class="comment-form">
+        <h4 class="mb-15">Add a review</h4>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                    <form class="form-contact comment_form" asp-controller="Home" asp-action="About" method="post">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                <textarea asp-for="Comment" class="form-control w-100" name="Comment" id="comment" cols="30" rows="9" placeholder="Write Comment">@Model?.Comment ?? ""</textarea>
+                                    <span asp-validation-for="Comment" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="button button-contactForm" value="Create">Submit Review</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
 </main>
+
+
+
+
