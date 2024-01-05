@@ -202,26 +202,6 @@ namespace ECommerceFPE.Controllers
             );
         }
 
-        ////////////////////////////////////////////////////////
-
-        // public async Task<IActionResult> Cart()
-        // {
-        //     ApplicationUser user = await _userManager.GetUserAsync(User);
-        //
-        //     Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
-        //
-        //     var cartItems = _context
-        //         .CartItems
-        //         .Include(ci => ci.ProductCatalog)
-        //         .Where(ci => ci.CartId == cart.CartId)
-        //         .ToList();
-        //
-        //     // Pass cart data to the view using ViewBag
-        //     ViewBag.CartItems = cartItems;
-        //
-        //     return View("Cart");
-        // }
-
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Cart(int productId, string change)
         {
@@ -294,6 +274,7 @@ namespace ECommerceFPE.Controllers
                 else if (change == "delete")
                 {
                     _context.CartItems.Remove(cartItem);
+
                     _context.SaveChanges();
                 }
             }
