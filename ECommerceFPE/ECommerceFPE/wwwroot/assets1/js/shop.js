@@ -98,6 +98,7 @@
     //             $(this).next().text(qtyval);
     //         }
     //     });
+
     // });
 
     $(".dropdown-menu .cart_list").on("click", function (event) {
