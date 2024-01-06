@@ -11626,11 +11626,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Orange Coding School\\ecommerce final project\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
+      "projectUniqueName": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
       "projectName": "ECommerceFPE",
-      "projectPath": "F:\\Orange Coding School\\ecommerce final project\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
+      "projectPath": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "F:\\Orange Coding School\\ecommerce final project\\ECommerceFPE\\ECommerceFPE\\obj\\",
+      "outputPath": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

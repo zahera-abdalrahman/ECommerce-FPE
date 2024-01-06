@@ -7,6 +7,10 @@
     .update-center {
         justify-content: center;
     }
+
+    .border {
+        border: 1px solid #088178 !important;
+    }
 </style>
 
 
@@ -28,7 +32,7 @@
                 <div class="col-lg-10 m-auto">
                     <div class="row update-center">
                         <div class="col-lg-5">
-                            <div class="login_wrap widget-taber-content p-30 background-white border-radius-10 mb-md-5 mb-lg-0 mb-sm-5">
+                            <div class="border login_wrap widget-taber-content p-30 background-white border-radius-10 mb-md-5 mb-lg-0 mb-sm-5">
                                 <div class="padding_eight_all bg-white">
                                     <div class="heading_s1">
                                         <h3 class="mb-30">Login</h3>
@@ -56,13 +60,12 @@
 
                                                 </div>
                                             </div>
-                                            <a class="text-muted" href="#">Forgot password?</a>
                                         </div>
 
-                                        <div class="pt-3 m-2 pb-xl-5 d-flex justify-content-evenly">
+                                        <div class="mb-3 d-flex justify-content-evenly">
                                             <input type="submit" value="Login" class="btn btn-primary btn-md btn-block" />                                         
                                         </div>
-                                        <a asp-action="Register" asp-controller="Account" class="text-muted">Don't have an account?<span>Register</span></a>
+                                        <a asp-action="Register" asp-controller="Account" class="text-muted">Don't have an account? <span class="text-brand">Register</span></a>
                                     </form>
                                 </div>
                             </div>

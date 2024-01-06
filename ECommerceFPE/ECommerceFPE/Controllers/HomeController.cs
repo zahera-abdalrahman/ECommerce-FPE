@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
 using ECommerceFPE.Data;
 using ECommerceFPE.Models;
+using ECommerceFPE.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -31,13 +33,6 @@ namespace ECommerceFPE.Controllers
             ;
             return View();
         }
-
-        ////////////////////////////////////////////////////////
-        public IActionResult About()
-        {
-            return View();
-        }
-
         ////////////////////////////////////////////////////////
         public IActionResult ContactUs()
         {
@@ -167,23 +162,112 @@ namespace ECommerceFPE.Controllers
         }
 
         ////////////////////////////////////////////////////////
-        public IActionResult ReviewAll()
+        public async Task<IActionResult> About()
         {
-            ViewBag.AllReview = _context.ReviewAll.Include(p => p.ApplicationUser).ToList();
+            var reviews = await _context.ReviewAll
+         .Include(r => r.ApplicationUser)
+         .Where(r => r.isActive)
+         .Take(6)
+         .ToListAsync();
+            var currentUser = await _userManager.GetUserAsync(User);
+            ViewBag.Reviews = reviews;
             return View();
         }
 
+        [Authorize]
         [HttpPost]
-        public IActionResult ReviewAll(ReviewAll model)
+        public async Task<ActionResult> About(ReviewAll model)
         {
-            model.ReviewDate = DateTime.Now;
-            model.isActive = false;
-            model.ApplicationUser.Address = "123 Main St";
-            _context.ReviewAll.Add(model);
+
+            ApplicationUser user = await _userManager.GetUserAsync(User);
+            var newReview = new ReviewAll
+            {
+                UserId = user.Id,
+                Comment = model.Comment,
+                ReviewDate = DateTime.Now,
+                isActive = false,
+                ApplicationUser = user
+            };
+
+            _context.ReviewAll.Add(newReview);
             _context.SaveChanges();
 
-            return RedirectToAction("ReviewAll");
+            return RedirectToAction("About");
+
         }
+        ////////////////////////////////////////////////////////
+        [HttpGet]
+        public async Task<IActionResult> Edit()
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var model = new EditViewModel
+            {
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Address = user.Address,
+            };
+
+            return View(model);
+        }
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(EditViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.GetUserAsync(User);
+
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                user.FirstName = model.FirstName;
+                user.LastName = model.LastName;
+                user.Address = model.Address;
+
+                if (!string.IsNullOrEmpty(model.NewPassword))
+                {
+                    var passwordChangeResult = await _userManager.ChangePasswordAsync(user, null, model.NewPassword);
+
+                    if (!passwordChangeResult.Succeeded)
+                    {
+                        foreach (var error in passwordChangeResult.Errors)
+                        {
+                            ModelState.AddModelError("", error.Description);
+                        }
+
+                        return View(model);
+                    }
+                }
+
+                var updateResult = await _userManager.UpdateAsync(user);
+
+                if (updateResult.Succeeded)
+                {
+                    // Optionally, you can redirect to a profile page or show a success message.
+                    return RedirectToAction("Index", "Home");
+                }
+
+                foreach (var error in updateResult.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+
+            // If the model is not valid or the update fails, return to the edit view with errors.
+            return View("Edit", "Home");
+        }
+
 
         ////////////////////////////////////////////////////////
         public IActionResult Privacy()

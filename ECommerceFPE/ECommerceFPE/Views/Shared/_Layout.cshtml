@@ -15,8 +15,10 @@
     <link rel="shortcut icon" type="~/image/x-icon" href="~/assets1/imgs/theme/favicon.svg">
     <!-- Template CSS -->
     <link rel="stylesheet" href="~/assets1/css/main.css?v=3.4">
-   
-
+ 
+    <!--leaflet map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
 </head>
 
@@ -30,8 +32,8 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info">
                             <ul>
-                                <li><i class="fi-rs-smartphone"></i> <a href="#">(+01) - 2345 - 6789</a></li>
-                                <li><i class="fi-rs-marker"></i><a asp-action="Logout" asp-controller="Account">Our location</a></li>
+                                <li><i class="fi-rs-smartphone"></i> <a href="#">(+962)796684240</a></li>
+                                <li><i class="fi-rs-marker"></i><a asp-action="ContactUs" asp-controller="Home">Our location</a></li>
                             </ul>
                         </div>
                     </div>
@@ -56,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+        <div class="header-middle header-middle-ptb-1 d-none d-lg-block sticky-bar" style="border:none">
             <div class="container">
                 <div class="header-wrap">
                     <div class="logo logo-width-1">
@@ -77,10 +79,10 @@
                                             <a asp-controller="Home" asp-action="About">About</a>
                                         </li>
                                         <li>
-                                            <a asp-controller="Home" asp-action="ReviewAll">Reviews</a>
+                                            <a <a asp-controller="Home" asp-action="ContactUs">Contact</a>
                                         </li>
                                         <li>
-                                            <a <a asp-controller="Home" asp-action="ContactUs">Contact</a>
+                                            <a <a asp-controller="Account" asp-action="Edit">Profile</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -93,7 +95,9 @@
                                     <a class="mini-cart-icon" href="shop-cart.html">
                                         <img alt="Evara" src="~/assets1/imgs/theme/icons/icon-cart.svg">
                                         <span class="pro-count blue">2</span>
+
                                     </a>
+                                    
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                         <ul>
                                             <li>
@@ -132,6 +136,7 @@
                                         </div>
                                     </div>
                                 </div>
+                              
                             </div>
                         </div>
                     </div>
@@ -328,10 +333,10 @@
                             </div>
                             <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                             <p class="wow fadeIn animated">
-                                <strong>Address: </strong>562 Wellington Road, Street 32, San Francisco
+                                <strong>Address: </strong>Amman Jordan
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789
+                                <strong>Phone: </strong>(+962)796684240
                             </p>
 
 
@@ -340,16 +345,16 @@
                     <div class="col-lg-2 col-md-3">
                         <h5 class="widget-title wow fadeIn animated">About</h5>
                         <ul class="footer-list wow fadeIn animated mb-sm-5 mb-md-0">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a asp-action="About" asp-controller="Home">About Us</a></li>
+                            <li><a asp-action="ContactUs" asp-controller="Home">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2  col-md-3">
                         <h5 class="widget-title wow fadeIn animated">My Account</h5>
                         <ul class="footer-list wow fadeIn animated">
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="#">View Cart</a></li>
-                            <li><a href="#">Order</a></li>
+                            <li><a asp-action="Register" asp-controller="Account">Sign In</a></li>
+                            <li><a asp-action="Cart" asp-controller="Home">View Cart</a></li>
+                            <li><a asp-action="About" asp-controller="Home">Order</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
