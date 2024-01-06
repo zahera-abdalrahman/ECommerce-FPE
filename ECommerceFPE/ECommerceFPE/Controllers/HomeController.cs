@@ -348,7 +348,8 @@ namespace ECommerceFPE.Controllers
                 TotalAmount = cart.Total.ToString(),
                 OrderStatus = "Pending",
                 CartId = cart.CartId,
-                UserId = user.Id
+                UserId = user.Id,
+                ApplicationUser = user,
             };
 
             // Add the order to the database
