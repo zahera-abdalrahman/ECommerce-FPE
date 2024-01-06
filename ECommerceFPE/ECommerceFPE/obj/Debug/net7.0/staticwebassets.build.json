@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iqdh8Fn1Xiwa0TWBVOZCq54m0wvGAUUKKuN3irAj3vg=",
+  "Hash": "T6j9b+vVQb9ihWhGMkAIdVxVR8SFg6mptumolBcdQE8=",
   "Source": "ECommerceFPE",
   "BasePath": "_content/ECommerceFPE",
   "Mode": "Default",
@@ -13904,6 +13904,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProductImg\\Image132024124911PM.jpg"
+    },
+    {
+      "Identity": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image16202451730AM.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image16202451730AM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image16202451730AM.png"
+    },
+    {
+      "Identity": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image16202451749AM.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image16202451749AM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image16202451749AM.png"
     }
   ]
 }

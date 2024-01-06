@@ -28,7 +28,7 @@ namespace ECommerceFPE.Models.ViewModels
         public string Address { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Enter Email")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 

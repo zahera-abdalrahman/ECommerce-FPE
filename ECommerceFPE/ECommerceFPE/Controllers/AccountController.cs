@@ -47,67 +47,64 @@ namespace ECommerceFPE.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            var existingUser = await userManager.FindByEmailAsync(model.Email);
-            if (existingUser != null)
+            if (ModelState.IsValid)
             {
-                ModelState.AddModelError(string.Empty, "A user with this email address already exists.");
+                var existingUser = await userManager.FindByEmailAsync(model.Email);
+                if (existingUser != null)
+                {
+                    ModelState.AddModelError(string.Empty, "A user with this email address already exists.");
+                    return View(model);
+                }
+
+                ApplicationUser user = new ApplicationUser
+                {
+                    UserName = model.Email,
+                    Email = model.Email,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Address = model.Address,
+                };
+
+                var result = await userManager.CreateAsync(user, model.Password);
+
+                if (result.Succeeded)
+                {
+                    string adminEmail = "zaheraalakash15@gmail.com";
+                    if (model.Email.Equals(adminEmail, StringComparison.OrdinalIgnoreCase))
+                    {
+                        if (!await roleManager.RoleExistsAsync("Administrator"))
+                        {
+                            await roleManager.CreateAsync(new IdentityRole("Administrator"));
+                        }
+
+                        await userManager.AddToRoleAsync(user, "Administrator");
+                    }
+                    else
+                    {
+                        if (!await roleManager.RoleExistsAsync("User"))
+                        {
+                            await roleManager.CreateAsync(new IdentityRole("User"));
+                        }
+
+                        await userManager.AddToRoleAsync(user, "User");
+                    }
+
+                    await signInManager.SignInAsync(user, isPersistent: false);
+
+                    return RedirectToAction("Login");
+                }
+
+                foreach (var err in result.Errors)
+                {
+                    ModelState.AddModelError(err.Code, err.Description);
+                }
+
                 return View(model);
             }
 
-            else
-            {
-                if (ModelState.IsValid)
-                {
-                    ApplicationUser user = new ApplicationUser
-                    {
-                        UserName = model.Email,
-                        Email = model.Email,
-                        FirstName = model.FirstName,
-                        LastName = model.LastName,
-                        Address = model.Address,
-                      
-                    };
-
-                    var result = await userManager.CreateAsync(user, model.Password);
-
-                    if (result.Succeeded)
-                    {
-                        string adminEmail = "zaheraalakash15@gmail.com"; 
-                        if (model.Email.Equals(adminEmail, StringComparison.OrdinalIgnoreCase))
-                        {
-                            if (!await roleManager.RoleExistsAsync("Administrator"))
-                            {
-                                await roleManager.CreateAsync(new IdentityRole("Administrator"));
-                            }
-
-                            await userManager.AddToRoleAsync(user, "Administrator");
-                        }
-                        else
-                        {
-                            if (!await roleManager.RoleExistsAsync("User"))
-                            {
-                                await roleManager.CreateAsync(new IdentityRole("User"));
-                            }
-
-                            await userManager.AddToRoleAsync(user, "User");
-                        }
-
-                        await signInManager.SignInAsync(user, isPersistent: false);
-
-                        return RedirectToAction("Login");
-                    }
-
-                    foreach (var err in result.Errors)
-                    {
-                        ModelState.AddModelError(err.Code, err.Description);
-                    }
-
-                    return View(model);
-                }
-            }
-
-            return View();
+            return View(model);
         }
+
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Login()
@@ -142,11 +139,12 @@ namespace ECommerceFPE.Controllers
                 {
                     ModelState.AddModelError("", "Invalid User or Password");
                 }
-                return View(model);
             }
 
-            return RedirectToAction("Index", "Home");
+            // If there are validation errors or the login attempt was unsuccessful, stay on the login page
+            return View(model);
         }
+
 
 
 

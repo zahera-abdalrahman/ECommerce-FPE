@@ -195,10 +195,15 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             if (product != null)
             {
                 _context.Product.Remove(product);
+                await _context.SaveChangesAsync();
+
+                TempData["SweetAlert"] = "Deleted|The product has been successfully deleted.";
+
+
             }
-            
-            await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
+
         }
 
         private bool ProductExists(int id)

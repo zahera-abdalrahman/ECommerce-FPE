@@ -1,5 +1,4 @@
 ﻿@model ECommerceFPE.Models.ViewModels.RegisterViewModel
-
 @{
     ViewData["Title"] = "Register";
 }
@@ -11,7 +10,12 @@
     .border {
         border: 1px solid #088178 !important;
     }
+
 </style>
+
+
+
+
 <main class="main">
     <div class="page-header breadcrumb-wrap">
         <div class="container">
@@ -33,47 +37,46 @@
                                     <div class="heading_s1">
                                         <h3 class="mb-30">Create an Account</h3>
                                     </div>
-                                    <form asp-action="Register" asp-controller="Account" method="post" name="enq">
+
+                                    <form asp-action="Register" asp-controller="Account" method="post">
                                         <div class="row">
                                             <div class="form-group col-md-6">
                                                 <label asp-for="FirstName" class="control-label"></label>
-                                                <input asp-for="FirstName" class="form-control square" />
+                                                <input asp-for="FirstName" class="form-control" />
                                                 <span asp-validation-for="FirstName" class="text-danger"></span>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label asp-for="LastName" class="control-label"></label>
-                                                <input asp-for="LastName" class="form-control square" />
+                                                <input asp-for="LastName" class="form-control" />
                                                 <span asp-validation-for="LastName" class="text-danger"></span>
                                             </div>
+
+
                                             <div class="form-group col-md-12">
                                                 <label asp-for="Email" class="control-label"></label>
-                                                <input asp-for="Email" class="form-control square" type="email" />
+                                                <input asp-for="Email" class="form-control" />
                                                 <span asp-validation-for="Email" class="text-danger"></span>
                                             </div>
-                                            
                                             <div class="form-group col-md-12">
                                                 <label asp-for="Address" class="control-label"></label>
-                                                <input asp-for="Address" class="form-control square" />
+                                                <input asp-for="Address" class="form-control" />
                                                 <span asp-validation-for="Address" class="text-danger"></span>
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label asp-for="Password" class="control-label"></label>
-                                                <input asp-for="Password" class="form-control square" />
+                                                <input asp-for="Password" class="form-control" />
                                                 <span asp-validation-for="Password" class="text-danger"></span>
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label asp-for="ConfirmPassword" class="control-label"></label>
-                                                <input asp-for="ConfirmPassword" class="form-control square" />
+                                                <input asp-for="ConfirmPassword" class="form-control" />
                                                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                                             </div>
-                                            <div class="col-md-12">
-                                                <button type="submit" class="btn btn-fill-out submit" name="submit" value="Submit">Save</button>
-                                            </div>
-                                        </div>
+
+
                                         <div class="form-row d-flex justify-content-end pt-1">
-                                            <div class="form-group col-md-2 d-flex m-2 justify-content-end">
-                                                <input type="submit" value="Create" class="btn btn-primary btn-md btn-block m-2" />
-                                                <a asp-action="Index" asp-controller="Home" class="btn btn-warning btn-md btn-block m-2">Cancel</a>
+                                            <div class="form-group col-md-12 d-flex justify-content-end">
+                                                    <input type="submit" value="Create" class="btn btn-brand" style="background-color:#088178;color:white" />
                                             </div>
                                         </div>
                                     </form>
@@ -81,7 +84,7 @@
                                         <span> or</span>
                                     </div>
 
-                                    <div class="text-muted text-center">Already have an account? <a href="#">Sign in now</a></div>
+                                    <div class="text-muted text-center">Already have an account? <a asp-action="Login" asp-controller="Account">Sign in now</a></div>
                                 </div>
                             </div>
                         </div>
@@ -101,3 +104,6 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+
+
