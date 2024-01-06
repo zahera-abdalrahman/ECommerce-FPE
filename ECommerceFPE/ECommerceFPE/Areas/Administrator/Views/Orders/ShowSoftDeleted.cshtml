@@ -1,16 +1,13 @@
 ﻿@model IEnumerable<ECommerceFPE.Models.Order>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "ShowSoftDeleted";
 }
 
-<form asp-action="Index"method="get">
-    <input type="search" name="search" value="@ViewData["GetSearch"]" placeholder="Enter User Name" style="width:300px;height:30px;" />
-    <input type="submit" class="btn btn-primary" value="Search" />
-</form>
+
 <div class="card mb-4">
     <header class="card-header">
-        <h4 class="card-title">Latest orders</h4>
+        <h4 class="card-title">Order Deleted</h4>
     </header>
     <div class="card-body">
         <div class="table-responsive">
@@ -18,9 +15,9 @@
                 <table class="table align-middle table-nowrap mb-0">
                     <thead class="table-light">
                         <tr>
-                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x=>x.ApplicationUser.UserName)</th>
-                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x=>x.OrderDate)</th>
-                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x=>x.TotalAmount)</th>
+                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x => x.ApplicationUser.UserName)</th>
+                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x => x.OrderDate)</th>
+                            <th class="align-middle" scope="col">@Html.DisplayNameFor(x => x.TotalAmount)</th>
                             <th class="align-middle" scope="col">@Html.DisplayNameFor(x => x.OrderStatus)</th>
                             <th class="align-middle" scope="col" asp-action="Details" asp-controller="Orders" asp-area="Administrator">View Details</th>
                         </tr>
@@ -36,9 +33,6 @@
                                 </td>
                                 <td>
                                     @item.OrderStatus
-                                </td>
-                                <td>
-                                    <a class="btn btn-xs" asp-action="Details" asp-route-id="@item.OrderId"> View details</a>
                                 </td>
                             </tr>
                         }

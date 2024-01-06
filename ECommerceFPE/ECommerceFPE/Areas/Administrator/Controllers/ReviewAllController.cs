@@ -29,7 +29,18 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             var reviews = _context.ReviewAll.Include(r => r.ApplicationUser).ToList();
             return View(reviews);
         }
-      
+        [HttpGet]
+        public IActionResult Index(string search)
+        {
+            ViewBag.GetSearch = search;
+            var ReviewAllQuery = from r in _context.ReviewAll select r;
+            if (!string.IsNullOrEmpty(search))
+            {
+                ReviewAllQuery = ReviewAllQuery.Where(r=>r.ApplicationUser.FirstName.Contains(search));
+            }
+            return View(ReviewAllQuery);
+        }
+
         // GET: Administrator/ReviewAll/Details/5
         public async Task<IActionResult> Details(int? id)
         {

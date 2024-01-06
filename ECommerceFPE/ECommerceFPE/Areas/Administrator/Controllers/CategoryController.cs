@@ -29,6 +29,17 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
                         View(await _context.Category.ToListAsync()) :
                         Problem("Entity set 'ECommerceDBContext.ProductCategory'  is null.");
         }
+        [HttpGet]
+        public IActionResult Index(string search)
+        {
+            ViewBag.GetSearch = search;
+            var CategoryQuery = from c in _context.Category select c;
+            if (!string.IsNullOrEmpty(search))
+            {
+                CategoryQuery = CategoryQuery.Where(c => c.CategoryName.Contains(search));
+            }
+            return View(CategoryQuery.AsNoTracking().ToList());
+        }
 
         // GET: Administrator/ProductCategory/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -168,7 +179,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             var productCategory = await _context.Category.FindAsync(id);
             if (productCategory != null)
             {
-                _context.Category.Remove(productCategory);
+                productCategory.IsDeleted= true;
                 await _context.SaveChangesAsync();
 
                 // Add SweetAlert confirmation message
@@ -177,7 +188,11 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
+        public IActionResult ShowSoftDeleted()
+        {
+            var softDeletedCategory = _context.Category.IgnoreQueryFilters().Where(p => p.IsDeleted).ToList();
+            return View(softDeletedCategory);
+        }
         private bool ProductCategoryExists(int id)
         {
             return (_context.Category?.Any(e => e.CategoryId == id)).GetValueOrDefault();

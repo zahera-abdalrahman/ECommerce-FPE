@@ -23,21 +23,34 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
         // GET: Administrator/Orders
         public async Task<IActionResult> Index()
         {
-            var eCommerceDBContext = _context.Order.Include(o => o.ApplicationUser)
-                .ToListAsync();
+            var eCommerceDBContext = _context.Orders.Include(o => o.Customer)
+                .Include(o => o.Products).ToListAsync();
             return View(await eCommerceDBContext);
+        }
+        [HttpGet]
+        public IActionResult Index(string search)
+        {
+            ViewBag.GetSearch = search;
+            var orderQuery=from o in _context.Order select o;
+            if (!string.IsNullOrEmpty(search))
+            {
+                orderQuery = orderQuery.Where(o => o.ApplicationUser.FirstName.Contains(search)&&
+                o.ApplicationUser.LastName.Contains(search));
+            }
+            return View(orderQuery);
         }
 
         // GET: Administrator/Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Order == null)
+            if (id == null || _context.Orders == null)
             {
                 return NotFound();
             }
 
-            var order = await _context.Order
-                .Include(o => o.ApplicationUser)
+            var order = await _context.Orders
+                .Include(o => o.Customer)
+                .Include(o=> o.Products)
                 .FirstOrDefaultAsync(m => m.OrderId == id);
             if (order == null)
             {
@@ -51,13 +64,13 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
         // GET: Administrator/Orders/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Order == null)
+            if (id == null || _context.Orders == null)
             {
                 return NotFound();
             }
 
-            var order = await _context.Order
-                .Include(o => o.ApplicationUser)
+            var order = await _context.Orders
+                .Include(o => o.Customer)
                 .FirstOrDefaultAsync(m => m.OrderId == id);
             if (order == null)
             {
@@ -72,23 +85,31 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Order == null)
+            if (_context.Orders == null)
             {
                 return Problem("Entity set 'ECommerceDBContext.Orders'  is null.");
             }
-            var order = await _context.Order.FindAsync(id);
+            var order = await _context.Orders.FindAsync(id);
             if (order != null)
             {
-                _context.Order.Remove(order);
+<<<<<<< Updated upstream
+                _context.Orders.Remove(order);
+=======
+                order.IsDeleted = true;
+>>>>>>> Stashed changes
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        public IActionResult ShowSoftDeleted()
+        {
+            var softDeletedOrders = _context.Order.IgnoreQueryFilters().Where(p => p.IsDeleted).ToList();
+            return View(softDeletedOrders);
+        }
         private bool OrderExists(int id)
         {
-          return (_context.Order?.Any(e => e.OrderId == id)).GetValueOrDefault();
+          return (_context.Orders?.Any(e => e.OrderId == id)).GetValueOrDefault();
         }
     }
 }
