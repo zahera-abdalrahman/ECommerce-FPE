@@ -6,6 +6,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css",
 =======
 <<<<<<< Updated upstream
@@ -61,6 +62,157 @@
 =======
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202394342AM.jpg",
       "PackagePath": "staticwebassets\\CategoryImg\\Image1229202394342AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\css\\main.css",
+>>>>>>> Stashed changes
+=======
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image11202491009PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image11202491009PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323341PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202323341PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323354PM.png",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202323354PM.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323410PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202323410PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323425PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202323425PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202394342AM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1229202394342AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315750PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1230202315750PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315807PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1230202315807PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315822PM.png",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1230202315822PM.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315840PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1230202315840PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315857PM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1230202315857PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1231202332834AM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image1231202332834AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image152024120450AM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image152024120450AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image152024120458AM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image152024120458AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image152024121820AM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image152024121820AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image152024121848AM.jpg",
+      "PackagePath": "staticwebassets\\CategoryImg\\Image152024121848AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image11202491031PM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image11202491031PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202320747AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202320747AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202320825AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202320825AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321045AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202321045AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321127PM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202321127PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321144PM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202321144PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321206PM.png",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202321206PM.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321223PM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202321223PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321248PM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202321248PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202322122AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202322122AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202322320AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202322320AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202323256AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202323256AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202323930AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1230202323930AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335245AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1231202335245AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335254AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1231202335254AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335311AM.png",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1231202335311AM.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335326AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1231202335326AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335357AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image1231202335357AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image132024124911PM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image132024124911PM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image162024105735AM.jpg",
+      "PackagePath": "staticwebassets\\ProductImg\\Image162024105735AM.jpg"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\about-1.png",
+      "PackagePath": "staticwebassets\\assets1\\about-1.png"
     },
     {
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\css\\main.css",
@@ -1065,6 +1217,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\cart.css",
       "PackagePath": "staticwebassets\\assets\\css\\cart.css"
     },
@@ -1077,6 +1230,17 @@
     {
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css",
 >>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\slider-3.png",
+      "PackagePath": "staticwebassets\\assets1\\slider-3.png"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\cart.css",
+      "PackagePath": "staticwebassets\\assets\\css\\cart.css"
+    },
+    {
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css",
 >>>>>>> Stashed changes
       "PackagePath": "staticwebassets\\assets\\css\\main.css"
     },
@@ -1110,7 +1274,10 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\bootstrap.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendors\\bootstrap.css"
     },
@@ -1119,6 +1286,9 @@
       "PackagePath": "staticwebassets\\assets\\css\\vendors\\bootstrap.css.map"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendors\\bootstrap.min.css"
@@ -1137,18 +1307,27 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\material-icon-round.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendors\\material-icon-round.css"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\normalize.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendors\\normalize.css"
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\perfect-scrollbar.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendors\\perfect-scrollbar.css"
     },
@@ -1157,6 +1336,9 @@
       "PackagePath": "staticwebassets\\assets\\css\\vendors\\select2.min.css"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\uicons-regular-straight.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendors\\uicons-regular-straight.css"
@@ -1303,7 +1485,10 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\material-icon\\MaterialIcons-Outlined.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\material-icon\\MaterialIcons-Outlined.ttf"
     },
@@ -1364,6 +1549,9 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\material-icon\\MaterialIcons.woff2"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\uicons\\uicons-regular-straight.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\uicons\\uicons-regular-straight.eot"
@@ -1542,7 +1730,10 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\brands\\brand-1.jpg",
       "PackagePath": "staticwebassets\\assets\\imgs\\brands\\brand-1.jpg"
     },
@@ -1703,6 +1894,9 @@
       "PackagePath": "staticwebassets\\assets\\imgs\\misc\\map.jpg"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\about-1.png",
       "PackagePath": "staticwebassets\\assets\\imgs\\page\\about-1.png"
@@ -1757,7 +1951,10 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\people\\avatar1.jpg",
       "PackagePath": "staticwebassets\\assets\\imgs\\people\\avatar1.jpg"
     },
@@ -1774,6 +1971,9 @@
       "PackagePath": "staticwebassets\\assets\\imgs\\people\\avatar4.jpg"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-1.jpg",
       "PackagePath": "staticwebassets\\assets\\imgs\\shop\\category-thumb-1.jpg"
@@ -2048,11 +2248,17 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-cn.png",
       "PackagePath": "staticwebassets\\assets\\imgs\\theme\\flag-cn.png"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-dt.png",
       "PackagePath": "staticwebassets\\assets\\imgs\\theme\\flag-dt.png"
@@ -2063,22 +2269,34 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-jp.png",
       "PackagePath": "staticwebassets\\assets\\imgs\\theme\\flag-jp.png"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-ru.png",
       "PackagePath": "staticwebassets\\assets\\imgs\\theme\\flag-ru.png"
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-us.png",
       "PackagePath": "staticwebassets\\assets\\imgs\\theme\\flag-us.png"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\google-play.jpg",
       "PackagePath": "staticwebassets\\assets\\imgs\\theme\\google-play.jpg"
@@ -2169,7 +2387,10 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\upload.svg",
       "PackagePath": "staticwebassets\\assets\\imgs\\theme\\upload.svg"
     },
@@ -2178,6 +2399,9 @@
       "PackagePath": "staticwebassets\\assets\\js\\custom-chart.js"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
@@ -2284,7 +2508,10 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\vendors\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendors\\bootstrap.bundle.min.js"
     },
@@ -2313,17 +2540,26 @@
       "PackagePath": "staticwebassets\\assets\\js\\vendors\\select2.min.js"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_functions.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\abstracts\\_functions.scss"
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_import-vendors.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\abstracts\\_import-vendors.scss"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_mixins.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\abstracts\\_mixins.scss"
@@ -2342,11 +2578,17 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\base\\_helpers.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\base\\_helpers.scss"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\base\\_typography.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\base\\_typography.scss"
@@ -2365,18 +2607,27 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_elements.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\components\\_elements.scss"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_form.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\components\\_form.scss"
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_forms.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\components\\_forms.scss"
     },
@@ -2389,17 +2640,26 @@
       "PackagePath": "staticwebassets\\assets\\sass\\components\\_lists.scss"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_misc.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\components\\_misc.scss"
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_navigation.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\components\\_navigation.scss"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_slider.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\components\\_slider.scss"
@@ -2418,7 +2678,10 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_layout-dark.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\layout\\_layout-dark.scss"
     },
@@ -2427,6 +2690,9 @@
       "PackagePath": "staticwebassets\\assets\\sass\\layout\\_layout.scss"
     },
     {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_navigation.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\layout\\_navigation.scss"
@@ -2993,10 +3259,14 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\index.html",
 =======
 <<<<<<< Updated upstream
       "Id": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\index.html",
+>>>>>>> Stashed changes
+=======
+      "Id": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\index.html",
 >>>>>>> Stashed changes
       "PackagePath": "staticwebassets\\index.html"
     },

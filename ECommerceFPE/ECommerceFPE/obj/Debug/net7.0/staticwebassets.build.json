@@ -1,6 +1,7 @@
 {
   "Version": 1,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "Hash": "udZbH1MlA6ooo2Si9ssk7+pZLakJeZGG+H1JEyo8bw8=",
 =======
 <<<<<<< Updated upstream
@@ -8,6 +9,9 @@
 =======
   "Hash": "jXiDaa+TQCkhS/Rf0WF6W+rUUfj1cq0qscigPx5A9jY=",
 >>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+  "Hash": "0Lu1BJKnErLEBX8jCN/cVXwShogPAYCXwLxR5vPWkf0=",
 >>>>>>> Stashed changes
   "Source": "ECommerceFPE",
   "BasePath": "_content/ECommerceFPE",
@@ -1204,6 +1208,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -1213,11 +1218,19 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\cart.css",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/css/cart.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1226,6 +1239,7 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\cart.css"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\cart.css",
@@ -1253,6 +1267,12 @@
       "SourceType": "Discovered",
 >>>>>>> Stashed changes
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\main.css",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/css/main.css",
       "AssetKind": "All",
@@ -1402,6 +1422,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\bootstrap.min.css",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -1411,6 +1432,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\bootstrap.css",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/css/vendors/bootstrap.css",
       "AssetKind": "All",
@@ -1449,6 +1476,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/css/vendors/bootstrap.min.css",
@@ -1523,6 +1553,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\normalize.css",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -1532,6 +1563,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\material-icon-round.css",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/css/vendors/material-icon-round.css",
       "AssetKind": "All",
@@ -1551,6 +1588,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/css/vendors/normalize.css",
@@ -1568,6 +1608,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\uicons-regular-straight.css",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -1577,6 +1618,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\css\\vendors\\perfect-scrollbar.css",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/css/vendors/perfect-scrollbar.css",
       "AssetKind": "All",
@@ -1615,6 +1662,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/css/vendors/uicons-regular-straight.css",
@@ -2297,6 +2347,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\uicons\\uicons-regular-straight.eot",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -2306,6 +2357,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\fonts\\material-icon\\MaterialIcons.ttf",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/fonts/material-icon/MaterialIcons.ttf",
       "AssetKind": "All",
@@ -2591,6 +2648,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/fonts/uicons/uicons-regular-straight.eot",
@@ -3425,6 +3485,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\page\\about-1.png",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -3434,6 +3495,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\brands\\brand.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/brands/brand.jpg",
       "AssetKind": "All",
@@ -4194,6 +4261,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/page/about-1.png",
@@ -4439,6 +4509,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\shop\\category-thumb-1.jpg",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -4448,6 +4519,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\people\\avatar1.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/people/avatar1.jpg",
       "AssetKind": "All",
@@ -4524,6 +4601,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/shop/category-thumb-1.jpg",
@@ -5814,6 +5894,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-dt.png",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -5823,6 +5904,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-cn.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/theme/flag-cn.png",
       "AssetKind": "All",
@@ -5842,6 +5929,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/theme/flag-dt.png",
@@ -5878,6 +5968,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-ru.png",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -5887,6 +5978,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-jp.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/theme/flag-jp.png",
       "AssetKind": "All",
@@ -5906,6 +6003,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/theme/flag-ru.png",
@@ -5923,6 +6023,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\google-play.jpg",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -5932,6 +6033,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\flag-us.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/theme/flag-us.png",
       "AssetKind": "All",
@@ -5951,6 +6058,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/theme/google-play.jpg",
@@ -6367,6 +6477,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\main.js",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -6376,6 +6487,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\imgs\\theme\\upload.svg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/imgs/theme/upload.svg",
       "AssetKind": "All",
@@ -6414,6 +6531,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/js/main.js",
@@ -6906,6 +7026,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_functions.scss",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -6915,6 +7036,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\js\\vendors\\bootstrap.bundle.min.js",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/js/vendors/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -7048,6 +7175,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/abstracts/_functions.scss",
@@ -7065,6 +7195,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_mixins.scss",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -7074,6 +7205,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\abstracts\\_import-vendors.scss",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/abstracts/_import-vendors.scss",
       "AssetKind": "All",
@@ -7093,6 +7230,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/abstracts/_mixins.scss",
@@ -7167,6 +7307,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\base\\_typography.scss",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -7176,6 +7317,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\base\\_helpers.scss",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/base/_helpers.scss",
       "AssetKind": "All",
@@ -7195,6 +7342,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/base/_typography.scss",
@@ -7269,6 +7419,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_form.scss",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -7278,6 +7429,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_elements.scss",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/components/_elements.scss",
       "AssetKind": "All",
@@ -7297,6 +7454,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/components/_form.scss",
@@ -7314,6 +7474,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_misc.scss",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -7323,6 +7484,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_forms.scss",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/components/_forms.scss",
       "AssetKind": "All",
@@ -7380,6 +7547,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/components/_misc.scss",
@@ -7397,6 +7567,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_slider.scss",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -7406,6 +7577,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\components\\_navigation.scss",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/components/_navigation.scss",
       "AssetKind": "All",
@@ -7425,6 +7602,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/components/_slider.scss",
@@ -7499,6 +7679,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_navigation.scss",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -7508,6 +7689,12 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets\\sass\\layout\\_layout.scss",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/layout/_layout.scss",
       "AssetKind": "All",
@@ -7546,6 +7733,9 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "assets/sass/layout/_navigation.scss",
@@ -7734,11 +7924,33 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\main.css",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
 =======
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\about-1.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "assets1/about-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets1\\about-1.png"
+    },
+    {
+>>>>>>> Stashed changes
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\css\\main.css",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -12490,15 +12702,62 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323341PM.jpg",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\assets1\\slider-3.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "assets1/slider-3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets1\\slider-3.png"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image11202491009PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image11202491009PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image11202491009PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323341PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "CategoryImg/Image1229202323341PM.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -12507,15 +12766,24 @@
       "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1229202323341PM.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323354PM.png",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323354PM.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "CategoryImg/Image1229202323354PM.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -12524,15 +12792,24 @@
       "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1229202323354PM.png"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323410PM.jpg",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323410PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "CategoryImg/Image1229202323410PM.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -12541,15 +12818,24 @@
       "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1229202323410PM.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323425PM.jpg",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202323425PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "CategoryImg/Image1229202323425PM.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -12558,15 +12844,24 @@
       "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1229202323425PM.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202394342AM.jpg",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202394342AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "CategoryImg/Image1229202394342AM.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -12575,9 +12870,13 @@
       "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1229202394342AM.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\main.css",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1229202394342AM.jpg",
+>>>>>>> Stashed changes
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315750PM.jpg",
 >>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -12595,6 +12894,184 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1229202394342AM.jpg"
+    },
+    {
+<<<<<<< Updated upstream
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\main.css",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315807PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image1230202315807PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1230202315807PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315822PM.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image1230202315822PM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1230202315822PM.png"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315840PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image1230202315840PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1230202315840PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1230202315857PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image1230202315857PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1230202315857PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image1231202332834AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image1231202332834AM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image1231202332834AM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image152024120450AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image152024120450AM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image152024120450AM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image152024120458AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image152024120458AM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image152024120458AM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image152024121820AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image152024121820AM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image152024121820AM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\CategoryImg\\Image152024121848AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "CategoryImg/Image152024121848AM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CategoryImg\\Image152024121848AM.jpg"
     },
     {
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\evara-backend\\assets\\css\\main.css",
@@ -15088,10 +15565,14 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\index.html",
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\index.html",
@@ -15311,6 +15792,8 @@
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -15329,6 +15812,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202320747AM.jpg",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202365741AM.jpg",
@@ -15336,6 +15820,31 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image11202491031PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image11202491031PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image11202491031PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202320747AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "ProductImg/Image1230202320747AM.jpg",
       "AssetKind": "All",
@@ -15352,9 +15861,13 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202320825AM.jpg",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202371505AM.jpg",
+>>>>>>> Stashed changes
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202320825AM.jpg",
 >>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -15375,9 +15888,13 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321045AM.jpg",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202371618AM.jpg",
+>>>>>>> Stashed changes
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321045AM.jpg",
 >>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -15398,6 +15915,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202322122AM.jpg",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202372948AM.jpg",
@@ -15405,6 +15923,107 @@
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321127PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image1230202321127PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image1230202321127PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321144PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image1230202321144PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image1230202321144PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321206PM.png",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image1230202321206PM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image1230202321206PM.png"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321223PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image1230202321223PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image1230202321223PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202321248PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image1230202321248PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image1230202321248PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202322122AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/ECommerceFPE",
       "RelativePath": "ProductImg/Image1230202322122AM.jpg",
       "AssetKind": "All",
@@ -15421,9 +16040,13 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202322320AM.jpg",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202374543AM.png",
+>>>>>>> Stashed changes
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202322320AM.jpg",
 >>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -15444,9 +16067,13 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202323256AM.jpg",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202385617AM.jpg",
+>>>>>>> Stashed changes
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202323256AM.jpg",
 >>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -15467,9 +16094,13 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Identity": "F:\\Orange Coding School\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202323930AM.jpg",
 =======
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202385624AM.jpg",
+>>>>>>> Stashed changes
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1230202323930AM.jpg",
 >>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
@@ -15492,7 +16123,11 @@
       "OriginalItemSpec": "wwwroot\\main\\Image1229202385624AM.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202393634AM.jpg",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335245AM.jpg",
+>>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
@@ -15511,7 +16146,11 @@
       "OriginalItemSpec": "wwwroot\\main\\Image1229202393634AM.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\main\\Image1229202394150AM.jpg",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335254AM.jpg",
+>>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
@@ -15530,7 +16169,11 @@
       "OriginalItemSpec": "wwwroot\\main\\Image1229202394150AM.jpg"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\page-contact.html",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335311AM.png",
+>>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
@@ -15549,7 +16192,11 @@
       "OriginalItemSpec": "wwwroot\\page-contact.html"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\page-login.html",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335326AM.jpg",
+>>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
@@ -15568,7 +16215,11 @@
       "OriginalItemSpec": "wwwroot\\page-login.html"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\page-register.html",
+=======
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image1231202335357AM.jpg",
+>>>>>>> Stashed changes
       "SourceId": "ECommerceFPE",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
@@ -15584,8 +16235,50 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< Updated upstream
       "OriginalItemSpec": "wwwroot\\page-register.html"
 >>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image1231202335357AM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image132024124911PM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image132024124911PM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image132024124911PM.jpg"
+    },
+    {
+      "Identity": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\ProductImg\\Image162024105735AM.jpg",
+      "SourceId": "ECommerceFPE",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OrangeTasks\\ASPNET\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\wwwroot\\",
+      "BasePath": "_content/ECommerceFPE",
+      "RelativePath": "ProductImg/Image162024105735AM.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImg\\Image162024105735AM.jpg"
 >>>>>>> Stashed changes
     }
   ]
