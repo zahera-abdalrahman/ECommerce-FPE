@@ -45,7 +45,7 @@
                                         <span class="old-price">$@product.Price</span>
                                     </div>
                                     <div class="product-action-1 show">
-                                        <a aria-label="Add To Cart" class="action-btn hover-up" asp-action="AddToCart" asp-controller="Home" asp-route-productId="@product.ProductId"><i class="fi-rs-shopping-bag-add"></i></a>
+                                        <a aria-label="Add To Cart" class="action-btn hover-up" asp-controller="Home" asp-action="Cart" asp-route-productId="@product.ProductId" asp-route-change="add"><i class="fi-rs-shopping-bag-add"></i></a>
                                     </div>
                                 </div>
                             </div>

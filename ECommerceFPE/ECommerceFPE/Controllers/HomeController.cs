@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using ECommerceFPE.Data;
 using ECommerceFPE.Models;
 using ECommerceFPE.Models.ViewModels;
@@ -315,6 +316,8 @@ namespace ECommerceFPE.Controllers
             );
         }
 
+
+        [Authorize]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Cart(int productId, string change)
         {
@@ -332,7 +335,8 @@ namespace ECommerceFPE.Controllers
                     .Where(ci => ci.CartId == cart.CartId)
                     .ToList();
 
-                // Pass cart data to the view using ViewBag
+                ViewBag.CartItemCount = cartItems.Count;
+
                 ViewBag.CartItems = cartItems;
 
                 return View("Cart");

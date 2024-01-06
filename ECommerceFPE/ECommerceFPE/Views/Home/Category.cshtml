@@ -58,8 +58,7 @@
                                 </div>
                                 <p class="mt-15">@product.Description</p>
                                 <div class="product-action-1 show">
-                                    <a aria-label="Buy now" class="action-btn" href="shop-cart.html"><i class="fi-rs-shopping-bag-add"></i>Add to Cart</a>
-
+                                    <a aria-label="Buy now" class="action-btn" asp-controller="Home" asp-action="Cart" asp-route-productId="@product.ProductId" asp-route-change="add"><i class="fi-rs-shopping-bag-add"></i>Add to Cart</a>
                                 </div>
                             </div>
                         </div>
