@@ -197,6 +197,68 @@ namespace ECommerceFPE.Controllers
             return RedirectToAction("About");
 
         }
+        ////////////////////////////////////////////////////////
+        [HttpGet]
+        public async Task<IActionResult> Profile()
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                return View();
+            }
+
+            var userOrders = _context.Order.Where(o => o.UserId == user.Id).ToList();
+
+            var profileViewModel = new ProfileViewModel
+            {
+                User = user,
+                Orders = userOrders,
+                EditModel = new EditViewModel
+                {
+                    Email = user.Email,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Address = user.Address,
+                }
+            };
+
+            return View(profileViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(ProfileViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.GetUserAsync(User);
+
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                user.FirstName = model.EditModel.FirstName;
+                user.LastName = model.EditModel.LastName;
+                user.Address = model.EditModel.Address;              
+
+                var result = await _userManager.UpdateAsync(user);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Profile");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+
+            return View("Profile", model);
+        }
+
+
 
         ////////////////////////////////////////////////////////
         public IActionResult Privacy()
@@ -377,44 +439,7 @@ namespace ECommerceFPE.Controllers
             return View();
         }
 
-        // public async Task<IActionResult> RemoveFromCart(int productId)
-        // {
-        //     ApplicationUser user = await _userManager.GetUserAsync(User);
-        //
-        //     Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
-        //     //
-        //     // if (cart == null)
-        //     // {
-        //     //     return View("AddToCart");
-        //     // }
-        //
-        //     CartItems cartItem = _context
-        //         .CartItems
-        //         .FirstOrDefault(ci => ci.CartId == cart.CartId && ci.ProductId == productId);
-        //
-        //     // if (cartItem == null)
-        //     // {
-        //     //     return View("AddToCart");
-        //     // }
-        //
-        //     cartItem.Quantity--;
-        //
-        //     double productPrice = GetProductPrice(productId);
-        //     cart.Total -= productPrice;
-        //
-        //     _context.SaveChanges();
-        //
-        //     var cartItems = _context
-        //         .CartItems
-        //         .Include(ci => ci.ProductCatalog)
-        //         .Where(ci => ci.CartId == cart.CartId)
-        //         .ToList();
-        //
-        //     // Pass cart data to the view using ViewBag
-        //     ViewBag.CartItems = cartItems;
-        //
-        //     return View("RemoveFromCart");
-        // }
+      
 
         private double GetProductPrice(int productId)
         {

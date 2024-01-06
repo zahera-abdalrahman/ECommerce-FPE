@@ -49,13 +49,13 @@
                                             <a asp-action="Edit" asp-route-id="@item.CategoryId" class="btn btn-sm font-sm rounded btn-brand">
                                                 <i class="material-icons md-edit"></i> Edit
                                             </a>
-                                            <a asp-action="Details" asp-route-id="@item.CategoryId" class="btn btn-sm font-sm btn-light rounded">
+                                            <a asp-action="Details" asp-route-id="@item.CategoryId" class="btn btn-sm font-sm rounded btn-brand">
                                                 Details
                                             </a>
                                             <form id="deleteForm-@item.CategoryId" method="post" asp-action="Delete" asp-route-id="@item.CategoryId" class="d-inline">
                                                 @Html.HiddenFor(modelItem => item.CategoryId)
                                                 <button type="submit" class="btn btn-sm font-sm btn-light rounded" style="display: none;"></button>
-                                                <a href="#" class="btn btn-sm font-sm btn-light rounded" onclick="confirmDelete(@item.CategoryId)">
+                                                <a href="#" class="btn btn-sm font-sm rounded btn-danger" onclick="confirmDelete(@item.CategoryId)">
                                                     <i class="material-icons md-delete_forever"></i> Delete
                                                 </a>
                                             </form>

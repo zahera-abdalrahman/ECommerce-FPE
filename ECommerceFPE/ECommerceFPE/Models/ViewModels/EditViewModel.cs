@@ -16,6 +16,12 @@ namespace ECommerceFPE.Models.ViewModels
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
+
+        [DataType(DataType.Password)]
+        [Display(Name = "Current Password")]
+        public string CurrentPassword { get; set; }
+
+
         [Required]
         public string Address { get; set; }
 

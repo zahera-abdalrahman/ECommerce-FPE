@@ -120,7 +120,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Cart", (string)null);
+                    b.ToTable("Cart");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.CartItems", b =>
@@ -146,7 +146,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("CartItems", (string)null);
+                    b.ToTable("CartItems");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Category", b =>
@@ -167,7 +167,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Category", (string)null);
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Order", b =>
@@ -205,7 +205,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("CartId");
 
-                    b.ToTable("Order", (string)null);
+                    b.ToTable("Order");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.OrderItems", b =>
@@ -237,7 +237,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderItems", (string)null);
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Payment", b =>
@@ -265,7 +265,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("ApplicationUserId");
 
-                    b.ToTable("Payment", (string)null);
+                    b.ToTable("Payment");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Product", b =>
@@ -304,7 +304,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Product", (string)null);
+                    b.ToTable("Product");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Review", b =>
@@ -341,7 +341,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Review", (string)null);
+                    b.ToTable("Review");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.ReviewAll", b =>
@@ -359,9 +359,6 @@ namespace ECommerceFPE.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Rating")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("ReviewDate")
                         .HasColumnType("datetime2");
 
@@ -376,7 +373,7 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("ApplicationUserId");
 
-                    b.ToTable("ReviewAll", (string)null);
+                    b.ToTable("ReviewAll");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

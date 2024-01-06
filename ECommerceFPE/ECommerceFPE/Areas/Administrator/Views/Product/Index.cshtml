@@ -72,16 +72,16 @@
                                     </td>
                                     <td>
                                         <div class="text-end">
-                                        <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand"><i class="material-icons md-edit"></i>Edit</a>
+                                            <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand"><i class="material-icons md-edit"></i>Edit</a>
                                         <a asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand">Details</a>
                                             <form id="deleteForm-@item.ProductId" method="post" asp-action="Delete" asp-route-id="@item.ProductId" class="d-inline">
                                                 @Html.HiddenFor(modelItem => item.ProductId)
                                                 <button type="submit" class="btn btn-sm font-sm btn-light rounded" style="display: none;"></button>
-                                                <a href="#" class="btn btn-sm font-sm btn-light rounded" onclick="confirmDelete(@item.ProductId)">
+                                                <a href="#" class="btn btn-sm font-sm rounded btn-danger" onclick="confirmDelete(@item.ProductId)">
                                                     <i class="material-icons md-delete_forever"></i> Delete
                                                 </a>
                                             </form>
-                                        <a asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand"><i class="material-icons md-delete_forever"></i>Delete</a>
+                                           
                                         </div>
                                     </td>
                                 </tr>
