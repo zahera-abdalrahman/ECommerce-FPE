@@ -49,6 +49,7 @@ namespace ECommerceFPE.Data
 
             // Configure Identity related entities (if needed)
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ECommerceDBContext).Assembly);
+<<<<<<< Updated upstream
             modelBuilder.Entity<Customer>()
        .HasOne(c => c.CreditCard)
        .WithOne(cc => cc.Customer)
@@ -62,6 +63,16 @@ namespace ECommerceFPE.Data
             
 
             //modelBuilder.Entity<OrderItems>().HasKey(o => o.OrderItemsId);
+=======
+            modelBuilder.Entity<Product>().HasQueryFilter(p => !p.IsDeleted);
+            modelBuilder.Entity<Category>().HasQueryFilter(p => !p.IsDeleted);
+            modelBuilder.Entity<Order>().HasQueryFilter(p => !p.IsDeleted);
+
+            //modelBuilder.Entity<ApplicationUser>()
+            //    .HasOne(c => c.CreditCard)
+            //    .WithOne(cc => cc.ApplicationUser)
+            //    .HasForeignKey<CreditCard>(cc => cc.CustomerId);
+>>>>>>> Stashed changes
             // Add your additional configurations here if necessary
         }
     }

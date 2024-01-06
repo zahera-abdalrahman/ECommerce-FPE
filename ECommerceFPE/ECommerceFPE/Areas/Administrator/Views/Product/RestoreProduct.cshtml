@@ -4,9 +4,16 @@
     ViewData["Title"] = "RestoreProduct";
 }
 
+<<<<<<< Updated upstream:ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/RestoreProduct.cshtml
 <h1>RestoreEmployee</h1>
 
 
+=======
+<form method="get" asp-action="Index">
+    <input type="search" name="search" value="@ViewData["GetSearch"]" placeholder="Enter Product Name" style="width:300px;height:30px;" />
+    <input type="submit" class="btn btn-primary" value="Search" />
+</form>
+>>>>>>> Stashed changes:ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/Index.cshtml
 <section class="section">
     <div class="row">
         <div class="col-lg-12">
@@ -72,8 +79,21 @@
                                     </td>
                                     <td>
                                         <div class="text-end">
+<<<<<<< Updated upstream:ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/RestoreProduct.cshtml
                                             <a asp-action="ConfirmRestoreProduct" asp-controller="Product" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand"><i class="material-icons md-edit"></i>Restore Employee</a>
                                         </div>
+=======
+                                        <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand"><i class="material-icons md-edit"></i>Edit</a>
+                                        <a asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand">Details</a>
+                                            <form id="deleteForm-@item.ProductId" method="post" asp-action="Delete" asp-route-id="@item.ProductId" class="d-inline">
+                                                @Html.HiddenFor(modelItem => item.ProductId)
+                                                <button type="submit" class="btn btn-sm font-sm btn-light rounded" style="display: none;"></button>
+                                                <a href="#" class="btn btn-sm font-sm btn-light rounded" onclick="confirmDelete(@item.ProductId)">
+                                                    <i class="material-icons md-delete_forever"></i> Delete
+                                                </a>
+                                            </form>
+                                    </div>
+>>>>>>> Stashed changes:ECommerceFPE/ECommerceFPE/Areas/Administrator/Views/Product/Index.cshtml
                                     </td>
                                 </tr>
                             }
@@ -85,3 +105,23 @@
         </div>
     </div>
 </section>
+@section scripts {
+    <script>
+        function confirmDelete(categoryId) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You won\'t be able to revert this!',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // If confirmed, submit the form
+                    document.getElementById('deleteForm-' + categoryId).submit();
+                }
+            });
+        }
+    </script>
+}

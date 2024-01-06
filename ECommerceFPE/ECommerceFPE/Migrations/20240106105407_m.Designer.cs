@@ -4,6 +4,7 @@ using ECommerceFPE.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerceFPE.Migrations
 {
     [DbContext(typeof(ECommerceDBContext))]
-    partial class ECommerceDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240106105407_m")]
+    partial class m
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,12 +33,12 @@ namespace ECommerceFPE.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
+                    b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Country")
-                        .IsRequired()
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -49,10 +52,6 @@ namespace ECommerceFPE.Migrations
                         .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
-
-                    b.Property<string>("Gender")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -113,14 +112,18 @@ namespace ECommerceFPE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"));
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
+                    b.Property<double>("Total")
+                        .HasColumnType("float");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("CartId");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("UserId");
 
-                    b.ToTable("Carts");
+                    b.ToTable("Cart");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.CartItems", b =>
@@ -134,9 +137,6 @@ namespace ECommerceFPE.Migrations
                     b.Property<int>("CartId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductCatalogProductId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
@@ -147,67 +147,33 @@ namespace ECommerceFPE.Migrations
 
                     b.HasIndex("CartId");
 
-                    b.HasIndex("ProductCatalogProductId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("CartItems");
                 });
 
-            modelBuilder.Entity("ECommerceFPE.Models.CreditCard", b =>
+            modelBuilder.Entity("ECommerceFPE.Models.Category", b =>
                 {
-                    b.Property<int>("CreditCardID")
+                    b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CreditCardID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
 
-                    b.Property<string>("CardNumber")
+                    b.Property<string>("CategoryName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("ExpiryDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("CreditCardID");
-
-                    b.HasIndex("CustomerId")
-                        .IsUnique();
-
-                    b.ToTable("CreditCards");
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.Customer", b =>
-                {
-                    b.Property<int>("CustomerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int>("CreditCardID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CustomerName")
+                    b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< Updated upstream
-                    b.HasKey("CustomerId");
-=======
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.HasKey("CategoryId");
->>>>>>> Stashed changes
 
-                    b.ToTable("Customers");
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Order", b =>
@@ -218,7 +184,10 @@ namespace ECommerceFPE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
 
-                    b.Property<int>("CustomerId")
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("CartId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
@@ -235,26 +204,32 @@ namespace ECommerceFPE.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("OrderId");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("ApplicationUserId");
 
-                    b.ToTable("Orders");
+                    b.HasIndex("CartId");
+
+                    b.ToTable("Order");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.OrderItems", b =>
                 {
-                    b.Property<int>("OrderId")
+                    b.Property<int>("OrderItemsId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("OrderItemId")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderItemsId"));
+
+                    b.Property<int>("OrderId")
                         .HasColumnType("int");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
-
-                    b.Property<int>("ProductCatalogProductId")
-                        .HasColumnType("int");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
@@ -265,9 +240,11 @@ namespace ECommerceFPE.Migrations
                     b.Property<double>("TotalPrice")
                         .HasColumnType("float");
 
+                    b.HasKey("OrderItemsId");
+
                     b.HasIndex("OrderId");
 
-                    b.HasIndex("ProductCatalogProductId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("OrderItems");
                 });
@@ -280,49 +257,27 @@ namespace ECommerceFPE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentId"));
 
-                    b.Property<int>("CreditCardID")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("CustomerId")
-                        .HasColumnType("int");
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("PaymentId");
 
-                    b.HasIndex("CreditCardID");
+                    b.HasIndex("ApplicationUserId");
 
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Payments");
+                    b.ToTable("Payment");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Product", b =>
-                {
-                    b.Property<int>("ProductId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"));
-
-                    b.Property<string>("ProductImg")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProductInStock")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ProductName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("ProductPrice")
-                        .HasColumnType("float");
-
-                    b.HasKey("ProductId");
-
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.ProductCatalog", b =>
                 {
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
@@ -337,17 +292,18 @@ namespace ECommerceFPE.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("DiscountPercent")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("DiscountPercent")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
-
-                    b.Property<int>("ProductCategoryCategoryId")
-                        .HasColumnType("int");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
@@ -358,54 +314,9 @@ namespace ECommerceFPE.Migrations
 
                     b.HasKey("ProductId");
 
-                    b.HasIndex("ProductCategoryCategoryId");
+                    b.HasIndex("CategoryId");
 
-                    b.ToTable("ProductCatalog");
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.ProductCategory", b =>
-                {
-                    b.Property<int>("CategoryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
-
-                    b.Property<string>("CategoryName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CategoryId");
-
-                    b.ToTable("ProductCategory");
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.ProductImages", b =>
-                {
-                    b.Property<int>("ImageId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ImageId"));
-
-                    b.Property<int>("ImageOrder")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProductCatalogProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ImageId");
-
-                    b.HasIndex("ProductCatalogProductId");
-
-                    b.ToTable("ProductImages");
+                    b.ToTable("Product");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Review", b =>
@@ -416,11 +327,8 @@ namespace ECommerceFPE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReviewId"));
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductCatalogProductId")
-                        .HasColumnType("int");
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
@@ -435,13 +343,49 @@ namespace ECommerceFPE.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ReviewId");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("ApplicationUserId");
 
-                    b.HasIndex("ProductCatalogProductId");
+                    b.HasIndex("ProductId");
 
-                    b.ToTable("Reviews");
+                    b.ToTable("Review");
+                });
+
+            modelBuilder.Entity("ECommerceFPE.Models.ReviewAll", b =>
+                {
+                    b.Property<int>("ReviewId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReviewId"));
+
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReviewDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isActive")
+                        .HasColumnType("bit");
+
+                    b.HasKey("ReviewId");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("ReviewAll");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -577,43 +521,28 @@ namespace ECommerceFPE.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("OrderProduct", b =>
-                {
-                    b.Property<int>("OrdersOrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductsProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrdersOrderId", "ProductsProductId");
-
-                    b.HasIndex("ProductsProductId");
-
-                    b.ToTable("OrderProduct");
-                });
-
             modelBuilder.Entity("ECommerceFPE.Models.Cart", b =>
                 {
-                    b.HasOne("ECommerceFPE.Models.Customer", "Customer")
+                    b.HasOne("ECommerceFPE.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
-                        .HasForeignKey("CustomerId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.CartItems", b =>
                 {
                     b.HasOne("ECommerceFPE.Models.Cart", "Cart")
-                        .WithMany("CartItems")
+                        .WithMany()
                         .HasForeignKey("CartId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ECommerceFPE.Models.ProductCatalog", "ProductCatalog")
+                    b.HasOne("ECommerceFPE.Models.Product", "ProductCatalog")
                         .WithMany()
-                        .HasForeignKey("ProductCatalogProductId")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -622,26 +551,21 @@ namespace ECommerceFPE.Migrations
                     b.Navigation("ProductCatalog");
                 });
 
-            modelBuilder.Entity("ECommerceFPE.Models.CreditCard", b =>
-                {
-                    b.HasOne("ECommerceFPE.Models.Customer", "Customer")
-                        .WithOne("CreditCard")
-                        .HasForeignKey("ECommerceFPE.Models.CreditCard", "CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-                });
-
             modelBuilder.Entity("ECommerceFPE.Models.Order", b =>
                 {
-                    b.HasOne("ECommerceFPE.Models.Customer", "Customer")
-                        .WithMany("Orders")
-                        .HasForeignKey("CustomerId")
+                    b.HasOne("ECommerceFPE.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId");
+
+                    b.HasOne("ECommerceFPE.Models.Cart", "Cart")
+                        .WithMany()
+                        .HasForeignKey("CartId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.Navigation("ApplicationUser");
+
+                    b.Navigation("Cart");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.OrderItems", b =>
@@ -652,9 +576,9 @@ namespace ECommerceFPE.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ECommerceFPE.Models.ProductCatalog", "ProductCatalog")
+                    b.HasOne("ECommerceFPE.Models.Product", "ProductCatalog")
                         .WithMany()
-                        .HasForeignKey("ProductCatalogProductId")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -665,58 +589,48 @@ namespace ECommerceFPE.Migrations
 
             modelBuilder.Entity("ECommerceFPE.Models.Payment", b =>
                 {
-                    b.HasOne("ECommerceFPE.Models.CreditCard", "CreditCard")
+                    b.HasOne("ECommerceFPE.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
-                        .HasForeignKey("CreditCardID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ApplicationUserId");
 
-                    b.HasOne("ECommerceFPE.Models.Customer", null)
-                        .WithMany("Payments")
-                        .HasForeignKey("CustomerId");
-
-                    b.Navigation("CreditCard");
+                    b.Navigation("ApplicationUser");
                 });
 
-            modelBuilder.Entity("ECommerceFPE.Models.ProductCatalog", b =>
+            modelBuilder.Entity("ECommerceFPE.Models.Product", b =>
                 {
-                    b.HasOne("ECommerceFPE.Models.ProductCategory", "ProductCategory")
-                        .WithMany("ProductCatalogs")
-                        .HasForeignKey("ProductCategoryCategoryId")
+                    b.HasOne("ECommerceFPE.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ProductCategory");
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.ProductImages", b =>
-                {
-                    b.HasOne("ECommerceFPE.Models.ProductCatalog", "ProductCatalog")
-                        .WithMany("ProductImages")
-                        .HasForeignKey("ProductCatalogProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ProductCatalog");
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.Review", b =>
                 {
-                    b.HasOne("ECommerceFPE.Models.Customer", "Customer")
-                        .WithMany("Reviews")
-                        .HasForeignKey("CustomerId")
+                    b.HasOne("ECommerceFPE.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId");
+
+                    b.HasOne("ECommerceFPE.Models.Product", "ProductCatalog")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ECommerceFPE.Models.ProductCatalog", "ProductCatalog")
-                        .WithMany("Reviews")
-                        .HasForeignKey("ProductCatalogProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
+                    b.Navigation("ApplicationUser");
 
                     b.Navigation("ProductCatalog");
+                });
+
+            modelBuilder.Entity("ECommerceFPE.Models.ReviewAll", b =>
+                {
+                    b.HasOne("ECommerceFPE.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId");
+
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -768,50 +682,6 @@ namespace ECommerceFPE.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("OrderProduct", b =>
-                {
-                    b.HasOne("ECommerceFPE.Models.Order", null)
-                        .WithMany()
-                        .HasForeignKey("OrdersOrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ECommerceFPE.Models.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.Cart", b =>
-                {
-                    b.Navigation("CartItems");
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.Customer", b =>
-                {
-                    b.Navigation("CreditCard")
-                        .IsRequired();
-
-                    b.Navigation("Orders");
-
-                    b.Navigation("Payments");
-
-                    b.Navigation("Reviews");
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.ProductCatalog", b =>
-                {
-                    b.Navigation("ProductImages");
-
-                    b.Navigation("Reviews");
-                });
-
-            modelBuilder.Entity("ECommerceFPE.Models.ProductCategory", b =>
-                {
-                    b.Navigation("ProductCatalogs");
                 });
 #pragma warning restore 612, 618
         }

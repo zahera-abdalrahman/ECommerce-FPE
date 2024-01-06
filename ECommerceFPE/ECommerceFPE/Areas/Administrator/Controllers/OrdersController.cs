@@ -27,6 +27,18 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
                 .Include(o => o.Products).ToListAsync();
             return View(await eCommerceDBContext);
         }
+        [HttpGet]
+        public IActionResult Index(string search)
+        {
+            ViewBag.GetSearch = search;
+            var orderQuery=from o in _context.Order select o;
+            if (!string.IsNullOrEmpty(search))
+            {
+                orderQuery = orderQuery.Where(o => o.ApplicationUser.FirstName.Contains(search)&&
+                o.ApplicationUser.LastName.Contains(search));
+            }
+            return View(orderQuery);
+        }
 
         // GET: Administrator/Orders/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -80,13 +92,21 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             var order = await _context.Orders.FindAsync(id);
             if (order != null)
             {
+<<<<<<< Updated upstream
                 _context.Orders.Remove(order);
+=======
+                order.IsDeleted = true;
+>>>>>>> Stashed changes
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        public IActionResult ShowSoftDeleted()
+        {
+            var softDeletedOrders = _context.Order.IgnoreQueryFilters().Where(p => p.IsDeleted).ToList();
+            return View(softDeletedOrders);
+        }
         private bool OrderExists(int id)
         {
           return (_context.Orders?.Any(e => e.OrderId == id)).GetValueOrDefault();

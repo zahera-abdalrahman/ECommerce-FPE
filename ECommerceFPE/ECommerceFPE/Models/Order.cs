@@ -17,6 +17,13 @@ namespace ECommerceFPE.Models
         [Required]
         public string OrderStatus { get; set; }
 
+<<<<<<< Updated upstream
+=======
+      
+        public int CartId { get; set; }
+        public  Cart Cart { get; set; }
+
+>>>>>>> Stashed changes
         // Foreign Keys
         [Required]
         public int CustomerId { get; set; }
@@ -25,5 +32,10 @@ namespace ECommerceFPE.Models
 
         // Collection Navigation Properties
 
+<<<<<<< Updated upstream
+=======
+        public ApplicationUser ApplicationUser { get; set; }
+        public bool IsDeleted { get; set; }
+>>>>>>> Stashed changes
     }
 }
