@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using ECommerceFPE.Data;
 using ECommerceFPE.Models;
+using ECommerceFPE.Models.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -301,6 +302,67 @@ namespace ECommerceFPE.Controllers
             ViewBag.CartItems = cartItemsModified;
 
             return View("Cart");
+        }
+
+        public async Task<IActionResult> Checkout(PaymentViewModel model)
+        {
+            ApplicationUser user = await _userManager.GetUserAsync(User);
+
+            Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
+
+            var cartItems = _context
+                .CartItems
+                .Include(ci => ci.ProductCatalog)
+                .Where(ci => ci.CartId == cart.CartId)
+                .ToList();
+
+            // Pass cart data to the view using ViewBag
+            ViewBag.CartItems = cartItems;
+
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            return RedirectToAction("SuccessfulOrder");
+        }
+
+        public async Task<IActionResult> SuccessfulOrder()
+        {
+            // Get the current user
+            ApplicationUser user = await _userManager.GetUserAsync(User);
+
+            // Get the cart for the current user
+            Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
+
+            if (cart == null)
+            {
+                // Handle the case when the cart is not found
+                return NotFound();
+            }
+
+            // Create a new order
+            Order order = new Order
+            {
+                OrderDate = DateTime.Now,
+                TotalAmount = cart.Total.ToString(),
+                OrderStatus = "Pending",
+                CartId = cart.CartId,
+                UserId = user.Id
+            };
+
+            // Add the order to the database
+            _context.Order.Add(order);
+
+            // Clear the cart
+            var cartItems = _context.CartItems.Where(ci => ci.CartId == cart.CartId);
+            _context.CartItems.RemoveRange(cartItems);
+            cart.Total = 0;
+
+            // Save the changes
+            await _context.SaveChangesAsync();
+
+            return View();
         }
 
         // public async Task<IActionResult> RemoveFromCart(int productId)

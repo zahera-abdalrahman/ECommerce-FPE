@@ -1,6 +1,6 @@
 ﻿@{
-    var cart = ViewBag.CartItems as CartItems;
-}
+     var cart = ViewBag.CartItems as CartItems;
+ }
 
 
 <div class="page-header breadcrumb-wrap">
@@ -80,7 +80,7 @@
                     </table>
                 </div>
                 <div class="cart-action text-end">
-                    <a class="btn "><i class="fi-rs-shopping-bag mr-10"></i>Continue Shopping ></a>
+                    <a class="btn " asp-controller="Home" asp-action="Checkout"><i class="fi-rs-shopping-bag mr-10"></i>Checkout ></a>
                 </div>
 
             </div>
