@@ -208,6 +208,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Orange Coding School/last last clone/ECommerceFPE/ECommerceFPE/Views/Home/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Orange Coding School/last last clone/ECommerceFPE/ECommerceFPE/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -230,6 +234,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Orange Coding School/last last clone/ECommerceFPE/ECommerceFPE/Views/Home/ProductSingle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0U2luZ2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Orange Coding School/last last clone/ECommerceFPE/ECommerceFPE/Views/Home/SuccessfulOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzZnVsT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Orange Coding School/last last clone/ECommerceFPE/ECommerceFPE/Views/Shared/Error.cshtml]

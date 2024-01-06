@@ -204,16 +204,16 @@
                 <div class="col-lg-12 col-md-12 text-center">
                     <h6 class="mt-0 mb-10 text-uppercase  text-brand font-sm wow fadeIn animated">some facts</h6>
                     <h2 class="mb-15 text-grey-1 wow fadeIn animated">Take a look what<br> our clients say about us</h2>
-                    
+
                 </div>
             </div>
             <div class="row align-items-center">
-                
+
                 @foreach (var review in ViewBag.Reviews)
                 {
                     <div class="col-md-6 col-lg-4">
                         <div class="hero-card box-shadow-outer-6 wow fadeIn animated mb-30 hover-up d-flex">
-                         
+
                             <div class="pl-30">
                                 <h5 class="mb-5 fw-500">
                                     @if (review.ApplicationUser != null)

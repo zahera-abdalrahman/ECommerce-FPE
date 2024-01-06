@@ -2,6 +2,7 @@
 using ECommerceFPE.Data;
 using ECommerceFPE.Models;
 using ECommerceFPE.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -33,12 +34,7 @@ namespace ECommerceFPE.Controllers
             return View();
         }
 
-        ////////////////////////////////////////////////////////
-        public IActionResult About()
-        {
-            return View();
-        }
-
+    
         ////////////////////////////////////////////////////////
         public IActionResult ContactUs()
         {
@@ -168,22 +164,38 @@ namespace ECommerceFPE.Controllers
         }
 
         ////////////////////////////////////////////////////////
-        public IActionResult ReviewAll()
+        public async Task<IActionResult> About()
         {
-            ViewBag.AllReview = _context.ReviewAll.Include(p => p.ApplicationUser).ToList();
+            var reviews = await _context.ReviewAll
+         .Include(r => r.ApplicationUser)
+         .Where(r => r.isActive)
+         .Take(6)
+         .ToListAsync();
+            var currentUser = await _userManager.GetUserAsync(User);
+            ViewBag.Reviews = reviews;
             return View();
         }
 
+        [Authorize]
         [HttpPost]
-        public IActionResult ReviewAll(ReviewAll model)
+        public async Task<ActionResult> About(ReviewAll model)
         {
-            model.ReviewDate = DateTime.Now;
-            model.isActive = false;
-            model.ApplicationUser.Address = "123 Main St";
-            _context.ReviewAll.Add(model);
+
+            ApplicationUser user = await _userManager.GetUserAsync(User);
+            var newReview = new ReviewAll
+            {
+                UserId = user.Id,
+                Comment = model.Comment,
+                ReviewDate = DateTime.Now,
+                isActive = false,
+                ApplicationUser = user
+            };
+
+            _context.ReviewAll.Add(newReview);
             _context.SaveChanges();
 
-            return RedirectToAction("ReviewAll");
+            return RedirectToAction("About");
+
         }
 
         ////////////////////////////////////////////////////////
