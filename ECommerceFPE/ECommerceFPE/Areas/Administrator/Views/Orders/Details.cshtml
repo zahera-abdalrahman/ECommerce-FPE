@@ -54,57 +54,72 @@
 <body>
 
     <h1>Details Order</h1>
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="pagetitle">
+                    <nav>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Home</a></li>
+                            <a class="breadcrumb-item" asp-action="Index" asp-controller="Orders">Order</a>
+                            <a class="breadcrumb-item active" asp-action="Details" asp-controller="Orders">Details</a>
+                        </ol>
+                    </nav>
+                </div>
 
-    <div>
-        <hr />
-        <dl class="row">
-            <dt>
-                <strong>Products</strong>
-            </dt>
-            <dd>
-@*                @Html.DisplayFor(model => model.Products)
-*@            </dd>
+                <div>
+                    <hr />
+                    <dl class="row">
+                        <dt>
+                            <strong>Products</strong>
+                        </dt>
+                        <dd>
+                            @*                @Html.DisplayFor(model => model.Products)
+                            *@
+                        </dd>
 
-            <dt>
-                <strong>Order Date</strong>
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.OrderDate)
-            </dd>
+                        <dt>
+                            <strong>Order Date</strong>
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.OrderDate)
+                        </dd>
 
-            <dt>
-                <strong>Total Amount</strong>
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.TotalAmount)
-            </dd>
+                        <dt>
+                            <strong>Total Amount</strong>
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.TotalAmount)
+                        </dd>
 
-            <dt>
-                <strong>Order Status</strong>
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.OrderStatus)
-            </dd>
+                        <dt>
+                            <strong>Order Status</strong>
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.OrderStatus)
+                        </dd>
 
-            <dt>
-                <strong>Customer Name</strong>
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.ApplicationUser.UserName)
-            </dd>
+                        <dt>
+                            <strong>Customer Name</strong>
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.ApplicationUser.UserName)
+                        </dd>
 
-            <dt>
-                <strong>Customer Address</strong>
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.ApplicationUser.Address)
-            </dd>
-        </dl>
+                        <dt>
+                            <strong>Customer Address</strong>
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.ApplicationUser.Address)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>
 
-<div>
-    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+<div class="text-end">
+    <a asp-action="Index" class="btn btn-sm font-sm rounded btn-brand">Back to List</a>
 </div>

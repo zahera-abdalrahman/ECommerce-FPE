@@ -10,6 +10,7 @@ namespace ECommerceFPE.Models
         public int OrderId { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public DateTime OrderDate { get; set; }
 
         [Required]
@@ -25,6 +26,7 @@ namespace ECommerceFPE.Models
         // Foreign Keys
         public string UserId { get; set; }
 
+        [ForeignKey("UserId")]
         public ApplicationUser ApplicationUser { get; set; }
     }
 }

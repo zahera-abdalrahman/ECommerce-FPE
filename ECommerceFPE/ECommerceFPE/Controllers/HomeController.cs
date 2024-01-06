@@ -220,43 +220,81 @@ namespace ECommerceFPE.Controllers
                     FirstName = user.FirstName,
                     LastName = user.LastName,
                     Address = user.Address,
+                    // Ensure that the following properties are properly initialized based on your model
+                    CurrentPassword = "", // or however you handle the current password
+                    NewPassword = "",
+                    ConfirmPassword = ""
                 }
             };
 
             return View(profileViewModel);
         }
 
+
         [HttpPost]
         public async Task<IActionResult> Edit(ProfileViewModel model)
         {
-            if (ModelState.IsValid)
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
             {
-                var user = await _userManager.GetUserAsync(User);
+                return NotFound();
+            }
 
-                if (user == null)
+            if (model.EditModel != null)
+            {
+                if (!string.IsNullOrEmpty(model.EditModel.FirstName))
                 {
-                    return NotFound();
+                    user.FirstName = model.EditModel.FirstName;
                 }
 
-                user.FirstName = model.EditModel.FirstName;
-                user.LastName = model.EditModel.LastName;
-                user.Address = model.EditModel.Address;              
-
-                var result = await _userManager.UpdateAsync(user);
-
-                if (result.Succeeded)
+                if (!string.IsNullOrEmpty(model.EditModel.LastName))
                 {
-                    return RedirectToAction("Profile");
+                    user.LastName = model.EditModel.LastName;
                 }
 
-                foreach (var error in result.Errors)
+                if (!string.IsNullOrEmpty(model.EditModel.Address))
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    user.Address = model.EditModel.Address;
                 }
+                if (!string.IsNullOrEmpty(model.EditModel.Email))
+                {
+                    user.Email = model.EditModel.Email;
+                }
+
+
+                if (!string.IsNullOrEmpty(model.EditModel.NewPassword))
+                {
+                    var changePasswordResult = await _userManager.ChangePasswordAsync(user, model.EditModel.CurrentPassword, model.EditModel.NewPassword);
+
+                    if (!changePasswordResult.Succeeded)
+                    {
+                        foreach (var error in changePasswordResult.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
+
+                        return View("Profile", model);
+                    }
+                }
+            }
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Profile");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
             }
 
             return View("Profile", model);
         }
+
+
 
 
 
