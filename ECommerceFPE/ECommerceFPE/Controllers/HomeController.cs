@@ -2,7 +2,6 @@
 using ECommerceFPE.Data;
 using ECommerceFPE.Models;
 using ECommerceFPE.Models.ViewModels;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +32,13 @@ namespace ECommerceFPE.Controllers
             ;
             return View();
         }
+
+        ////////////////////////////////////////////////////////
+        public IActionResult About()
+        {
+            return View();
+        }
+
         ////////////////////////////////////////////////////////
         public IActionResult ContactUs()
         {
@@ -162,112 +168,23 @@ namespace ECommerceFPE.Controllers
         }
 
         ////////////////////////////////////////////////////////
-        public async Task<IActionResult> About()
+        public IActionResult ReviewAll()
         {
-            var reviews = await _context.ReviewAll
-         .Include(r => r.ApplicationUser)
-         .Where(r => r.isActive)
-         .Take(6)
-         .ToListAsync();
-            var currentUser = await _userManager.GetUserAsync(User);
-            ViewBag.Reviews = reviews;
+            ViewBag.AllReview = _context.ReviewAll.Include(p => p.ApplicationUser).ToList();
             return View();
         }
 
-        [Authorize]
         [HttpPost]
-        public async Task<ActionResult> About(ReviewAll model)
+        public IActionResult ReviewAll(ReviewAll model)
         {
-
-            ApplicationUser user = await _userManager.GetUserAsync(User);
-            var newReview = new ReviewAll
-            {
-                UserId = user.Id,
-                Comment = model.Comment,
-                ReviewDate = DateTime.Now,
-                isActive = false,
-                ApplicationUser = user
-            };
-
-            _context.ReviewAll.Add(newReview);
+            model.ReviewDate = DateTime.Now;
+            model.isActive = false;
+            model.ApplicationUser.Address = "123 Main St";
+            _context.ReviewAll.Add(model);
             _context.SaveChanges();
 
-            return RedirectToAction("About");
-
+            return RedirectToAction("ReviewAll");
         }
-        ////////////////////////////////////////////////////////
-        [HttpGet]
-        public async Task<IActionResult> Edit()
-        {
-            var user = await _userManager.GetUserAsync(User);
-
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            var model = new EditViewModel
-            {
-                Email = user.Email,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Address = user.Address,
-            };
-
-            return View(model);
-        }
-
-
-
-        [HttpPost]
-        public async Task<IActionResult> Edit(EditViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var user = await _userManager.GetUserAsync(User);
-
-                if (user == null)
-                {
-                    return NotFound();
-                }
-
-                user.FirstName = model.FirstName;
-                user.LastName = model.LastName;
-                user.Address = model.Address;
-
-                if (!string.IsNullOrEmpty(model.NewPassword))
-                {
-                    var passwordChangeResult = await _userManager.ChangePasswordAsync(user, null, model.NewPassword);
-
-                    if (!passwordChangeResult.Succeeded)
-                    {
-                        foreach (var error in passwordChangeResult.Errors)
-                        {
-                            ModelState.AddModelError("", error.Description);
-                        }
-
-                        return View(model);
-                    }
-                }
-
-                var updateResult = await _userManager.UpdateAsync(user);
-
-                if (updateResult.Succeeded)
-                {
-                    // Optionally, you can redirect to a profile page or show a success message.
-                    return RedirectToAction("Index", "Home");
-                }
-
-                foreach (var error in updateResult.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }
-            }
-
-            // If the model is not valid or the update fails, return to the edit view with errors.
-            return View("Edit", "Home");
-        }
-
 
         ////////////////////////////////////////////////////////
         public IActionResult Privacy()
@@ -385,6 +302,67 @@ namespace ECommerceFPE.Controllers
             ViewBag.CartItems = cartItemsModified;
 
             return View("Cart");
+        }
+
+        public async Task<IActionResult> Checkout(PaymentViewModel model)
+        {
+            ApplicationUser user = await _userManager.GetUserAsync(User);
+
+            Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
+
+            var cartItems = _context
+                .CartItems
+                .Include(ci => ci.ProductCatalog)
+                .Where(ci => ci.CartId == cart.CartId)
+                .ToList();
+
+            // Pass cart data to the view using ViewBag
+            ViewBag.CartItems = cartItems;
+
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            return RedirectToAction("SuccessfulOrder");
+        }
+
+        public async Task<IActionResult> SuccessfulOrder()
+        {
+            // Get the current user
+            ApplicationUser user = await _userManager.GetUserAsync(User);
+
+            // Get the cart for the current user
+            Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
+
+            if (cart == null)
+            {
+                // Handle the case when the cart is not found
+                return NotFound();
+            }
+
+            // Create a new order
+            Order order = new Order
+            {
+                OrderDate = DateTime.Now,
+                TotalAmount = cart.Total.ToString(),
+                OrderStatus = "Pending",
+                CartId = cart.CartId,
+                UserId = user.Id
+            };
+
+            // Add the order to the database
+            _context.Order.Add(order);
+
+            // Clear the cart
+            var cartItems = _context.CartItems.Where(ci => ci.CartId == cart.CartId);
+            _context.CartItems.RemoveRange(cartItems);
+            cart.Total = 0;
+
+            // Save the changes
+            await _context.SaveChangesAsync();
+
+            return View();
         }
 
         // public async Task<IActionResult> RemoveFromCart(int productId)

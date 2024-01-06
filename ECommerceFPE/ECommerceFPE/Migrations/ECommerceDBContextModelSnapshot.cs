@@ -181,6 +181,9 @@ namespace ECommerceFPE.Migrations
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
@@ -199,6 +202,8 @@ namespace ECommerceFPE.Migrations
                     b.HasKey("OrderId");
 
                     b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("CartId");
 
                     b.ToTable("Order");
                 });
@@ -540,7 +545,15 @@ namespace ECommerceFPE.Migrations
                         .WithMany()
                         .HasForeignKey("ApplicationUserId");
 
+                    b.HasOne("ECommerceFPE.Models.Cart", "Cart")
+                        .WithMany()
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("ApplicationUser");
+
+                    b.Navigation("Cart");
                 });
 
             modelBuilder.Entity("ECommerceFPE.Models.OrderItems", b =>

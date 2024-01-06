@@ -18,17 +18,13 @@ namespace ECommerceFPE.Models
         [Required]
         public string OrderStatus { get; set; }
 
-
-        //[ForeignKey("Cart")]
-        //public int CartId { get; set; }
-        //public Cart Cart { get; set; }
-
+        [ForeignKey("Cart")]
+        public int CartId { get; set; }
+        public Cart Cart { get; set; }
 
         // Foreign Keys
         public string UserId { get; set; }
 
         public ApplicationUser ApplicationUser { get; set; }
-
-
     }
 }
