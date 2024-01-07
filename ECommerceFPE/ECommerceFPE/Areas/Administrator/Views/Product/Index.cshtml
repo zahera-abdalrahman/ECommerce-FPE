@@ -3,7 +3,10 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<form method="get" asp-action="Index">
+    <input type="search" name="search" value="@ViewData["GetSearch"]" placeholder="Enter product Name" style="width:300px;height:30px;" />
+    <input type="submit" class="btn btn-primary" value="Search" />
+</form>
 <section class="section">
     <div class="row">
         <div class="col-lg-12">
@@ -28,7 +31,7 @@
                                 <th>
                                     @Html.DisplayNameFor(model => model.ProductName)
                                 </th>
-                              
+
                                 <th>
                                     @Html.DisplayNameFor(model => model.Price)
                                 </th>
@@ -54,7 +57,7 @@
                                     <td>
                                         @Html.DisplayFor(modelItem => item.ProductName)
                                     </td>
-                                  
+
                                     <td>
                                         @Html.DisplayFor(modelItem => item.Price)
                                     </td>
@@ -73,7 +76,7 @@
                                     <td>
                                         <div class="text-end">
                                             <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand"><i class="material-icons md-edit"></i>Edit</a>
-                                        <a asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand">Details</a>
+                                            <a asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-sm font-sm rounded btn-brand">Details</a>
                                             <form id="deleteForm-@item.ProductId" method="post" asp-action="Delete" asp-route-id="@item.ProductId" class="d-inline">
                                                 @Html.HiddenFor(modelItem => item.ProductId)
                                                 <button type="submit" class="btn btn-sm font-sm btn-light rounded" style="display: none;"></button>
@@ -81,7 +84,7 @@
                                                     <i class="material-icons md-delete_forever"></i> Delete
                                                 </a>
                                             </form>
-                                           
+
                                         </div>
                                     </td>
                                 </tr>

@@ -5,7 +5,7 @@ namespace ECommerceFPE.Models
 {
     public class Payment
     {
-  
+
         [Key]
         public int PaymentId { get; set; }
 

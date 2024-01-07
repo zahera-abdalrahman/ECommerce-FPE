@@ -32,7 +32,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
 
         public IActionResult Index()
         {
-            var ordersTable = _context.Order
+            var ordersTable = _context.Orders
                 .Include(order => order.ApplicationUser)  // Include ApplicationUser navigation property
                 .OrderByDescending(order => order.OrderDate)
                 .Take(10)

@@ -8,10 +8,8 @@ namespace ECommerceFPE.Models
         [Key]
         public int CartId { get; set; }
 
-
         [ForeignKey("ApplicationUser")]
         public string UserId { get; set; }
-
         public ApplicationUser ApplicationUser { get; set; }
 
         [Required]

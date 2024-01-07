@@ -19,9 +19,9 @@ builder
     .AddDbContext<ECommerceDBContext>(
         options =>
             options.UseSqlServer(
-                builder.Configuration.GetConnectionString("ECommerceFPEContext")
+                builder.Configuration.GetConnectionString("Last")
                     ?? throw new InvalidOperationException(
-                        "Connection string 'ECommerceFPEContext' not found."
+                        "Connection string 'Last' not found."
                     )
             )
     );

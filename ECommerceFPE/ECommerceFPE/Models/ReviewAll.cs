@@ -14,7 +14,7 @@ namespace ECommerceFPE.Models
         public ApplicationUser ApplicationUser { get; set; }
         [Required(ErrorMessage = "Please enter your review.")]
         public string Comment { get; set; }
-                
+
         public DateTime ReviewDate { get; set; }
 
         public bool isActive { get; set; }

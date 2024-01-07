@@ -208,7 +208,7 @@ namespace ECommerceFPE.Controllers
                 return View();
             }
 
-            var userOrders = _context.Order.Where(o => o.UserId == user.Id).ToList();
+            var userOrders = _context.Orders.Where(o => o.UserId == user.Id).ToList();
 
             var profileViewModel = new ProfileViewModel
             {
@@ -465,7 +465,7 @@ namespace ECommerceFPE.Controllers
             };
 
             // Add the order to the database
-            _context.Order.Add(order);
+            _context.Orders.Add(order);
 
             // Clear the cart
             var cartItems = _context.CartItems.Where(ci => ci.CartId == cart.CartId);

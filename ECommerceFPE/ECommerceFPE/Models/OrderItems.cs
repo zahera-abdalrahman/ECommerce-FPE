@@ -6,6 +6,7 @@ namespace ECommerceFPE.Models
     public class OrderItems
     {
 
+
         [Key]
         public int OrderItemsId { get; set; }
 

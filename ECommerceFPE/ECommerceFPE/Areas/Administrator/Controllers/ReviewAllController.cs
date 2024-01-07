@@ -36,7 +36,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             var ReviewAllQuery = from r in _context.ReviewAll select r;
             if (!string.IsNullOrEmpty(search))
             {
-                ReviewAllQuery = ReviewAllQuery.Where(r=>r.ApplicationUser.FirstName.Contains(search));
+                ReviewAllQuery = ReviewAllQuery.Where(r => r.ApplicationUser.FirstName.Contains(search));
             }
             return View(ReviewAllQuery);
         }
@@ -60,8 +60,8 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             return View(reviewAll);
         }
 
-      
-        
+
+
         // POST: Administrator/ReviewAll/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -76,7 +76,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             {
                 _context.ReviewAll.Remove(reviewAll);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -96,7 +96,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
         }
         private bool ReviewAllExists(int id)
         {
-          return (_context.ReviewAll?.Any(e => e.ReviewId == id)).GetValueOrDefault();
+            return (_context.ReviewAll?.Any(e => e.ReviewId == id)).GetValueOrDefault();
         }
     }
 }

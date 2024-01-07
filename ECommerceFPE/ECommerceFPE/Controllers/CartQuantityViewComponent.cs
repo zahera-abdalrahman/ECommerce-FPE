@@ -2,6 +2,7 @@
 using ECommerceFPE.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace ECommerceFPE.Controllers
 {
@@ -16,23 +17,33 @@ namespace ECommerceFPE.Controllers
             _userManager = userManager;
         }
 
-
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            ApplicationUser user = await _userManager.GetUserAsync((System.Security.Claims.ClaimsPrincipal)User);
-
-            Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
-
-            if (cart != null)
+            // Check if the user is authenticated
+            if (User.Identity.IsAuthenticated)
             {
-                var totalQuantity = _context
-                    .CartItems
-                    .Where(ci => ci.CartId == cart.CartId)
-                    .Sum(ci => ci.Quantity);
+                // Retrieve the user
+                ApplicationUser user = await _userManager.GetUserAsync((ClaimsPrincipal)User);
 
-                return View(totalQuantity);
+                // Check if the user is not null
+                if (user != null)
+                {
+                    // Retrieve the user's cart
+                    Cart cart = _context.Cart.FirstOrDefault(c => c.UserId == user.Id);
+
+                    if (cart != null)
+                    {
+                        // Calculate total quantity in the cart
+                        var totalQuantity = _context.CartItems
+                            .Where(ci => ci.CartId == cart.CartId)
+                            .Sum(ci => ci.Quantity);
+
+                        return View(totalQuantity);
+                    }
+                }
             }
 
+            // Return 0 if the user is not authenticated or doesn't have a cart
             return View(0);
         }
     }
