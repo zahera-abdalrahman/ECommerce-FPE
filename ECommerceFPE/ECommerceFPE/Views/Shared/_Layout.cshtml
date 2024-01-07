@@ -15,15 +15,13 @@
     <link rel="shortcut icon" type="~/image/x-icon" href="~/assets1/imgs/theme/favicon.svg">
     <!-- Template CSS -->
     <link rel="stylesheet" href="~/assets1/css/main.css?v=3.4">
- 
-    <!--leaflet map-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
 
 </head>
 
 <body>
- 
+
 
     <header class="header-area header-style-1 header-height-2">
         <div class="header-top header-top-ptb-1 d-none d-lg-block">
@@ -32,13 +30,13 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info">
                             <ul>
-                                <li><i class="fi-rs-smartphone"></i> <a href="#">(+962)796684240</a></li>
-                                <li><i class="fi-rs-marker"></i><a asp-action="ContactUs" asp-controller="Home">Our location</a></li>
+                                <li><i class="fi-rs-smartphone"></i> <a href="#">(+01) - 2345 - 6789</a></li>
+                                <li><i class="fi-rs-marker"></i><a asp-action="Logout" asp-controller="Account">Our location</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-4">
-                        
+
                     </div>
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info header-info-right">
@@ -58,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-middle header-middle-ptb-1 d-none d-lg-block sticky-bar" style="border:none">
+        <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
             <div class="container">
                 <div class="header-wrap">
                     <div class="logo logo-width-1">
@@ -79,10 +77,10 @@
                                             <a asp-controller="Home" asp-action="About">About</a>
                                         </li>
                                         <li>
-                                            <a <a asp-controller="Home" asp-action="ContactUs">Contact</a>
+                                            <a asp-controller="Home" asp-action="ReviewAll">Reviews</a>
                                         </li>
                                         <li>
-                                            <a <a asp-controller="Home" asp-action="Profile">Profile</a>
+                                            <a <a asp-controller="Home" asp-action="ContactUs">Contact</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -92,51 +90,48 @@
                             <div class="header-action-2">
 
                                 <div class="header-action-icon-2">
-                                    <a class="mini-cart-icon" href="shop-cart.html">
+                                    <a class="mini-cart-icon" asp-controller="Home" asp-action="Cart">
                                         <img alt="Evara" src="~/assets1/imgs/theme/icons/icon-cart.svg">
-                                        <span class="pro-count blue">2</span>
-
+                                        @* <span class="pro-count blue">2</span> *@
                                     </a>
-                                    
-                                    <div class="cart-dropdown-wrap cart-dropdown-hm2">
-                                        <ul>
-                                            <li>
-                                                <div class="shopping-cart-img">
-                                                    <a href="shop-product-right.html"><img alt="Evara" src="~/assets1/imgs/shop/thumbnail-3.jpg"></a>
-                                                </div>
-                                                <div class="shopping-cart-title">
-                                                    <h4><a href="shop-product-right.html">Daisy Casual Bag</a></h4>
-                                                    <h4><span>1 × </span>$800.00</h4>
-                                                </div>
-                                                <div class="shopping-cart-delete">
-                                                    <a href="#"><i class="fi-rs-cross-small"></i></a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="shopping-cart-img">
-                                                    <a href="shop-product-right.html"><img alt="Evara" src="~/assets1/imgs/shop/thumbnail-2.jpg"></a>
-                                                </div>
-                                                <div class="shopping-cart-title">
-                                                    <h4><a href="shop-product-right.html">Corduroy Shirts</a></h4>
-                                                    <h4><span>1 × </span>$3200.00</h4>
-                                                </div>
-                                                <div class="shopping-cart-delete">
-                                                    <a href="#"><i class="fi-rs-cross-small"></i></a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="shopping-cart-footer">
-                                            <div class="shopping-cart-total">
-                                                <h4>Total <span>$4000.00</span></h4>
-                                            </div>
-                                            <div class="shopping-cart-button">
-                                                <a href="shop-cart.html" class="outline">View cart</a>
-                                                <a href="shop-checkout.html">Checkout</a>
-                                            </div>
+                                    @* <div class="cart-dropdown-wrap cart-dropdown-hm2"> *@
+                                        @* <ul> *@
+                                            @* <li> *@
+                                            @*     <div class="shopping-cart-img"> *@
+                                            @*         <a href="shop-product-right.html"><img alt="Evara" src="~/assets1/imgs/shop/thumbnail-3.jpg"></a> *@
+                                            @*     </div> *@
+                                            @*     <div class="shopping-cart-title"> *@
+                                            @*         <h4><a href="shop-product-right.html">Daisy Casual Bag</a></h4> *@
+                                            @*         <h4><span>1 × </span>$800.00</h4> *@
+                                            @*     </div> *@
+                                            @*     <div class="shopping-cart-delete"> *@
+                                            @*         <a href="#"><i class="fi-rs-cross-small"></i></a> *@
+                                            @*     </div> *@
+                                            @* </li> *@
+                                            @* <li> *@
+                                            @*     <div class="shopping-cart-img"> *@
+                                            @*         <a href="shop-product-right.html"><img alt="Evara" src="~/assets1/imgs/shop/thumbnail-2.jpg"></a> *@
+                                            @*     </div> *@
+                                            @*     <div class="shopping-cart-title"> *@
+                                            @*         <h4><a href="shop-product-right.html">Corduroy Shirts</a></h4> *@
+                                            @*         <h4><span>1 × </span>$3200.00</h4> *@
+                                            @*     </div> *@
+                                                @* <div class="shopping-cart-delete"> *@
+                                                @*     <a href="#"><i class="fi-rs-cross-small"></i></a> *@
+                                                @* </div> *@
+                                            @* </li> *@
+                                        @* </ul> *@
+                                        @* <div class="shopping-cart-footer"> *@
+                                            @* <div class="shopping-cart-total"> *@
+                                                @* <h4>Total <span>$4000.00</span></h4> *@
+                                            @* </div> *@
+                                            @* <div class="shopping-cart-button"> *@
+                                            @*     <a href="shop-cart.html" class="outline">View cart</a> *@
+                                            @*     <a href="shop-checkout.html">Checkout</a> *@
+                                            @* </div> *@
                                         </div>
                                     </div>
                                 </div>
-                              
                             </div>
                         </div>
                     </div>
@@ -144,7 +139,7 @@
             </div>
         </div>
         <div class="header-bottom header-bottom-bg-color sticky-bar">
-            
+
         </div>
     </header>
     <div class="mobile-header-active mobile-header-wrapper-style">
@@ -313,7 +308,7 @@
     </div>
     <div class="container">
         <main class="main pb-3" role="main">
-         
+
 
             @RenderBody()
 
@@ -333,10 +328,10 @@
                             </div>
                             <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                             <p class="wow fadeIn animated">
-                                <strong>Address: </strong>Amman Jordan
+                                <strong>Address: </strong>562 Wellington Road, Street 32, San Francisco
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Phone: </strong>(+962)796684240
+                                <strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789
                             </p>
 
 
@@ -345,16 +340,16 @@
                     <div class="col-lg-2 col-md-3">
                         <h5 class="widget-title wow fadeIn animated">About</h5>
                         <ul class="footer-list wow fadeIn animated mb-sm-5 mb-md-0">
-                            <li><a asp-action="About" asp-controller="Home">About Us</a></li>
-                            <li><a asp-action="ContactUs" asp-controller="Home">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2  col-md-3">
                         <h5 class="widget-title wow fadeIn animated">My Account</h5>
                         <ul class="footer-list wow fadeIn animated">
-                            <li><a asp-action="Register" asp-controller="Account">Sign In</a></li>
-                            <li><a asp-action="Cart" asp-controller="Home">View Cart</a></li>
-                            <li><a asp-action="About" asp-controller="Home">Order</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">View Cart</a></li>
+                            <li><a href="#">Order</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
@@ -434,6 +429,5 @@
 </body>
 
 </html>
-
 
 

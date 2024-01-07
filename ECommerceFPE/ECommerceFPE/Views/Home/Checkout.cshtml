@@ -9,7 +9,7 @@
 <div class="mb-25">
     <h4>Billing Details</h4>
 </div>
-<form method="post">
+<form method="post" action-controller="Home" asp-action="SuccessfulOrder">
     <div class="form-group">
         <input asp-for="CCNum" placeholder="CC Number">
         <span asp-validation-for="CCNum" class="text-danger"></span>

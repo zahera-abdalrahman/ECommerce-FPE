@@ -11621,19 +11621,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\haith\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
+      "projectUniqueName": "C:\\Users\\haith\\Documents\\Code\\C#\\ASP.net\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
       "projectName": "ECommerceFPE",
-      "projectPath": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "F:\\Orange Coding School\\last last clone\\ECommerceFPE\\ECommerceFPE\\obj\\",
+      "projectPath": "C:\\Users\\haith\\Documents\\Code\\C#\\ASP.net\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\ECommerceFPE.csproj",
+      "packagesPath": "C:\\Users\\haith\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\haith\\Documents\\Code\\C#\\ASP.net\\ECommerce-FPE\\ECommerceFPE\\ECommerceFPE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\haith\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11705,7 +11705,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

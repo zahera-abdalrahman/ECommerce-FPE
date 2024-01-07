@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using ECommerceFPE.Data;
 using ECommerceFPE.Models;
 using ECommerceFPE.Models.ViewModels;
@@ -34,7 +35,6 @@ namespace ECommerceFPE.Controllers
             return View();
         }
 
-    
         ////////////////////////////////////////////////////////
         public IActionResult ContactUs()
         {
@@ -166,11 +166,12 @@ namespace ECommerceFPE.Controllers
         ////////////////////////////////////////////////////////
         public async Task<IActionResult> About()
         {
-            var reviews = await _context.ReviewAll
-         .Include(r => r.ApplicationUser)
-         .Where(r => r.isActive)
-         .Take(6)
-         .ToListAsync();
+            var reviews = await _context
+                .ReviewAll
+                .Include(r => r.ApplicationUser)
+                .Where(r => r.isActive)
+                .Take(6)
+                .ToListAsync();
             var currentUser = await _userManager.GetUserAsync(User);
             ViewBag.Reviews = reviews;
             return View();
@@ -180,7 +181,6 @@ namespace ECommerceFPE.Controllers
         [HttpPost]
         public async Task<ActionResult> About(ReviewAll model)
         {
-
             ApplicationUser user = await _userManager.GetUserAsync(User);
             var newReview = new ReviewAll
             {
@@ -195,8 +195,8 @@ namespace ECommerceFPE.Controllers
             _context.SaveChanges();
 
             return RedirectToAction("About");
-
         }
+
         ////////////////////////////////////////////////////////
         [HttpGet]
         public async Task<IActionResult> Profile()
@@ -220,6 +220,10 @@ namespace ECommerceFPE.Controllers
                     FirstName = user.FirstName,
                     LastName = user.LastName,
                     Address = user.Address,
+                    // Ensure that the following properties are properly initialized based on your model
+                    CurrentPassword = "", // or however you handle the current password
+                    NewPassword = "",
+                    ConfirmPassword = ""
                 }
             };
 
@@ -229,36 +233,68 @@ namespace ECommerceFPE.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(ProfileViewModel model)
         {
-            if (ModelState.IsValid)
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
             {
-                var user = await _userManager.GetUserAsync(User);
+                return NotFound();
+            }
 
-                if (user == null)
+            if (model.EditModel != null)
+            {
+                if (!string.IsNullOrEmpty(model.EditModel.FirstName))
                 {
-                    return NotFound();
+                    user.FirstName = model.EditModel.FirstName;
                 }
 
-                user.FirstName = model.EditModel.FirstName;
-                user.LastName = model.EditModel.LastName;
-                user.Address = model.EditModel.Address;              
-
-                var result = await _userManager.UpdateAsync(user);
-
-                if (result.Succeeded)
+                if (!string.IsNullOrEmpty(model.EditModel.LastName))
                 {
-                    return RedirectToAction("Profile");
+                    user.LastName = model.EditModel.LastName;
                 }
 
-                foreach (var error in result.Errors)
+                if (!string.IsNullOrEmpty(model.EditModel.Address))
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    user.Address = model.EditModel.Address;
                 }
+                if (!string.IsNullOrEmpty(model.EditModel.Email))
+                {
+                    user.Email = model.EditModel.Email;
+                }
+
+                if (!string.IsNullOrEmpty(model.EditModel.NewPassword))
+                {
+                    var changePasswordResult = await _userManager.ChangePasswordAsync(
+                        user,
+                        model.EditModel.CurrentPassword,
+                        model.EditModel.NewPassword
+                    );
+
+                    if (!changePasswordResult.Succeeded)
+                    {
+                        foreach (var error in changePasswordResult.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
+
+                        return View("Profile", model);
+                    }
+                }
+            }
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Profile");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
             }
 
             return View("Profile", model);
         }
-
-
 
         ////////////////////////////////////////////////////////
         public IActionResult Privacy()
@@ -277,6 +313,7 @@ namespace ECommerceFPE.Controllers
             );
         }
 
+        [Authorize]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Cart(int productId, string change)
         {
@@ -294,7 +331,8 @@ namespace ECommerceFPE.Controllers
                     .Where(ci => ci.CartId == cart.CartId)
                     .ToList();
 
-                // Pass cart data to the view using ViewBag
+                ViewBag.CartItemCount = cartItems.Count;
+
                 ViewBag.CartItems = cartItems;
 
                 return View("Cart");
@@ -422,7 +460,8 @@ namespace ECommerceFPE.Controllers
                 TotalAmount = cart.Total.ToString(),
                 OrderStatus = "Pending",
                 CartId = cart.CartId,
-                UserId = user.Id
+                UserId = user.Id,
+                ApplicationUser = user,
             };
 
             // Add the order to the database
@@ -438,8 +477,6 @@ namespace ECommerceFPE.Controllers
 
             return View();
         }
-
-      
 
         private double GetProductPrice(int productId)
         {

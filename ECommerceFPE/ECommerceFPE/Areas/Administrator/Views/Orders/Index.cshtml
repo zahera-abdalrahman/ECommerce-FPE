@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ECommerceFPE.Models.Order>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Orders";
 }
 
 <div class="card mb-4">
@@ -22,19 +22,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model)
+                        @foreach (var order in Model)
                         {
                             <tr>
-                                <td>@item.ApplicationUser.UserName</td>
-                                <td>@item.OrderDate</td>
+                                <td>@order.ApplicationUser.UserName</td>
+                                <td>@order.OrderDate</td>
                                 <td>
-                                    @item.TotalAmount
+                                    @order.TotalAmount
                                 </td>
                                 <td>
-                                    @item.OrderStatus
+                                    @order.OrderStatus
                                 </td>
                                 <td>
-                                    <a href="#" class="btn btn-xs" asp-action="Details"asp-route-id="@item.OrderId"> View details</a>
+                                    <a class="btn btn-xs" asp-action="Details" asp-route-id="@order.OrderId"> View details</a>
                                 </td>
                             </tr>
                         }
