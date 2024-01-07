@@ -28,6 +28,17 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             var eCommerceDBContext = _context.Product.Include(p => p.Category);
             return View(await eCommerceDBContext.ToListAsync());
         }
+        [HttpGet]
+        public IActionResult Index(string search)
+        {
+            ViewBag.GetSearch=search;
+            var productQuery = from p in _context.Product select p;
+            if (!string.IsNullOrEmpty(search))
+            {
+                productQuery = productQuery.Where(p => p.ProductName.Contains(search));
+            }
+            return View(productQuery);
+        }
 
         // GET: Administrator/Product/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -194,16 +205,36 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             var product = await _context.Product.FindAsync(id);
             if (product != null)
             {
-                _context.Product.Remove(product);
-                await _context.SaveChangesAsync();
-
-                TempData["SweetAlert"] = "Deleted|The product has been successfully deleted.";
-
-
+                product.IsDeleted = true;
+            }
+            
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public IActionResult ShowSoftDeleted()
+        {
+            var softDeletedProducts = _context.Product.IgnoreQueryFilters().Where(p => p.IsDeleted).ToList();
+            return View(softDeletedProducts);
+        }
+        public async Task<IActionResult> RestoreProduct(int? id)
+        {
+            if (id == null)
+            {
+                return BadRequest("Invalid product id.");
             }
 
-            return RedirectToAction(nameof(Index));
+            var product = await _context.Product.FindAsync(id);
 
+            if (product == null)
+            {
+                return NotFound(); // Return a 404 Not Found response if the product is not found.
+            }
+
+            product.IsDeleted = false;
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
 
         private bool ProductExists(int id)

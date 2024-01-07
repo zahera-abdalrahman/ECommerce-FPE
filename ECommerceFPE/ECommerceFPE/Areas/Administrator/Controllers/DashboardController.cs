@@ -32,14 +32,13 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
 
         public IActionResult Index()
         {
-            var orders = _context.Order.ToList();
-
             var ordersTable = _context.Order
-        .OrderByDescending(order => order.OrderDate)
-        .Take(10)
-        .ToList();
+                .Include(order => order.ApplicationUser)  // Include ApplicationUser navigation property
+                .OrderByDescending(order => order.OrderDate)
+                .Take(10)
+                .ToList();
 
-            ViewBag.OrderCount = orders.Count;
+            ViewBag.OrderCount = ordersTable.Count;
 
             var products = _context.Product.ToList();
             ViewBag.ProductCount = products.Count;
@@ -50,7 +49,7 @@ namespace ECommerceFPE.Areas.Administrator.Controllers
             var currentMonth = DateTime.Now.Month;
             var currentYear = DateTime.Now.Year;
 
-            var ordersForCurrentMonth = orders
+            var ordersForCurrentMonth = ordersTable
                 .Where(order => order.OrderDate.Month == currentMonth && order.OrderDate.Year == currentYear)
                 .ToList();
 

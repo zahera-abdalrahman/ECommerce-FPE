@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECommerceFPE.Models
 {
@@ -18,13 +17,25 @@ namespace ECommerceFPE.Models
         [Required]
         public string OrderStatus { get; set; }
 
-        [ForeignKey("Cart")]
+<<<<<<< Updated upstream
+=======
+      
         public int CartId { get; set; }
-        public Cart Cart { get; set; }
+        public  Cart Cart { get; set; }
 
+>>>>>>> Stashed changes
         // Foreign Keys
-        public string UserId { get; set; }
+        [Required]
+        public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
+        public List<Product> Products { get; set; }
 
+        // Collection Navigation Properties
+
+<<<<<<< Updated upstream
+=======
         public ApplicationUser ApplicationUser { get; set; }
+        public bool IsDeleted { get; set; }
+>>>>>>> Stashed changes
     }
 }

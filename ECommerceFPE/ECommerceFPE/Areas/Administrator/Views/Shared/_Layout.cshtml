@@ -49,7 +49,9 @@
                     </a>
                     <div class="submenu">
                          <a asp-area="Administrator" asp-controller="Category" asp-action="Index">Add Categories</a>
+                        <a asp-area="Administrator" asp-controller="Category" asp-action="ShowSoftDeleted">Categories Deleted</a>
                         <a asp-area="Administrator" asp-controller="Product" asp-action="Index">Add Product</a>
+                        <a asp-area="Administrator" asp-controller="Product" asp-action="ShowSoftDeleted">Products Deleted</a>
                     </div>
                 </li>
                 <li class="menu-item has-submenu">
@@ -59,6 +61,7 @@
                     </a>
                     <div class="submenu">
                         <a asp-area="Administrator" asp-action="Index" asp-controller="Orders">Orders</a>
+                        <a asp-area="Administrator" asp-action="ShowSoftDeleted" asp-controller="Orders">Orders Deleted</a>
                     </div>
                 </li>
              
@@ -85,10 +88,15 @@
                 <ul class="nav">
                   
                     <li class="dropdown nav-item">
-                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" id="dropdownAccount" aria-expanded="false">Hello @User.Identity.Name</a>
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" id="dropdownAccount" aria-expanded="false"> <img class="img-xs rounded-circle" src="~/evara-backend/assets/imgs/people/avatar2.jpg" alt="User"></a>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownAccount">
+                            <a class="dropdown-item" href="#"><i class="material-icons md-perm_identity"></i>Edit Profile</a>
+                            <a class="dropdown-item" href="#"><i class="material-icons md-settings"></i>Log out</a>
+                           
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-danger" asp-area="" asp-action="Logout" asp-controller="Account"><i class="material-icons md-exit_to_app"></i>Logout</a>
+
+                           @* asp-area="Administrator" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"*@
                         </div>
                     </li>
                 </ul>

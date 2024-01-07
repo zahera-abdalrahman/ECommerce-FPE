@@ -1,15 +1,24 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECommerceFPE.Models
 {
     public class Product
     {
-        [Key]
-        public int ProductId { get; set; }
 
-        [Required]
+        public int ProductId { get; set; }
+        [Display(Name = "Product Name")]
+        [Required(ErrorMessage = "Product Name")]
         public string ProductName { get; set; }
+<<<<<<< Updated upstream
+        [Display(Name = "Product Price")]
+        [Required(ErrorMessage = "Product Price")]
+        public double ProductPrice { get; set; }
+        public int ProductInStock { get; set; }
+        [Display(Name = "Product Img")]
+        [DataType(DataType.ImageUrl)]
+        public string ProductImg { get; set; }
+        public List<Order> Orders { get; set; }
+=======
 
         [Required]
         public string Description { get; set; }
@@ -26,6 +35,8 @@ namespace ECommerceFPE.Models
 
         [Required]
         public string ImageUrl { get; set; }
-        
+        public bool IsDeleted { get; set; }
+
+>>>>>>> Stashed changes
     }
 }
